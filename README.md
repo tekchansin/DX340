@@ -36,3 +36,10 @@ When the script is finished (shows Debloat Complete), you MUST Reboot your devic
 ```
 reboot
 ```
+
+# Rooting and Optimize Android Kernel
+- Wider Sound Stage
+- Reduce Noise and darker Bankground
+- Improve more micro-detail and dynamic
+- Save more bettery life
+- Please follow steps [https://www.head-fi.org/threads/ibasso-dx180-dx260-dx300-max-dx320-max-dx340-rooting-optimization-guides-and-discussion.974923/](Here) 
