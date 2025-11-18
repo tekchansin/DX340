@@ -18,6 +18,28 @@ echo "tekChansin's DX340 Audiophile Debloat Script"
 echo "Debloat List from mattclarke18 on Head-fi"
 echo "Disabling 'Noise Maker' apps and bloatware..."
 
+
+CURRENT_MODEL=$(getprop ro.product.model)
+
+echo "Checking device model..."
+echo "Found model: $CURRENT_MODEL"
+
+# Check Device model
+case "$CURRENT_MODEL" in
+  "DX340" | "DX180" | "DX260mk2")
+    # (รุ่นถูกต้อง, ทำงานต่อ)
+    echo "Success: iBasso DAP detected ($CURRENT_MODEL). Proceeding..."
+    ;;
+  *)
+    echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+    echo "ERROR: This script is ONLY for iBasso DX340, DX180, or DX260mk2."
+    echo "Device model '$CURRENT_MODEL' is not supported."
+    echo "Aborting script."
+    echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+    exit 1
+    ;;
+esac
+
 # Debloat List
 PACKAGES_TO_DISABLE="
 android.overlay.common
