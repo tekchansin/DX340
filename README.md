@@ -1,4 +1,4 @@
-# DX340, DX260mk and DX180 Optimization guide.
+# DX340, DX260mk2 and DX180 Optimization guide.
 
 ## Please follow tekChansin and mattclarke18 on Head-fi
 - https://www.head-fi.org/threads/ibasso-dx180-dx260-dx300-max-dx320-max-dx340-rooting-optimization-guides-and-discussion.974923/
