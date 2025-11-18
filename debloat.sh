@@ -18,14 +18,8 @@ echo "tekChansin's DX340 Audiophile Debloat Script"
 echo "Debloat List from mattclarke18 on Head-fi"
 echo "Disabling 'Noise Maker' apps and bloatware..."
 
-
-CURRENT_MODEL=$(getprop ro.product.model)
-
-echo "Checking device model..."
-echo "Found model: $CURRENT_MODEL"
-
 # Check Device model
-case "$CURRENT_MODEL" in
+case "$HOSTNAME" in
   "DX340" | "DX180" | "DX260mk2")
     # (รุ่นถูกต้อง, ทำงานต่อ)
     echo "Success: iBasso DAP detected ($CURRENT_MODEL). Proceeding..."
