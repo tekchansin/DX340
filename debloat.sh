@@ -7,13 +7,13 @@
 # ===============================================
 
 # Check for Root
-if [ "$(id -u)" -ne 0 ]; then
-  echo "Error: This script must be run as root."
-  echo "Please run 'su' first, then run this script."
-  exit 1
-fi
+# if [ "$(id -u)" -ne 0 ]; then
+#   echo "Error: This script must be run as root."
+#   echo "Please run 'su' first, then run this script."
+#   exit 1
+# fi
 
-echo "--- Starting DX340 Audiophile Debloat ---"
+echo "--- Starting DX340, DX260mk2 and  DX180 Audiophile Debloat ---"
 echo "tekChansin's DX340 Audiophile Debloat Script"
 echo "Debloat List from mattclarke18 on Head-fi"
 echo "Disabling 'Noise Maker' apps and bloatware..."
@@ -76,7 +76,7 @@ org.lineageos.setupwizard
 for pkg in $PACKAGES_TO_DISABLE; do
   echo -n "Disabling $pkg... "
 
-  pm disable "$pkg"
+  pm disable-user --user 0  "$pkg"
   
   # Checking
   if [ $? -eq 0 ]; then
