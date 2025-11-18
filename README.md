@@ -8,7 +8,7 @@
 This is the safest and recommended method for all users.
 
 ### Step 1 : Enable USB Debugging (on the DX340)
-
+- [Step by Step how to enable USB Debugging](https://drive.google.com/open?id=16Cj0Fg3WbrOMQ203d1HSczG9x7RZpePq&usp=drive_fs) 
 - Go to "Settings" > "About phone"
 - Tap on "Build number" 7 times until it says "You are now a developer!"
 - Go back to "Settings" > "System" > "Developer options"
