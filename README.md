@@ -3,23 +3,18 @@
 ## Please follow me and mattclarke18 on Head-fi
 - https://www.head-fi.org/threads/ibasso-dx180-dx260-dx300-max-dx320-max-dx340-rooting-optimization-guides-and-discussion.974923/
 
-# Debloating
-1. adb shell
-2. curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/debloat.sh | sh
-
-
 ## How to Run
 
 This is the safest and recommended method for all users.
 
-### Step 1 (All Methods): Enable USB Debugging (on the DX340)
+### Step 1 : Enable USB Debugging (on the DX340)
 
 - Go to "Settings" > "About phone"
 - Tap on "Build number" 7 times until it says "You are now a developer!"
 - Go back to "Settings" > "System" > "Developer options"
 - Find and turn "ON" the "USB debugging" toggle.
 
-### Step 2 (All Methods): Connect to PC
+### Step 2 : Connect to PC
 
 - Connect your DX340 to your computer via USB.
 - On the DX340, a popup "Allow USB debugging?" will appear. -> Check "Always allow" and tap "Allow".
@@ -34,12 +29,10 @@ adb shell
 
 "Run" (Execute) the online script:
 ```
-curl -sS [https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/debloat.sh](https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/debloat.sh) | sh
-
+curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/debloat.sh | sh
 ```
 
 When the script is finished (shows Debloat Complete), you MUST Reboot your device:
 ```
 reboot
-
 ```
