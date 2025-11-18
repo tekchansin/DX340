@@ -3,6 +3,12 @@
 ## Please follow tekChansin and mattclarke18 on Head-fi
 - https://www.head-fi.org/threads/ibasso-dx180-dx260-dx300-max-dx320-max-dx340-rooting-optimization-guides-and-discussion.974923/
 
+
+## Prerequisites (What you need)
+
+- A computer (PC or Mac) with ADB (Android Debug Bridge) installed. (Installation Guide is below)
+- A USB-C cable to connect the DX340 to your computer.
+
 ## How to Run
 
 This is the safest and recommended method for all users.
@@ -43,3 +49,37 @@ reboot
 - Improve more micro-detail and dynamic
 - Save more bettery life
 - Please follow steps [Here](https://www.head-fi.org/threads/ibasso-dx180-dx260-dx300-max-dx320-max-dx340-rooting-optimization-guides-and-discussion.974923/)
+
+
+## Appendix: How to Install ADB (Android Debug Bridge)
+
+If you do not have ADB installed, here is the simplest way to get it.
+
+### On macOS (Recommended: Homebrew)
+
+- Open the "Terminal" app.
+- Install Homebrew (if you don't have it) by pasting this command:
+```
+/bin/bash -c "$(curl -fsSL [https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh](https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh))"
+```
+
+- Install Android Platform Tools (this includes ADB):
+```
+brew install --cask android-platform-tools
+```
+- Verify the installation by plugging in your DX340 and running adb devices.
+
+### On Windows (Recommended: Platform-Tools ZIP)
+
+- Go to the official Android developer website and download "SDK Platform-Tools for Windows":
+https://developer.android.com/studio/releases/platform-tools
+- Unzip the file to a simple location you can remember (e.g., C:\platform-tools)
+- This folder (C:\platform-tools) now contains adb.exe.
+
+CRITICAL: You must run the commands from this folder.
+
+- Open the C:\platform-tools folder in Windows File Explorer.
+- Click in the "address bar" (where it says C:\platform-tools).
+- Type cmd and press Enter.
+- This will open a Command Prompt in the correct location.
+- Verify the installation by plugging in your DX340 and running adb devices.
