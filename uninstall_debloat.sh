@@ -7,11 +7,11 @@
 # ===============================================
 
 # 1. ตรวจสอบสิทธิ์ Root (Root Check)
-if [ "$(id -u)" -ne 0 ]; then
-  echo "Error: This script must be run as root."
-  echo "Please run 'su' first, then run this script."
-  exit 1
-fi
+# if [ "$(id -u)" -ne 0 ]; then
+#   echo "Error: This script must be run as root."
+#   echo "Please run 'su' first, then run this script."
+#   exit 1
+# fi
 
 # -----------------------------------------------
 # 2. Safety Check (ตรวจสอบรุ่น)
