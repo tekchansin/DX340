@@ -51,14 +51,10 @@ When the script is finished (shows Debloat Complete), you MUST Reboot your devic
 reboot
 ```
 
-## Rooting
-### Go to Fastboot mode
-- go to webadb.
-- Power Menu -> Reboot to Fastboot
-- 
+# [Rooting via Fastboot](rooting.md)
 
 
-# Rooting and Optimize Android Kernel
+# Optimize Android Kernel
 - Wider Sound Stage
 - Reduce Noise and darker Bankground
 - Improve more micro-detail and dynamic
