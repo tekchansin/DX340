@@ -32,17 +32,31 @@ This is the safest and recommended method for all users.
 - Click Add -> Select Device -> Click Connect
 - Open Interactive Shell
 
-##  Debloating
+##  Debloating (Disable method for non-root)
 
 "Run" (Execute) the online script:
 ```
 curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/debloat.sh | sh
 ```
 
+##  Debloating (Uninstall method for root)
+
+"Run" (Execute) the online script:
+```
+curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/uninstall_debloat.sh | sh
+```
+
 When the script is finished (shows Debloat Complete), you MUST Reboot your device:
 ```
 reboot
 ```
+
+## Rooting
+### Go to Fastboot mode
+- go to webadb.
+- Power Menu -> Reboot to Fastboot
+- 
+
 
 # Rooting and Optimize Android Kernel
 - Wider Sound Stage
