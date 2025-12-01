@@ -115,7 +115,8 @@ for pkg in $PACKAGES_TO_UNINSTALL; do
   echo -n "Uninstalling (User 0) $pkg... "
 
   # pm uninstall -k --user 0: Uninstalls for User 0, but keeps app data (-k)
-  pm uninstall -k --user 0 "$pkg"
+  cmd package uninstall --user 0 "$pkg"
+  # pm uninstall -k --user 0 "$pkg"
   
   if [ $? -eq 0 ]; then
     echo "OK."
