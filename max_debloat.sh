@@ -43,7 +43,6 @@ com.android.bluetooth
 com.android.bluetoothmidiservice
 com.android.bookmarkprovider
 com.android.calculator2
-com.android.chrome
 com.android.companiondevicemanager
 com.android.customization.themes
 com.android.deskclock
@@ -62,13 +61,11 @@ com.android.internal.systemui.navbar.gestural
 com.android.internal.systemui.navbar.gestural_extra_wide_back
 com.android.internal.systemui.navbar.gestural_narrow_back
 com.android.internal.systemui.navbar.gestural_wide_back
-com.android.launcher3
 com.android.managedprovisioning
 com.android.musicfx
 com.android.nearby.halfsheet
 com.android.ondevicepersonalization.services
 com.android.providers.blockednumber
-com.android.providers.downloads.ui
 com.android.providers.partnerbookmarks
 com.android.providers.userdictionary
 com.android.proxyhandler
