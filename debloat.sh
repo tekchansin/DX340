@@ -118,6 +118,7 @@ vendor.qti.hardware.cacert.server
 vendor.qti.iwlan
 vendor.qti.qesdk.sysservice
 com.qualcomm.qti.workloadclassifier
+com.wandoujia.phoenix2
 "
 
 # 3. "วนลูป" (Loop) และ "ปิด" (Disable) ทีละตัว
