@@ -13,6 +13,8 @@
 
 This is the safest and recommended method for all users.
 
+### How to Access ADB
+
 ### Step 1 : Enable USB Debugging (on the DX340)
 - [Step by Step how to enable USB Debugging](https://drive.google.com/open?id=16Cj0Fg3WbrOMQ203d1HSczG9x7RZpePq&usp=drive_fs) 
 - Go to "Settings" > "About phone"
@@ -25,13 +27,12 @@ This is the safest and recommended method for all users.
 - Connect your DX340 to your computer via USB.
 - On the DX340, a popup "Allow USB debugging?" will appear. -> Check "Always allow" and tap "Allow".
 
-### Step 3 Debloating
-(This method requires your DX340 to be connected to Wi-Fi)
-Open a "Terminal" (Mac/Linux) or "Command Prompt" (Windows) on your computer.
-"Enter" the DX340's shell:
-```
-adb shell
-```
+### Step 3: Connect ADB via web.
+- Go to: https://app.webadb.com/shell
+- Click Add -> Select Device -> Click Connect
+- Open Interactive Shell
+
+##  Debloating
 
 "Run" (Execute) the online script:
 ```
