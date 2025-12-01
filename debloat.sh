@@ -119,6 +119,7 @@ vendor.qti.iwlan
 vendor.qti.qesdk.sysservice
 com.qualcomm.qti.workloadclassifier
 com.wandoujia.phoenix2
+package:cm.aptoide.pt
 "
 
 # 3. "วนลูป" (Loop) และ "ปิด" (Disable) ทีละตัว
