@@ -51,7 +51,7 @@ When the script is finished (shows Debloat Complete), you MUST Reboot your devic
 reboot
 ```
 
-# [Rooting via Fastboot](rooting.md)
+# [Rooting via Fastboot](Rooting.md)
 
 
 # Optimize Android Kernel
