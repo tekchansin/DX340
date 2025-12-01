@@ -121,7 +121,7 @@ vendor.qti.hardware.cacert.server
 vendor.qti.iwlan
 vendor.qti.qesdk.sysservice
 com.qualcomm.qti.workloadclassifier
-package:cm.aptoide.pt
+cm.aptoide.pt
 "
 
 # 4. Loop and Uninstall
