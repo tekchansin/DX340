@@ -119,5 +119,8 @@ for pkg in $PACKAGES_TO_DISABLE; do
   fi
 done
 
+cmd package compile -m speed-profile -f -a
+
 echo "--- Debloat Complete ---"
-echo "Please Reboot your device NOW"
+echo "Rebooting your device NOW"
+reboot
