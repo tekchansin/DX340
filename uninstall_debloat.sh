@@ -58,7 +58,6 @@ com.android.internal.display.cutout.emulation.double
 com.android.internal.display.cutout.emulation.hole
 com.android.internal.display.cutout.emulation.tall
 com.android.internal.display.cutout.emulation.waterfall
-com.android.launcher3
 com.android.managedprovisioning
 com.android.musicfx
 com.android.nearby.halfsheet
