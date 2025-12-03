@@ -32,14 +32,14 @@ This is the safest and recommended method for all users.
 - Click Add -> Select Device -> Click Connect
 - Open Interactive Shell
 
-##  Debloating (Disable method for non-root)
+##  Debloating (Disable method)
 
 "Run" (Execute) the online script:
 ```
 curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/debloat.sh | sh
 ```
 
-##  Debloating (Uninstall method for root)
+##  Debloating (Uninstall method )
 
 "Run" (Execute) the online script:
 ```
