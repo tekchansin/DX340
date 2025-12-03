@@ -127,6 +127,30 @@ done
 
 cmd package compile -m speed-profile -f -a
 
+settings put global activity_starts_logging_enabled 0
+settings put global bug_report 0    
+settings put global multi_cb 0   
+settings put secure send_action_app_error 0  
+settings put system send_security_reports 0   
+settings put secure location_mode 0
+settings put secure notification_bubbles 0
+settings put global animator_duration_scale 0
+settings put global transition_animation_scale 0
+settings put global window_animation_scale 0
+settings put secure ui_night_mode 2 
+
+settings put global wifi_scan_throttling_enabled 0
+settings put global wifi_networks_available_notification_on 0
+settings put global mobile_data_always_on 0
+
+settings put global cell_on 0
+settings put global cdma_cell_broadcast_sms 0
+settings put global auto_wifi 0
+
+settings put global heads_up_notifications_enabled 0
+settings put global auto_time 1
+settings put global auto_time_zone 1
+
 echo "--- Permanent Debloat Complete ---"
 echo "Rebooting your device NOW"
 reboot
