@@ -103,6 +103,8 @@ vendor.qti.qesdk.sysservice
 com.qualcomm.qti.workloadclassifier
 com.wandoujia.phoenix2
 cm.aptoide.pt
+com.android.launcher3
+com.google.android.inputmethod.latin
 "
 
 # 3. "วนลูป" (Loop) และ "ปิด" (Disable) ทีละตัว
@@ -119,7 +121,19 @@ for pkg in $PACKAGES_TO_DISABLE; do
   fi
 done
 
+
+cd /data/local/tmp && \
+curl -L -k -o olauncer.apk https://f-droid.org/repo/app.olauncher_95.apk && \
+pm install -r olauncer.apk && \
+rm olauncer.apk
+
+curl -L -k -o simplekeyboard.apk https://f-droid.org/repo/rkr.simplekeyboard.inputmethod_139.apk && \
+pm install -r simplekeyboard.apk && \
+rm simplekeyboard.apk
+
+
 cmd package compile -m speed-profile -f -a
+
 
 
 settings put global activity_starts_logging_enabled 0
