@@ -142,7 +142,9 @@ pm install -r aurorastore.apk && \
 rm aurorastore.apk
 
 
-cmd package compile -m speed-profile -f -a
+pm compile -a -f --check-prof false -m everything
+pm compile -a -f --check-prof false --compile-layouts
+pm bg-dexopt-job
 
 settings put global activity_starts_logging_enabled 0
 settings put global bug_report 0    
