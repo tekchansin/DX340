@@ -152,6 +152,10 @@ echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 pm compile -a -f --check-prof false -m everything
 pm compile -a -f --check-prof false --compile-layouts
 pm bg-dexopt-job
+echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+echo "Some package could not be re-compiled. That's normal."
+echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+
 
 settings put global activity_starts_logging_enabled 0
 settings put global bug_report 0    
