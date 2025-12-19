@@ -146,6 +146,9 @@ pm install -r aurorastore.apk && \
 rm aurorastore.apk
 
 
+echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+echo "This process takes 15-30 minutes to complete."
+echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 pm compile -a -f --check-prof false -m everything
 pm compile -a -f --check-prof false --compile-layouts
 pm bg-dexopt-job
