@@ -36,7 +36,7 @@ This is the safest and recommended method for all users.
 
 "Run" (Execute) the online script:
 ```
-curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/baisc_debloat.sh | sh
+curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/basic_debloat.sh | sh
 ```
 
 ##  Max Debloating (Audiophile Extreme version )
