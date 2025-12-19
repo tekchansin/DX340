@@ -185,8 +185,8 @@ settings put global auto_wifi 0
 settings put global heads_up_notifications_enabled 0
 settings put global auto_time 1
 settings put global auto_time_zone 1
-settings put global usb_configuration_sticky mtp
-settings put system system_capabilities_usb_default_config mtp
+settings put global usb_configuration_sticky mtp,adb
+settings put system system_capabilities_usb_default_config mtp,adb
 
 echo "--- Permanent Debloat Complete ---"
 echo "Rebooting your device NOW"
