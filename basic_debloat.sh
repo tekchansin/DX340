@@ -128,6 +128,8 @@ for pkg in $PACKAGES_TO_UNINSTALL; do
   fi
 done
 
+cd /data/local/tmp
+
 # cd /data/local/tmp && \
 # curl -L -k -o olauncer.apk https://f-droid.org/repo/app.olauncher_95.apk && \
 # pm install -r olauncer.apk && \
