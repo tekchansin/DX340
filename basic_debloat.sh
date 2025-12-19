@@ -45,7 +45,6 @@ com.android.bips
 com.android.bluetoothmidiservice
 com.android.bookmarkprovider
 com.android.calculator2
-com.android.chrome
 com.android.companiondevicemanager
 com.android.customization.themes
 com.android.deskclock

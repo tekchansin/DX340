@@ -109,6 +109,9 @@ com.wandoujia.phoenix2
 cm.aptoide.pt
 com.google.android.inputmethod.latin
 com.android.launcher3
+com.android.vending
+com.google.android.gms
+com.google.android.gsf
 "
 
 # 4. Loop and Uninstall
@@ -176,24 +179,3 @@ echo "Rebooting your device NOW"
 reboot
 
 
-
-
-
-
-
-# com.ibasso.music
-# Disable if you do not use Mango Player
-# com.android.inputmethod.latin
-# Disable if you use a different keyboard
-# com.android.vending
-# Google Play - Nuetron will work with it disabled once license is cached
-# com.google.android.gms
-# Can disable if not using google play - Download and Download Manager need to be enabled as well if they exist on 320
-# com.google.android.gsf
-# Can disable if not using google play
-# com.android.chrome
-# Only disable if not using Chrome - Download and Download Manager need to be enabled as well if they exist on 320
-# com.android.bluetooth
-# Only disable if not using BT
-# com.ibasso.updater
-# Ibasso OTA updater module - Will NOT work if Rooted - you have to flash and then root again to update FW or unroot and enable all disabled modules and then OTA but I only would do FLASH for FW upgrades
