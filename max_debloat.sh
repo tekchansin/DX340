@@ -149,8 +149,8 @@ rm aurorastore.apk
 echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 echo "This process takes 15-30 minutes to complete."
 echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-pm compile -a -f --check-prof false -m everything
-pm compile -a -f --check-prof false --compile-layouts
+pm compile -a --check-prof false -m everything
+pm compile -a --check-prof false --compile-layouts
 pm bg-dexopt-job
 echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 echo "Some package could not be re-compiled. That's normal."
