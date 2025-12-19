@@ -112,6 +112,11 @@ com.android.launcher3
 com.android.vending
 com.google.android.gms
 com.google.android.gsf
+com.android.bluetooth
+com.android.inputmethod.latin
+com.android.providers.downloads
+com.google.android.partnersetup
+
 "
 
 # 4. Loop and Uninstall
