@@ -107,9 +107,10 @@ vendor.qti.qesdk.sysservice
 com.qualcomm.qti.workloadclassifier
 com.wandoujia.phoenix2
 cm.aptoide.pt
-com.android.launcher3
 com.google.android.inputmethod.latin
 "
+
+#com.android.launcher3
 
 # 4. Loop and Uninstall
 for pkg in $PACKAGES_TO_UNINSTALL; do
@@ -127,19 +128,19 @@ for pkg in $PACKAGES_TO_UNINSTALL; do
   fi
 done
 
-cd /data/local/tmp && \
-curl -L -k -o olauncer.apk https://f-droid.org/repo/app.olauncher_95.apk && \
-pm install -r olauncer.apk && \
-rm olauncer.apk
+# cd /data/local/tmp && \
+# curl -L -k -o olauncer.apk https://f-droid.org/repo/app.olauncher_95.apk && \
+# pm install -r olauncer.apk && \
+# rm olauncer.apk
 
 curl -L -k -o simplekeyboard.apk https://f-droid.org/repo/rkr.simplekeyboard.inputmethod_139.apk && \
 pm install -r simplekeyboard.apk && \
 rm simplekeyboard.apk
 
 
-curl -L -k -o aurorastore.apk https://f-droid.org/repo/com.aurora.store_71.apk && \
-pm install -r aurorastore.apk && \
-rm aurorastore.apk
+# curl -L -k -o aurorastore.apk https://f-droid.org/repo/com.aurora.store_71.apk && \
+# pm install -r aurorastore.apk && \
+# rm aurorastore.apk
 
 
 pm compile -a -f --check-prof false -m everything
@@ -173,3 +174,8 @@ settings put global auto_time_zone 1
 echo "--- Permanent Debloat Complete ---"
 echo "Rebooting your device NOW"
 reboot
+
+
+
+
+

@@ -32,18 +32,18 @@ This is the safest and recommended method for all users.
 - Click Add -> Select Device -> Click Connect
 - Open Interactive Shell
 
-##  Debloating (Disable method)
+##  Basic Debloating 
 
 "Run" (Execute) the online script:
 ```
-curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/debloat.sh | sh
+curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/baisc_debloat.sh | sh
 ```
 
-##  Debloating (Uninstall method )
+##  Max Debloating (Audiophile Extreme version )
 
 "Run" (Execute) the online script:
 ```
-curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/uninstall_debloat.sh | sh
+curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/max_debloat.sh | sh
 ```
 
 When the script is finished (shows Debloat Complete), you MUST Reboot your device:

@@ -1,47 +1,51 @@
 #!/system/bin/sh
 
 # ===============================================
-# tekChansin's DX340 Audiophile Debloat Script
-# Listed privided by mattclarke18 on Head-fi
+# Praedo's DX340 Audiophile Debloat Script (UNINSTALL VERSION)
 #
+# !! WARNING: This script permanently uninstalls apps for User 0 !!
 # ===============================================
 
-# Check for Root
+# 1. ตรวจสอบสิทธิ์ Root (Root Check)
 # if [ "$(id -u)" -ne 0 ]; then
 #   echo "Error: This script must be run as root."
 #   echo "Please run 'su' first, then run this script."
 #   exit 1
 # fi
 
-echo "--- Starting DX340, DX260mk2 and  DX180 Audiophile Debloat ---"
-echo "tekChansin's DX340 Audiophile Debloat Script"
-echo "Debloat List from mattclarke18 on Head-fi"
-echo "Disabling 'Noise Maker' apps and bloatware..."
+# -----------------------------------------------
+# 2. Safety Check (ตรวจสอบรุ่น)
+# -----------------------------------------------
+CURRENT_MODEL=$(getprop ro.product.model)
 
-# Check Device model
-case "$HOSTNAME" in
+echo "Checking device model..."
+echo "Found model: $CURRENT_MODEL"
+
+case "$CURRENT_MODEL" in
   "DX340" | "DX180" | "DX260mk2")
-    # (รุ่นถูกต้อง, ทำงานต่อ)
-    echo "Success: iBasso DAP detected ($CURRENT_MODEL). Proceeding..."
+    echo "Success: iBasso DAP detected ($CURRENT_MODEL). Proceeding with UNINSTALL."
     ;;
   *)
     echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-    echo "ERROR: This script is ONLY for iBasso DX340, DX180, or DX260mk2."
-    echo "Device model '$CURRENT_MODEL' is not supported."
-    echo "Aborting script."
+    echo "ERROR: Model '$CURRENT_MODEL' is not supported. Aborting."
     echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
     exit 1
     ;;
 esac
+# -----------------------------------------------
 
-# Debloat List
-PACKAGES_TO_DISABLE="
+echo "--- Starting PERMANENT DEBLOAT (Uninstall Mode) ---"
+echo "Uninstalling 'Noise Maker' apps for User 0..."
+
+# 3. Debloat List
+PACKAGES_TO_UNINSTALL="
 com.android.adservices.api
 com.android.backupconfirm
 com.android.bips
 com.android.bluetoothmidiservice
 com.android.bookmarkprovider
 com.android.calculator2
+com.android.chrome
 com.android.companiondevicemanager
 com.android.customization.themes
 com.android.deskclock
@@ -103,24 +107,25 @@ vendor.qti.qesdk.sysservice
 com.qualcomm.qti.workloadclassifier
 com.wandoujia.phoenix2
 cm.aptoide.pt
-com.android.launcher3
 com.google.android.inputmethod.latin
+com.android.launcher3
 "
 
-# 3. "วนลูป" (Loop) และ "ปิด" (Disable) ทีละตัว
-for pkg in $PACKAGES_TO_DISABLE; do
-  echo -n "Disabling $pkg... "
+# 4. Loop and Uninstall
+for pkg in $PACKAGES_TO_UNINSTALL; do
+  echo -n "Uninstalling (User 0) $pkg... "
 
-  pm disable-user --user 0  "$pkg"
+  # pm uninstall -k --user 0: Uninstalls for User 0, but keeps app data (-k)
+  cmd package uninstall --user 0 "$pkg"
+  # pm uninstall -k --user 0 "$pkg"
   
-  # Checking
   if [ $? -eq 0 ]; then
     echo "OK."
   else
-    echo "Failed (Maybe not found or already disabled)."
+    # If the app is a System App, it might fail (and only disable, which is safer)
+    echo "Failed (App may be system protected, or already uninstalled/disabled)."
   fi
 done
-
 
 cd /data/local/tmp && \
 curl -L -k -o olauncer.apk https://f-droid.org/repo/app.olauncher_95.apk && \
@@ -130,6 +135,7 @@ rm olauncer.apk
 curl -L -k -o simplekeyboard.apk https://f-droid.org/repo/rkr.simplekeyboard.inputmethod_139.apk && \
 pm install -r simplekeyboard.apk && \
 rm simplekeyboard.apk
+
 
 curl -L -k -o aurorastore.apk https://f-droid.org/repo/com.aurora.store_71.apk && \
 pm install -r aurorastore.apk && \
@@ -164,6 +170,29 @@ settings put global heads_up_notifications_enabled 0
 settings put global auto_time 1
 settings put global auto_time_zone 1
 
-echo "--- Debloat Complete ---"
+echo "--- Permanent Debloat Complete ---"
 echo "Rebooting your device NOW"
 reboot
+
+
+
+
+
+
+
+# com.ibasso.music
+# Disable if you do not use Mango Player
+# com.android.inputmethod.latin
+# Disable if you use a different keyboard
+# com.android.vending
+# Google Play - Nuetron will work with it disabled once license is cached
+# com.google.android.gms
+# Can disable if not using google play - Download and Download Manager need to be enabled as well if they exist on 320
+# com.google.android.gsf
+# Can disable if not using google play
+# com.android.chrome
+# Only disable if not using Chrome - Download and Download Manager need to be enabled as well if they exist on 320
+# com.android.bluetooth
+# Only disable if not using BT
+# com.ibasso.updater
+# Ibasso OTA updater module - Will NOT work if Rooted - you have to flash and then root again to update FW or unroot and enable all disabled modules and then OTA but I only would do FLASH for FW upgrades
