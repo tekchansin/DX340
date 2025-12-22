@@ -151,15 +151,10 @@ pm install -r aurorastore.apk && \
 rm aurorastore.apk
 
 
-echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-echo "This process takes 15-30 minutes to complete."
-echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-pm compile -a --check-prof false -m everything
-pm compile -a --check-prof false --compile-layouts
-pm bg-dexopt-job
-echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-echo "Some package could not be re-compiled. That's normal."
-echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+
+ime enable rkr.simplekeyboard.inputmethod/.latin.LatinIME
+ime set rkr.simplekeyboard.inputmethod/.latin.LatinIME
+settings put secure default_input_method rkr.simplekeyboard.inputmethod/.latin.LatinIME
 
 
 settings put global activity_starts_logging_enabled 0
@@ -187,6 +182,18 @@ settings put global auto_time 1
 settings put global auto_time_zone 1
 settings put global usb_configuration_sticky mtp,adb
 settings put system system_capabilities_usb_default_config mtp,adb
+
+
+echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+echo "This process takes 15-30 minutes to complete."
+echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+pm compile -a --check-prof false -m everything
+pm compile -a --check-prof false --compile-layouts
+pm bg-dexopt-job
+echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+echo "Some package could not be re-compiled. That's normal."
+echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+
 
 echo "--- Permanent Debloat Complete ---"
 echo "Rebooting your device NOW"
