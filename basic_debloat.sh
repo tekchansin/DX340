@@ -172,12 +172,17 @@ settings put global auto_time 1
 settings put global auto_time_zone 1
 settings put global usb_configuration_sticky mtp,adb
 settings put system system_capabilities_usb_default_config mtp,adb
-
+settings put global device_idle_constants \
+"inactive_to=600000,\
+idle_after_inactive_to=600000,\
+light_after_inactive_to=300000,\
+light_idle_to=300000,\
+quick_doze_delay_to=60000"
 
 echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 echo "This process takes 15-30 minutes to complete."
 echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-
+for pkg in $(pm list packages -3 | cut -d: -f2); do dumpsys deviceidle whitelist -$pkg; done
 pm compile -a --check-prof false -m everything
 pm compile -a --check-prof false --compile-layouts
 pm bg-dexopt-job
