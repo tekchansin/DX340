@@ -106,6 +106,7 @@ vendor.qti.qesdk.sysservice
 com.qualcomm.qti.workloadclassifier
 com.wandoujia.phoenix2
 cm.aptoide.pt
+com.google.android.inputmethod.latin
 com.android.inputmethod.latin
 "
 
