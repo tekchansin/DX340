@@ -112,13 +112,11 @@ com.android.launcher3
 com.android.vending
 com.google.android.gms
 com.google.android.gsf
-com.android.bluetooth
 com.android.inputmethod.latin
 com.android.providers.downloads
 com.google.android.partnersetup
-
 "
-
+# com.android.bluetooth
 # 4. Loop and Uninstall
 for pkg in $PACKAGES_TO_UNINSTALL; do
   echo -n "Uninstalling (User 0) $pkg... "
