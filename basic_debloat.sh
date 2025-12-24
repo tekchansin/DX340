@@ -106,7 +106,7 @@ vendor.qti.qesdk.sysservice
 com.qualcomm.qti.workloadclassifier
 com.wandoujia.phoenix2
 cm.aptoide.pt
-com.google.android.inputmethod.latin
+com.android.inputmethod.latin
 "
 
 #com.android.launcher3
@@ -143,8 +143,7 @@ rm simplekeyboard.apk
 # pm install -r aurorastore.apk && \
 # rm aurorastore.apk
 
-ime enable rkr.simplekeyboard.inputmethod/.latin.LatinIME
-ime set rkr.simplekeyboard.inputmethod/.latin.LatinIME
+
 settings put secure default_input_method rkr.simplekeyboard.inputmethod/.latin.LatinIME
 
 settings put global activity_starts_logging_enabled 0
@@ -190,6 +189,8 @@ echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 echo "Some package could not be re-compiled. That's normal."
 echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 
+ime enable rkr.simplekeyboard.inputmethod/.latin.LatinIME
+ime set rkr.simplekeyboard.inputmethod/.latin.LatinIME
 
 echo "--- Permanent Debloat Complete ---"
 echo "Rebooting your device NOW"
