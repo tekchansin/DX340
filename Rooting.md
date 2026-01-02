@@ -1,11 +1,6 @@
 
 # How to Rooting via fastboot
 
-
-## Install adb and fastboot on your mac 
-```
-brew install android-platform-tools
-```
 ## You have to know what is current boot (a or b) and have to flash on that.
 
 ## Find active boot partition
