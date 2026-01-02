@@ -1,6 +1,17 @@
 
 # How to Rooting via fastboot
 
+# Install Magisk
+via ADB
+```
+cd /data/local/tmp && \
+curl -L -k -o Magisk.apk https://github.com/topjohnwu/Magisk/releases/download/v30.6/Magisk-v30.6.apk && \
+pm install -r Magisk.apk && \
+rm Magisk.apk
+```
+
+or just download apk from https://github.com/topjohnwu/Magisk/releases/download/v30.6/Magisk-v30.6.apk and install manually
+
 ## You have to know what is current boot (a or b) and have to flash on that.
 
 ## Find active boot partition
@@ -59,13 +70,6 @@ Rebooting                                          OKAY [  0.005s]
 Finished. Total time: 0.005s
 ```
 
-# Install Magisk
-```
-cd /data/local/tmp && \
-curl -L -k -o Magisk.apk https://github.com/topjohnwu/Magisk/releases/download/v30.6/Magisk-v30.6.apk && \
-pm install -r Magisk.apk && \
-rm Magisk.apk
-```
 
 ## Verify Root status
 - adb shell
