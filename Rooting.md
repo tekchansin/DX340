@@ -47,7 +47,7 @@ Finished. Total time: 0.007s
 ### Patch it (boot_a)
 fastboot flash boot_a  <boot_patched_image.bin>
 ```
-tek@Tek-Macbook-Air-M4 Root % fastboot flash boot_a ./Amagisk_patched-29000_sa4rS.img
+tek@Tek-Macbook-Air-M4 Root % fastboot flash boot_a ./magisk_patched-30600_tcUj7.img
 Sending 'boot_a' (65536 KB)                        OKAY [  1.628s]
 Writing 'boot_a'                                   OKAY [  0.695s]
 Finished. Total time: 2.373s
@@ -56,7 +56,7 @@ Finished. Total time: 2.373s
 #### Patch it (boot_b)
 fastboot flash boot_b  <boot_patched_image.bin>
 ```
-tek@Tek-Macbook-Air-M4 Root % fastboot flash boot_b ./Bmagisk_patched-29000_sa4rS.img
+tek@Tek-Macbook-Air-M4 Root % fastboot flash boot_b ./magisk_patched-30600_tcUj7.img
 Sending 'boot_b' (65536 KB)                        OKAY [  1.628s]
 Writing 'boot_b'                                   OKAY [  0.695s]
 Finished. Total time: 2.373s
