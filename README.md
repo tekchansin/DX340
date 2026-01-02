@@ -94,3 +94,11 @@ CRITICAL: You must run the commands from this folder.
 - Type cmd and press Enter.
 - This will open a Command Prompt in the correct location.
 - Verify the installation by plugging in your DX340 and running adb devices.
+
+### Windows 11 to fix fastboot driver. (thanks koala13 @headfi)
+
+If you are using Windows 11, you can follow these steps to make fastboot work:
+- After you enter fastboot, open Device Manager -> Other devices then you should see device name "trinket for arm64".
+- You need to install the driver for fastboot device: Driver -> Update Driver -> Browse My Computer for Drivers -> Let me pick from a list... -> WinUsb Device -> ADB Device
+- Install the driver -> reboot DX340 -> enter fastboot again and now you can see your device in Device Manager -> Universal Serial Bus Device -> trinket for arm64
+- Now you can run fastboot command
