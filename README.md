@@ -51,6 +51,16 @@ When the script is finished (shows Debloat Complete), you MUST Reboot your devic
 reboot
 ```
 
+
+##  Rooting
+
+"Run" (Execute) the online script:
+```
+adb root
+adb shell curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/root.sh | sh
+
+```
+
 # [Rooting via Fastboot](Rooting.md)
 
 
