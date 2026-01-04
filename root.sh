@@ -1,7 +1,7 @@
 #!/system/bin/sh
 
 # --- Configuration ---
-ZIP_URL="https://github.com/tekchansin/DX340/archive/refs/tags/prerelease.zip"
+ZIP_URL="https://github.com/tekchansin/DX340/archive/refs/tags/fw1.0.7.zip"
 TMP_DIR="/data/local/tmp/dx340_flash"
 ZIP_FILE="$TMP_DIR/prerelease.zip"
 
@@ -62,6 +62,13 @@ BLOCK_PATH=$(find /dev/block -name "$TARGET_PARTITION" | head -n 1)
 
 echo "[!] Flashing $IMG_NAME to $TARGET_PARTITION ($BLOCK_PATH)..."
 dd if="$TMP_DIR/$IMG_NAME" of="$BLOCK_PATH" 
+
+echo "[!] Install Magisk Manager APK..."
+
+cd /data/local/tmp
+curl -L -k -o magisk.apk https://github.com/topjohnwu/Magisk/releases/download/v30.6/Magisk-v30.6.apk && \
+pm install -r magisk.apk && \
+rm magisk.apk
 
 # 7. สรุปผล
 if [ $? -eq 0 ]; then
