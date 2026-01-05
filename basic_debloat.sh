@@ -108,6 +108,8 @@ com.wandoujia.phoenix2
 cm.aptoide.pt
 com.google.android.inputmethod.latin
 com.android.inputmethod.latin
+com.google.android.contactkeys
+com.google.android.safetycore
 "
 
 #com.android.launcher3
