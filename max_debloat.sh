@@ -115,6 +115,8 @@ com.google.android.gsf
 com.android.inputmethod.latin
 com.android.providers.downloads
 com.google.android.partnersetup
+com.google.android.contactkeys
+com.google.android.safetycore
 "
 # com.android.bluetooth
 # 4. Loop and Uninstall
@@ -188,16 +190,16 @@ light_after_inactive_to=300000,\
 light_idle_to=300000,\
 quick_doze_delay_to=60000"
 
-echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-echo "This process takes 15-30 minutes to complete."
-echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-for pkg in $(pm list packages -3 | cut -d: -f2); do dumpsys deviceidle whitelist -$pkg; done
-pm compile -a --check-prof false -m everything
-pm compile -a --check-prof false --compile-layouts
-pm bg-dexopt-job
-echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
-echo "Some package could not be re-compiled. That's normal."
-echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+# echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+# echo "This process takes 15-30 minutes to complete."
+# echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+# for pkg in $(pm list packages -3 | cut -d: -f2); do dumpsys deviceidle whitelist -$pkg; done
+# pm compile -a --check-prof false -m everything
+# pm compile -a --check-prof false --compile-layouts
+# pm bg-dexopt-job
+# echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
+# echo "Some package could not be re-compiled. That's normal."
+# echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 
 
 echo "--- Permanent Debloat Complete ---"
