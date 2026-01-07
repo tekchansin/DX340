@@ -192,6 +192,8 @@ quick_doze_delay_to=60000"
 # echo "Some package could not be re-compiled. That's normal."
 # echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 
+sleep 10
+
 ime enable rkr.simplekeyboard.inputmethod/.latin.LatinIME
 ime set rkr.simplekeyboard.inputmethod/.latin.LatinIME
 

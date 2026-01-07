@@ -201,6 +201,7 @@ quick_doze_delay_to=60000"
 # echo "Some package could not be re-compiled. That's normal."
 # echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 
+sleep 10
 
 echo "--- Permanent Debloat Complete ---"
 echo "Rebooting your device NOW"
