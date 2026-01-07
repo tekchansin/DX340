@@ -41,7 +41,7 @@ This is the safest and recommended method for all users.
 curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/basic_debloat.sh | sh
 ```
 
-##  Max Debloating (Audiophile Extreme version )
+##  Max Debloating (Remove GooglePlay, Chrome )
 
 "Run" (Execute) the online script:
 ```

@@ -1,7 +1,7 @@
 #!/system/bin/sh
 
 # ===============================================
-# Praedo's DX340 Audiophile Debloat Script (UNINSTALL VERSION)
+# DX340 Audiophile Debloat Script (UNINSTALL VERSION)
 #
 # !! WARNING: This script permanently uninstalls apps for User 0 !!
 # ===============================================
@@ -117,6 +117,7 @@ com.android.providers.downloads
 com.google.android.partnersetup
 com.google.android.contactkeys
 com.google.android.safetycore
+com.android.providers.contacts
 "
 # com.android.bluetooth
 # 4. Loop and Uninstall
@@ -201,10 +202,13 @@ quick_doze_delay_to=60000"
 # echo "Some package could not be re-compiled. That's normal."
 # echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 
-sleep 10
+sleep 15
+am force-stop com.android.settings
+settings put secure enabled_input_methods "rkr.simplekeyboard.inputmethod/.latin.LatinIME:com.android.inputmethod.latin/.LatinIME"
 
+ime enable rkr.simplekeyboard.inputmethod/.latin.LatinIME
+ime set rkr.simplekeyboard.inputmethod/.latin.LatinIME
 echo "--- Permanent Debloat Complete ---"
 echo "Rebooting your device NOW"
 reboot
-
 
