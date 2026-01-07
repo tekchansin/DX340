@@ -1,8 +1,5 @@
 ### Release Note 
 ### V2
+- Add current profile status on notification.
 - Add OTA Update
-- Add Notification
-- Add Support FW 1.07 via OTA or QFIL
-
-### V1
-- Support FW 1.07
+- Support FW1.07 (flash via qfil)
