@@ -191,6 +191,9 @@ light_after_inactive_to=300000,\
 light_idle_to=300000,\
 quick_doze_delay_to=60000"
 
+resetprop persist.vendor.usb.config mtp,adb
+resetprop persist.sys.usb.config mtp,adb
+
 # echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 # echo "This process takes 15-30 minutes to complete."
 # echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
