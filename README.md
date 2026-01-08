@@ -54,8 +54,9 @@ reboot
 ```
 
 
-##  Rooting
+##  Rooting (Recommend, very easy)
 
+!! NOT Support WebADB
 "Run" (Execute) the online script:
 ```
 adb root

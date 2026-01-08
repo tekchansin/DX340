@@ -4,6 +4,7 @@
 - Improve SQ Clearity
 - FIX UI responsive
 - Boost CPU for Streaming App
+- Clean empty Android Junk Folders on SDCard
 
 ## Introducing Deep Sleep mode.
 - This mode will trigger when no music playing, no usb-dac, screen off in 15 mins
