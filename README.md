@@ -8,44 +8,64 @@ If you find my mods helpful, consider buying me a coffee!
 
 # DX340 Rooting & Optimization
 
-## Prerequisites (What you need)
+## Introducing 3 Tuning Modules.
 
+### MoonDiamond v2 for DX340
+The Efficiency & Clarity Engine A high-performance system-wide processing module. It optimizes core efficiency to deliver a transparent, dynamic soundstage while maintaining a black background.
+
+### Anantar Harmonic v2 for DX340
+The FPGA Timbre Specialist Beyond simple filters—this module interacts directly with the SRC DSP and FPGA.
+- Step 1: Choose your topology—NOS (Non-OverSampling) for an organic feel or Upgraded OS for precision.
+- Step 2: Advanced Harmonic Adjustments (AHA). Custom-tuned FPGA profiles that refine texture and instrument weight far beyond stock H1-H5 settings.
+
+3. Anantar Boot v2 for DX340
+The Deep Kernel Core The foundation of the mod. This involves exclusive Kernel-level optimization and CPU core isolation.
+
+- Kernel Sound Profiles: Flash custom boot images to change the system's "DNA."
+- Selectable Modes: From Extreme Isolated (Maximum Transparency) to Analog Isolated (Tube-like warmth).
+
+## Steps to install (Super easy in 15 mins)
+1. Debloat
+2. Rooting
+3. Install Modules
+4. Enjoy Music
+
+## Prerequisites (What you need)
 - A computer (PC or Mac) with ADB (Android Debug Bridge) installed. (Installation Guide is below)
 - A USB-C cable to connect the DX340 to your computer.
 
-## How to Run
 
-This is the safest and recommended method for all users.
+#### How to Access ADB
 
-### How to Access ADB
+##### Step 1 : Connect DX340 to Internet via Wifi
 
-### Step 0 : Connect DX340 to Internet via Wifi
-
-### Step 1 : Enable USB Debugging (on the DX340)
+##### Step 2 : Enable USB Debugging (on the DX340)
 - [Step by Step how to enable USB Debugging](https://drive.google.com/open?id=16Cj0Fg3WbrOMQ203d1HSczG9x7RZpePq&usp=drive_fs) 
 - Go to "Settings" > "About phone"
 - Tap on "Build number" 7 times until it says "You are now a developer!"
 - Go back to "Settings" > "System" > "Developer options"
 - Find and turn "ON" the "USB debugging" toggle.
 
-### Step 2 : Connect to PC
+##### Step 3 : Connect to PC
 
 - Connect your DX340 to your computer via USB.
 - On the DX340, a popup "Allow USB debugging?" will appear. -> Check "Always allow" and tap "Allow".
 
-### Step 3: Connect ADB via web.
+##### Step 4: Connect ADB via web.
 - Go to: https://app.webadb.com/shell
 - Click Add -> Select Device -> Click Connect
 - Open Interactive Shell
 
-##  Basic Debloating 
+### Debloating
+
+##  Option 1: Basic Debloating (Recommend for all user)
 
 "Run" (Execute) the online script:
 ```
 curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/basic_debloat.sh | sh
 ```
 
-##  Max Debloating (Remove GooglePlay, Chrome )
+##  Option 1: Max Debloating (Remove GooglePlay, Chrome for local play only)
 
 "Run" (Execute) the online script:
 ```
@@ -58,7 +78,7 @@ reboot
 ```
 
 
-##  Rooting (Recommend, very easy)
+##  Rooting DX340 (Recommend, very easy)
 
 !! NOT Support WebADB
 "Run" (Execute) the online script:
