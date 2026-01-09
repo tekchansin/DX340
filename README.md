@@ -1,6 +1,8 @@
-[![Donate with PayPal](https://raw.githubusercontent.com/stefan-niedermann/paypal-donate-button/master/paypal-donate-button.png)]([www.paypal.com](https://paypal.me/CharnsilpChinprasert))
 
-[![Donate Bitcoin](img.shields.io)](bitcoin:0x794161ef033bd117a45f4dbeda023b5a69cc7cd5?label=MoonDiamond-Anantar&amount=10)
+[![paypal](https://github.com/Ximi1970/Donate/blob/master/paypal_btn_donateCC_LG_1.gif)](https://paypal.me/CharnsilpChinprasert)
+
+
+[![Donate Bitcoin](bitcoin:0x794161ef033bd117a45f4dbeda023b5a69cc7cd5?label=MoonDiamond-Anantar&amount=10)
 
 
 # DX340, DX260mk2 and DX180 Optimization guide.
@@ -70,7 +72,7 @@ curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/root
 
 ```
 
-# [Rooting via Fastboot](Rooting.md)
+#### [Rooting via Fastboot (Optional)](Rooting.md)
 
 # Install 3 Magisk Modules (All must to use together)
 1. MoonDiamond v2 for DX340
@@ -82,7 +84,9 @@ curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/root
 2. Upload to DX340 device.
 3. Go to Magisk App -> Module -> Install from storage
 
-### How to use Anantar Harmonic.
+# How to use
+
+### Anantar Harmonic.
 1. Go to Magisk App
 2. Modules tab.
 3. Select Action on Anantar Harmonic module.
@@ -91,7 +95,7 @@ curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/root
 6. The Profile will instantly apply after confirmation, and every time device started
 7. Enjoy Music.
 
-### How to use Anantar Harmonic.
+### Anantar Harmonic.
 1. Go to Magisk App
 2. Modules tab.
 3. Select Action on Anantar Boot module.
@@ -105,14 +109,14 @@ curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/root
 
 # Recommend sound profile.
 
-### Amp14
+#### Clarity/transparency/Dynamic:
 - Extreme Boot / OS Mode / EnOn harmonic.
-### Amp18 
-- Analog Boot / OS Mode / Zeno Harmonic.
-### Clarity/transparency/Dynamic:
-- Extreme Boot / OS Mode / EnOn harmonic.
-### R2R and Analog performanced
+#### R2R and Analog performanced
 - Analog Boot / NOS Mode / TenGen harmonic.
+#### Amp14
+- Extreme Boot / OS Mode / EnOn harmonic.
+#### Amp18 
+- Analog Boot / OS Mode / Zeno Harmonic.
 
 
 ## Appendix: How to Install ADB (Android Debug Bridge)
