@@ -10,15 +10,15 @@ If you find my mods helpful, consider buying me a coffee!
 
 ## Introducing Three Pillars of Tuning.
 
-#### MoonDiamond v2 for DX340
+### MoonDiamond v2 for DX340
 The Efficiency & Clarity Engine A high-performance system-wide processing module. It optimizes core efficiency to deliver a transparent, dynamic soundstage while maintaining a black background. Thanks for [mattClarke18 @Headfi](https://www.head-fi.org/members/mattclarke18.585003/)
 
-#### Anantar Harmonic v2 for DX340
+### Anantar Harmonic v2 for DX340
 The FPGA Timbre Specialist Beyond simple filters—this module interacts directly with the SRC DSP and FPGA. Thanks for [Whitigir @Headfi](https://www.head-fi.org/members/whitigir.378966/)
 - Step 1: Choose your topology—NOS (Non-OverSampling) for an organic feel or Upgraded OS for precision.
 - Step 2: Advanced Harmonic Adjustments (AHA). Custom-tuned FPGA profiles that refine texture and instrument weight far beyond stock H1-H5 settings.
 
-#### Anantar Boot v2 for DX340
+### Anantar Boot v2 for DX340
 The Deep Kernel Core The foundation of the mod. This involves exclusive Kernel-level optimization and CPU core isolation.
 
 - Kernel Sound Profiles: Flash custom boot images to change the system's "DNA."
