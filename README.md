@@ -11,10 +11,10 @@ If you find my mods helpful, consider buying me a coffee!
 ## Introducing 3 Tuning Modules.
 
 ### MoonDiamond v2 for DX340
-The Efficiency & Clarity Engine A high-performance system-wide processing module. It optimizes core efficiency to deliver a transparent, dynamic soundstage while maintaining a black background.
+The Efficiency & Clarity Engine A high-performance system-wide processing module. It optimizes core efficiency to deliver a transparent, dynamic soundstage while maintaining a black background. hanks for @mattClarke18
 
 ### Anantar Harmonic v2 for DX340
-The FPGA Timbre Specialist Beyond simple filters—this module interacts directly with the SRC DSP and FPGA.
+The FPGA Timbre Specialist Beyond simple filters—this module interacts directly with the SRC DSP and FPGA. Thanks for @Whitigir
 - Step 1: Choose your topology—NOS (Non-OverSampling) for an organic feel or Upgraded OS for precision.
 - Step 2: Advanced Harmonic Adjustments (AHA). Custom-tuned FPGA profiles that refine texture and instrument weight far beyond stock H1-H5 settings.
 
@@ -58,14 +58,14 @@ The Deep Kernel Core The foundation of the mod. This involves exclusive Kernel-l
 
 ### Debloating
 
-##  Option 1: Basic Debloating (Recommend for all user)
+####  Option 1: Basic Debloating (Recommend for all user)
 
 "Run" (Execute) the online script:
 ```
 curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/basic_debloat.sh | sh
 ```
 
-##  Option 1: Max Debloating (Remove GooglePlay, Chrome for local play only)
+####  Option 2: Max Debloating (Remove GooglePlay, Chrome for local play only)
 
 "Run" (Execute) the online script:
 ```
@@ -135,6 +135,10 @@ curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/root
 - Extreme Boot / OS Mode / EnOn harmonic.
 #### Amp18 
 - Analog Boot / OS Mode / Zeno Harmonic.
+
+# Special Thanks
+- [MattClarke18 @Headfi](https://www.head-fi.org/members/mattclarke18.585003/)
+- [Whitigir @Headfi](https://www.head-fi.org/members/whitigir.378966/)
 
 
 ## Appendix: How to Install ADB (Android Debug Bridge)
