@@ -1,8 +1,6 @@
+[![PayPal](https://img.shields.io/badge/Donate-PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://www.paypal.me/CharnsilpChinprasert)
+![Bitcoin](https://img.shields.io/badge/Bitcoin-000000?style=for-the-badge&logo=bitcoin&logoColor=white) `0x794161ef033bd117a45f4dbeda023b5a69cc7cd5`
 
-[![paypal](https://github.com/Ximi1970/Donate/blob/master/paypal_btn_donateCC_LG_1.gif)](https://paypal.me/CharnsilpChinprasert)
-
-
-[![Donate Bitcoin](bitcoin:0x794161ef033bd117a45f4dbeda023b5a69cc7cd5?label=MoonDiamond-Anantar&amount=10)
 
 
 # DX340, DX260mk2 and DX180 Optimization guide.
