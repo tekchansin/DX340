@@ -1,5 +1,10 @@
-[![PayPal](https://img.shields.io/badge/Donate-PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://www.paypal.me/CharnsilpChinprasert)![Bitcoin](https://img.shields.io/badge/Bitcoin-000000?style=for-the-badge&logo=bitcoin&logoColor=white) `0x794161ef033bd117a45f4dbeda023b5a69cc7cd5`
+## ☕ Support My Work
 
+If you find my mods helpful, consider buying me a coffee!
+
+| PayPal | Bitcoin |
+| :--- | :--- |
+| [![PayPal](https://img.shields.io/badge/Donate-PayPal-00457C?style=flat-square&logo=paypal&logoColor=white)](https://www.paypal.me/CharnsilpChinprasert) | ![Bitcoin](https://img.shields.io/badge/BTC-000000?style=flat-square&logo=bitcoin&logoColor=white) `0x794161ef033bd117a45f4dbeda023b5a69cc7cd5` |
 
 # DX340 Rooting & Optimization
 
