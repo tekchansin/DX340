@@ -1,7 +1,10 @@
+### V2.1
+- Fix scrolling lag on Qobuz app
+
 ### V2
 - Add OTA Update
 - Add DeepSleep Mode
-- Improve SQ Clearity
+- Improve SQ Clearity and Vocal
 - FIX UI responsive
 - Boost CPU for Streaming App
 - Clean empty Android Junk Folders on SDCard

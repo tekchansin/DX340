@@ -92,9 +92,9 @@ curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/root
 #### [Rooting via Fastboot (Optional)](Rooting.md)
 
 # Install 3 Magisk Modules (All must to use together)
-1. MoonDiamond v2 for DX340
-2. Anantar Harmonic v2 for DX340
-3. Anantar Boot v2 for DX340
+1. MoonDiamond v2 for DX340 [Download Link](https://drive.google.com/uc?export=download&id=1nf8vj3xREEH7XH-CXwDLXw8PMSib4lT2)
+2. Anantar Harmonic v2 for DX340 [Download Link](https://drive.google.com/file/d/1eWah8O9dKdWaFbWdiT1ys0UtxtZUvcIi/view?usp=sharing)
+3. Anantar Boot v2 for DX340 [Download Link](https://drive.google.com/file/d/16qlTgcb0mNPqF2X-V2b4AmWGQ8AcomLs/view?usp=sharing)
 
 ## How to install Magisk Modules
 1. Download zip file.
