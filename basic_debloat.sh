@@ -192,6 +192,13 @@ resetprop persist.sys.usb.config mtp,adb
 # pm compile -a --check-prof false -m everything
 # pm compile -a --check-prof false --compile-layouts
 # pm bg-dexopt-job
+for pkg in $(pm list packages -e | cut -d: -f2); do
+    echo "Processing Active App: $pkg"
+    # Compile Code
+    pm compile -m everything --check-prof false $pkg
+    # Compile UI Layouts
+    pm compile --compile-layouts $pkg
+done
 # echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 # echo "Some package could not be re-compiled. That's normal."
 # echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"

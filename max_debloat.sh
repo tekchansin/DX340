@@ -45,7 +45,7 @@ com.android.bips
 com.android.bluetoothmidiservice
 com.android.bookmarkprovider
 com.android.calculator2
-com.android.chrome
+
 com.android.companiondevicemanager
 com.android.customization.themes
 com.android.deskclock
@@ -108,7 +108,7 @@ com.qualcomm.qti.workloadclassifier
 com.wandoujia.phoenix2
 cm.aptoide.pt
 com.google.android.inputmethod.latin
-com.android.launcher3
+
 com.android.vending
 com.google.android.gms
 com.google.android.gsf
@@ -201,6 +201,13 @@ resetprop persist.sys.usb.config mtp,adb
 # pm compile -a --check-prof false -m everything
 # pm compile -a --check-prof false --compile-layouts
 # pm bg-dexopt-job
+for pkg in $(pm list packages -e | cut -d: -f2); do
+    echo "Processing Active App: $pkg"
+    # Compile Code
+    pm compile -m everything --check-prof false $pkg
+    # Compile UI Layouts
+    pm compile --compile-layouts $pkg
+done
 # echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 # echo "Some package could not be re-compiled. That's normal."
 # echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
