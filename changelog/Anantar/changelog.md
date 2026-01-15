@@ -1,4 +1,8 @@
 ### Release Note 
+### V2.1
+- Update New UI, make more simple.
+- Anatar Boot affect to MangoOS
+
 ### V2
 - Fix pop sound when switch NOS/OS mode.
 - Profile Selection can Scrolling via Vol Up/Down and Double tap for confirm
