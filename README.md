@@ -143,6 +143,14 @@ curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/root
 - [Whitigir @Headfi](https://www.head-fi.org/members/whitigir.378966/)
 
 
+# How to Unroot
+- Open to Magisk App
+- Click "Uninstall Magisk" (Red button on home tap)
+- DX340 will reboot and it will be unrooted.
+- Remove Magisk App
+- If you want to send to iBasso service, I recommend to do factory reset.
+
+
 # How to Recovery DX340 (Soft brick)
 - turn DX340 off
 - Hold side (bottom / last) button and press power button 
@@ -153,12 +161,39 @@ curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/root
 - select "Wipe data/factory reset" > "Factory data reset"
 - reboot device
 
-# How to Unroot
-- Open to Magisk App
-- Click "Uninstall Magisk" (Red button on home tap)
-- DX340 will reboot and it will be unrooted.
-- Remove Magisk App
-- If you want to send to iBasso service, I recommend to do factory reset.
+# How to Recovery DX340 (Hard brick)
+- iBasso DX340 use Qualcomm SOC chip, that can format and flash new entire firmware via QFIL.
+### Overview steps here
+#### Preparation
+- Need Windows PC, or VirtualBox/Paralells on MacOS
+- Install Qualcomm USB Driver (Qualcomm_USB_Driver_v1.0.10065.1.zip)
+- Install Flash software (QPST/QFIL) (qpst.win.2.7_OlderVer.zip)
+- iBasso DX340 Full Firmware 1.07 (DX340_20251227_1.07.726_256G_img.zip)
+- Download Link [here](https://drive.google.com/drive/folders/1qrl4OfUJKiOsnOVH4_5GGncfFPdYWIvY?usp=sharing)
+
+### Steps to Flash DX340
+- Extract DX340_20251227_1.07.726_256G_img.zip
+- Open Program in "C:\Program Files (x86)\Qualcomm\QPST\bin\Qfil.exe"
+
+##### Qfil configuration
+- SelectPort : You will see "Qualcomm HS-USB QDLoader 9008
+- Select Build Type : Flat Build
+- Select Programmer -> "Browse" button: "DX340_20251227_1.07.726_256G_img" folder and select prog_xxx.elf file.
+- Select Flat build -> "Load XML" button: "DX340_20251227_1.07.726_256G_img" folder and select all file (rawprogram and patch xml files).
+
+##### Format DX340 all Partition
+- Tool > Partition Manager 
+- Click right on any row
+- Erase Entire Flash 
+- "Would you like to erase entire flash" : Yes
+- "Would you like to erase GPT" : Yes
+- Check OK and go back Qfil home
+
+##### Flash Firmware
+- once you format entire partition and select programmer. You can see "Download" button. (under Load XML)
+- Click "Download" and wait 5-10 mins until blue progress bar is completed.
+- Reboot device
+- Done.
 
 ## Appendix: How to Install ADB (Android Debug Bridge)
 
