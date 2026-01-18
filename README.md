@@ -4,6 +4,33 @@ Welcome to the comprehensive guide for optimizing your iBasso DX340. This projec
 
 ---
 
+## 📋 Table of Contents
+* [☕ Support My Work](#-support-my-work)
+* [💎 The Three Pillars of Tuning](#-the-three-pillars-of-tuning)
+* [🚀 Installation Guide (Quick Start)](#-installation-guide-quick-start)
+    * [Prerequisites](#prerequisites)
+    * [Step 1: Prepare the Device](#step-1-prepare-the-device)
+    * [Step 2: Access ADB (Web Interface)](#step-2-access-adb-web-interface)
+    * [Step 3: Debloating](#step-3-debloating)
+    * [Step 4: Rooting](#step-4-rooting)
+* [📦 Magisk Modules Setup](#-magisk-modules-setup)
+    * [How to Install](#how-to-install)
+* [🛠️ Usage Instructions](#️-usage-instructions)
+    * [Configuring Anantar Harmonic](#configuring-anantar-harmonic)
+    * [Configuring Anantar Boot](#configuring-anantar-boot)
+* [🎶 Recommended Sound Profiles](#-recommended-sound-profiles)
+* [💬 Community & Discussion](#-community--discussion)
+* [❤️ Special Thanks](#️-special-thanks)
+* [🛠️ Maintenance & Recovery Guide](#️-maintenance--recovery-guide)
+    * [1. How to Unroot](#1-how-to-unroot)
+    * [2. How to Recover (Soft Brick)](#2-how-to-recover-soft-brick)
+    * [3. How to Recover (Hard Brick)](#3-how-to-recover-hard-brick)
+* [📖 Appendix: ADB Installation Guide](#-appendix-adb-installation-guide)
+
+---
+
+---
+
 ## ☕ Support My Work
 
 If you find these mods helpful and wish to support further development, consider buying me a coffee!
@@ -83,57 +110,74 @@ adb root
 adb shell 
 curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/root.sh | sh
 ```
+### 🔑 Rooting & Module Installation
 
-#### [Rooting via Fastboot (Optional)](Rooting.md)
+> [!TIP]
+> Prefer a more traditional method? See the **[Rooting via Fastboot (Optional)](Rooting.md)** guide.
 
-# Install 3 Magisk Modules (All must to use together)
-1. MoonDiamond v2 for DX340 [Download Link](https://drive.google.com/uc?export=download&id=1nf8vj3xREEH7XH-CXwDLXw8PMSib4lT2)
-2. Anantar Harmonic v2 for DX340 [Download Link](https://drive.google.com/file/d/1eWah8O9dKdWaFbWdiT1ys0UtxtZUvcIi/view?usp=sharing)
-3. Anantar Boot v2 for DX340 [Download Link](https://drive.google.com/file/d/16qlTgcb0mNPqF2X-V2b4AmWGQ8AcomLs/view?usp=sharing)
+---
 
-## How to install Magisk Modules
-1. Download zip file.
-2. Upload to DX340 device.
-3. Go to Magisk App -> Module -> Install from storage
+## 📦 Magisk Modules Setup
 
-# How to use
+To achieve the intended sound signature and performance, **all three modules must be installed and used together.**
 
-### Anantar Harmonic.
-1. Go to Magisk App
-2. Modules tab.
-3. Select Action on Anantar Harmonic module.
-4. use scrolling volume button.
-5. double tap to confirm selection.
-6. The Profile will instantly apply after confirmation, and every time device started
-7. Enjoy Music.
+| Module Name | Description | Download |
+| :--- | :--- | :--- |
+| **MoonDiamond v2** | System-wide efficiency & clarity | [Download](https://drive.google.com/uc?export=download&id=1nf8vj3xREEH7XH-CXwDLXw8PMSib4lT2) |
+| **Anantar Harmonic v2** | FPGA & Timbre adjustments | [Download](https://drive.google.com/file/d/1eWah8O9dKdWaFbWdiT1ys0UtxtZUvcIi/view?usp=sharing) |
+| **Anantar Boot v2** | Kernel-level core optimization | [Download](https://drive.google.com/file/d/16qlTgcb0mNPqF2X-V2b4AmWGQ8AcomLs/view?usp=sharing) |
 
-### Anantar Harmonic.
-1. Go to Magisk App
-2. Modules tab.
-3. Select Action on Anantar Boot module.
-4. use scrolling volume button.
-5. double tap to confirm selection.
-6. Device will reboot into that Boot version.
-7. Enjoy Music.
+### **How to Install**
+1. **Download** the ZIP files provided above.
+2. **Transfer** (Upload) the files to your DX340 internal storage.
+3. Open the **Magisk App** > Go to the **Modules** tab.
+4. Select **Install from storage** and pick each ZIP file.
+5. **Reboot** your device once all modules are installed.
 
-# Discussion
-- Please follow in Headfi [Here](https://www.head-fi.org/threads/dx340-guides-optimization-battery-replacements-diy-discussions.975654/)
-- [Here](https://www.head-fi.org/threads/ibasso-dx180-dx260-dx300-max-dx320-max-dx340-rooting-optimization-guides-and-discussion.974923/)
+---
 
-# Recommend sound profile.
+## 🛠️ Usage Instructions
 
-#### Clarity/transparency/Dynamic:
-- Extreme Boot / OS Mode / EnOn harmonic.
-#### R2R and Analog performanced
-- Analog Boot / NOS Mode / TenGen harmonic.
-#### Amp14
-- Extreme Boot / OS Mode / EnOn harmonic.
-#### Amp18 
-- Analog Boot / OS Mode / Zeno Harmonic.
+### **Configuring Anantar Harmonic**
+1. Launch the **Magisk App** and navigate to the **Modules** tab.
+2. Tap the **Action** button on the *Anantar Harmonic* module.
+3. Use the **physical volume wheel** to scroll through the menu.
+4. **Double-tap** (or follow on-screen prompts) to confirm your selection.
+5. The profile applies instantly and will persist through reboots.
 
-# Special Thanks
-- [mattClarke18 @Headfi](https://www.head-fi.org/members/mattclarke18.585003/)
-- [Whitigir @Headfi](https://www.head-fi.org/members/whitigir.378966/)
+### **Configuring Anantar Boot**
+1. Launch the **Magisk App** and navigate to the **Modules** tab.
+2. Tap the **Action** button on the *Anantar Boot* module.
+3. Use the **physical volume wheel** to scroll through the kernel profiles.
+4. **Double-tap** to confirm your selection.
+5. The device will **automatically reboot** to apply the selected Boot/Kernel version.
+
+---
+
+## 🎶 Recommended Sound Profiles
+
+| Desired Signature | Configuration Settings |
+| :--- | :--- |
+| **Maximum Clarity & Dynamics** | Extreme Boot / OS Mode / EnOn Harmonic |
+| **R2R & Analog Performance** | Analog Boot / NOS Mode / TenGen Harmonic |
+| **Optimized for Amp14** | Extreme Boot / OS Mode / EnOn Harmonic |
+| **Optimized for Amp18** | Analog Boot / OS Mode / Zeno Harmonic |
+
+---
+
+## 💬 Community & Discussion
+
+Join the conversation and stay updated on Head-Fi:
+* [DX340 Guides & DIY Discussion](https://www.head-fi.org/threads/dx340-guides-optimization-battery-replacements-diy-discussions.975654/)
+* [Global iBasso Rooting & Optimization Guide](https://www.head-fi.org/threads/ibasso-dx180-dx260-dx300-max-dx320-max-dx340-rooting-optimization-guides-and-discussion.974923/)
+
+---
+
+## ❤️ Special Thanks
+
+A huge thank you to the contributors who made these mods possible:
+* **[mattClarke18 @Head-Fi](https://www.head-fi.org/members/mattclarke18.585003/)**
+* **[Whitigir @Head-Fi](https://www.head-fi.org/members/whitigir.378966/)**
 
 # iBasso DX340 Maintenance & Recovery Guide
 
