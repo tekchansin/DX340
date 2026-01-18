@@ -10,11 +10,10 @@ Welcome to the comprehensive guide for optimizing your iBasso DX340. This projec
 * [🚀 Installation Guide (Quick Start)](#-installation-guide-quick-start)
     * [Prerequisites](#prerequisites)
     * [Step 1: Prepare the Device](#step-1-prepare-the-device)
-    * [Step 2: Access ADB (Web Interface)](#step-2-access-adb-web-interface)
+    * [Step 2: Install ADB (Android Debug Bridge)](#step-2-install-adb-android-debug-bridge)
     * [Step 3: Debloating](#step-3-debloating)
     * [Step 4: Rooting](#step-4-rooting)
-* [📦 Magisk Modules Setup](#-magisk-modules-setup)
-    * [How to Install](#how-to-install)
+    * [Step 5: 📦 Download Magisk Modules and install](#-download-magisk-modules)
 * [🛠️ Usage Instructions](#️-usage-instructions)
     * [Configuring Anantar Harmonic](#configuring-anantar-harmonic)
     * [Configuring Anantar Boot](#configuring-anantar-boot)
@@ -25,7 +24,6 @@ Welcome to the comprehensive guide for optimizing your iBasso DX340. This projec
     * [1. How to Unroot](#1-how-to-unroot)
     * [2. How to Recover (Soft Brick)](#2-how-to-recover-soft-brick)
     * [3. How to Recover (Hard Brick)](#3-how-to-recover-hard-brick)
-* [📖 Appendix: ADB Installation Guide](#-appendix-adb-installation-guide)
 
 ---
 
@@ -79,11 +77,47 @@ Estimated time: **15 minutes**
 2. **Enable USB Debugging:** Go to `Settings` > `System` > `Developer options` > Turn on `USB debugging`.
 3. **Authorize Connection:** Connect the DX340 to your PC. On the device popup, select "Always allow" and tap "Allow."
 
-### Step 2: Access ADB (Web Interface)
-For convenience, you can use a web-based ADB shell:
-1. Go to [app.webadb.com/shell](https://app.webadb.com/shell).
-2. Click **Add** > Select **DX340** > Click **Connect**.
-3. Open the **Interactive Shell**.
+### Step 2: Install ADB (Android Debug Bridge)
+
+If you do not have ADB installed, here is the simplest way to get it.
+
+#### On macOS (Recommended: Homebrew)
+
+- Open the "Terminal" app.
+- Install Homebrew (if you don't have it) by pasting this command:
+```
+/bin/bash -c "$(curl -fsSL [https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh](https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh))"
+```
+
+- Install Android Platform Tools (this includes ADB):
+```
+brew install --cask android-platform-tools
+```
+- Verify the installation by plugging in your DX340 and running adb devices.
+
+#### On Windows (Recommended: Platform-Tools ZIP)
+
+- Go to the official Android developer website and download "SDK Platform-Tools for Windows":
+https://developer.android.com/studio/releases/platform-tools
+- Unzip the file to a simple location you can remember (e.g., C:\platform-tools)
+- This folder (C:\platform-tools) now contains adb.exe.
+
+CRITICAL: You must run the commands from this folder.
+
+- Open the C:\platform-tools folder in Windows File Explorer.
+- Click in the "address bar" (where it says C:\platform-tools).
+- Type cmd and press Enter.
+- This will open a Command Prompt in the correct location.
+- Verify the installation by plugging in your DX340 and running adb devices.
+
+##### Windows 11 to fix fastboot driver. (thanks koala13 @headfi)
+
+If you are using Windows 11, you can follow these steps to make fastboot work:
+- After you enter fastboot, open Device Manager -> Other devices then you should see device name "trinket for arm64".
+- You need to install the driver for fastboot device: Driver -> Update Driver -> Browse My Computer for Drivers -> Let me pick from a list... -> WinUsb Device -> ADB Device
+- Install the driver -> reboot DX340 -> enter fastboot again and now you can see your device in Device Manager -> Universal Serial Bus Device -> trinket for arm64
+- Now you can run fastboot command
+
 
 ### Step 3: Debloating
 Choose one of the following options based on your usage:
@@ -117,7 +151,7 @@ curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/root
 
 ---
 
-## 📦 Magisk Modules Setup
+## 📦 Download Magisk Modules
 
 To achieve the intended sound signature and performance, **all three modules must be installed and used together.**
 
@@ -243,45 +277,3 @@ The iBasso DX340 uses a Qualcomm SoC, which allows you to flash the entire firmw
 3. **Troubleshooting:** This process has a variable success rate. If it fails, unplug the USB cable, restart QFIL, and try again. You can repeat this process until it completes successfully.
 4. Reboot the device.
 
-
-
-## Appendix: How to Install ADB (Android Debug Bridge)
-
-If you do not have ADB installed, here is the simplest way to get it.
-
-### On macOS (Recommended: Homebrew)
-
-- Open the "Terminal" app.
-- Install Homebrew (if you don't have it) by pasting this command:
-```
-/bin/bash -c "$(curl -fsSL [https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh](https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh))"
-```
-
-- Install Android Platform Tools (this includes ADB):
-```
-brew install --cask android-platform-tools
-```
-- Verify the installation by plugging in your DX340 and running adb devices.
-
-### On Windows (Recommended: Platform-Tools ZIP)
-
-- Go to the official Android developer website and download "SDK Platform-Tools for Windows":
-https://developer.android.com/studio/releases/platform-tools
-- Unzip the file to a simple location you can remember (e.g., C:\platform-tools)
-- This folder (C:\platform-tools) now contains adb.exe.
-
-CRITICAL: You must run the commands from this folder.
-
-- Open the C:\platform-tools folder in Windows File Explorer.
-- Click in the "address bar" (where it says C:\platform-tools).
-- Type cmd and press Enter.
-- This will open a Command Prompt in the correct location.
-- Verify the installation by plugging in your DX340 and running adb devices.
-
-### Windows 11 to fix fastboot driver. (thanks koala13 @headfi)
-
-If you are using Windows 11, you can follow these steps to make fastboot work:
-- After you enter fastboot, open Device Manager -> Other devices then you should see device name "trinket for arm64".
-- You need to install the driver for fastboot device: Driver -> Update Driver -> Browse My Computer for Drivers -> Let me pick from a list... -> WinUsb Device -> ADB Device
-- Install the driver -> reboot DX340 -> enter fastboot again and now you can see your device in Device Manager -> Universal Serial Bus Device -> trinket for arm64
-- Now you can run fastboot command
