@@ -79,8 +79,10 @@ reboot
 
 
 ##  Rooting DX340 (Recommend, very easy)
+- Support only FW version 1.07 and later.
+- NOT Support WebADB.
+- This will install Magisk app automatically.
 
-!! NOT Support WebADB
 "Run" (Execute) the online script:
 ```
 adb root
@@ -140,6 +142,23 @@ curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/root
 - [mattClarke18 @Headfi](https://www.head-fi.org/members/mattclarke18.585003/)
 - [Whitigir @Headfi](https://www.head-fi.org/members/whitigir.378966/)
 
+
+# How to Recovery DX340 (Soft brick)
+- turn DX340 off
+- Hold side (bottom / last) button and press power button 
+- When iBasso logo shown, release Power button, and still hold bottom button.
+- The White text and Black screen, will show.
+- select Recovery Mode via side button. (use Power button to confirm)
+- Now. You are in Recovery Mode.
+- select "Wipe data/factory reset" > "Factory data reset"
+- reboot device
+
+# How to Unroot
+- Open to Magisk App
+- Click "Uninstall Magisk" (Red button on home tap)
+- DX340 will reboot and it will be unrooted.
+- Remove Magisk App
+- If you want to send to iBasso service, I recommend to do factory reset.
 
 ## Appendix: How to Install ADB (Android Debug Bridge)
 

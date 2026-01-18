@@ -43,6 +43,7 @@ tek@Tek-Macbook-Air-M4 Root % fastboot getvar current-slot
 current-slot: a
 Finished. Total time: 0.007s
 ```
+#### Patched Boot file is in your PC/MAC.
 
 ### Patch it (boot_a)
 fastboot flash boot_a  <boot_patched_image.bin>
