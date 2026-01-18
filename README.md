@@ -1,94 +1,87 @@
+# DX340 Rooting & Optimization Guide
+
+Welcome to the comprehensive guide for optimizing your iBasso DX340. This project introduces the **Three Pillars of Tuning**, designed to elevate your listening experience through kernel-level modifications and FPGA optimizations.
+
+---
+
 ## ☕ Support My Work
 
-If you find my mods helpful, consider buying me a coffee!
+If you find these mods helpful and wish to support further development, consider buying me a coffee!
 
-| PayPal | Bitcoin |
+| Platform | Donation Link / Address |
 | :--- | :--- |
-| [![PayPal](https://img.shields.io/badge/Donate-PayPal-00457C?style=flat-square&logo=paypal&logoColor=white)](https://www.paypal.me/CharnsilpChinprasert) | ![Bitcoin](https://img.shields.io/badge/BTC-000000?style=flat-square&logo=bitcoin&logoColor=white) `0x794161ef033bd117a45f4dbeda023b5a69cc7cd5` |
+| **PayPal** | [![PayPal](https://img.shields.io/badge/Donate-PayPal-00457C?style=flat-square&logo=paypal&logoColor=white)](https://www.paypal.me/CharnsilpChinprasert) |
+| **Bitcoin** | `0x794161ef033bd117a45f4dbeda023b5a69cc7cd5` |
 
-# DX340 Rooting & Optimization
+---
 
-## Introducing Three Pillars of Tuning.
+## 💎 The Three Pillars of Tuning
 
-### MoonDiamond v2 for DX340
-The Efficiency & Clarity Engine A high-performance system-wide processing module. It optimizes core efficiency to deliver a transparent, dynamic soundstage while maintaining a black background. Thanks for [mattClarke18 @Headfi](https://www.head-fi.org/members/mattclarke18.585003/)
+### 1. MoonDiamond v2
+**The Efficiency & Clarity Engine** A high-performance system-wide processing module. It optimizes core efficiency to deliver a transparent, dynamic soundstage while maintaining a pitch-black background.  
+*Special thanks to [mattClarke18 @Head-Fi](https://www.head-fi.org/members/mattclarke18.585003/)*
 
-### Anantar Harmonic v2 for DX340
-The FPGA Timbre Specialist Beyond simple filters—this module interacts directly with the SRC DSP and FPGA. Thanks for [Whitigir @Headfi](https://www.head-fi.org/members/whitigir.378966/)
-- Step 1: Choose your topology—NOS (Non-OverSampling) for an organic feel or Upgraded OS for precision.
-- Step 2: Advanced Harmonic Adjustments (AHA). Custom-tuned FPGA profiles that refine texture and instrument weight far beyond stock H1-H5 settings.
+### 2. Anantar Harmonic v2
+**The FPGA Timbre Specialist** This module goes beyond simple filters by interacting directly with the SRC, DSP, and FPGA.  
+*Special thanks to [Whitigir @Head-Fi](https://www.head-fi.org/members/whitigir.378966/)*
+- **Step 1:** Choose your topology—**NOS (Non-OverSampling)** for an organic feel or **Upgraded OS** for precision.
+- **Step 2:** **Advanced Harmonic Adjustments (AHA)**. Custom-tuned FPGA profiles that refine texture and instrument weight far beyond stock H1-H5 settings.
 
-### Anantar Boot v2 for DX340
-The Deep Kernel Core The foundation of the mod. This involves exclusive Kernel-level optimization and CPU core isolation.
+### 3. Anantar Boot v2
+**The Deep Kernel Core** The foundation of the mod. This involves exclusive kernel-level optimization and CPU core isolation.
+- **Kernel Sound Profiles:** Flash custom boot images to change the system's "DNA."
+- **Selectable Modes:** Ranges from **Extreme Isolated** (Maximum Transparency) to **Analog Isolated** (Tube-like warmth).
 
-- Kernel Sound Profiles: Flash custom boot images to change the system's "DNA."
-- Selectable Modes: From Extreme Isolated (Maximum Transparency) to Analog Isolated (Tube-like warmth).
+---
 
-## Steps to install (Super easy in 15 mins)
-1. Debloat
-2. Rooting
-3. Install Modules
-4. Enjoy Music
+## 🚀 Installation Guide (Quick Start)
 
-## Prerequisites (What you need)
-- A computer (PC or Mac) with ADB (Android Debug Bridge) installed. (Installation Guide is below)
-- A USB-C cable to connect the DX340 to your computer.
+Estimated time: **15 minutes**
 
+1. **Debloat:** Remove unnecessary system apps.
+2. **Root:** Gain administrative access (Magisk).
+3. **Install Modules:** Flash the Three Pillars via Magisk.
+4. **Enjoy:** Experience the new sound signature.
 
-#### How to Access ADB
+### Prerequisites
+- A computer (PC or Mac) with **ADB (Android Debug Bridge)** installed.
+- A high-quality USB-C cable.
 
-##### Step 1 : Connect DX340 to Internet via Wifi
+### Step 1: Prepare the Device
+1. **Enable Developer Options:** Go to `Settings` > `About phone` > Tap `Build number` 7 times.
+2. **Enable USB Debugging:** Go to `Settings` > `System` > `Developer options` > Turn on `USB debugging`.
+3. **Authorize Connection:** Connect the DX340 to your PC. On the device popup, select "Always allow" and tap "Allow."
 
-##### Step 2 : Enable USB Debugging (on the DX340)
-- [Step by Step how to enable USB Debugging](https://drive.google.com/open?id=16Cj0Fg3WbrOMQ203d1HSczG9x7RZpePq&usp=drive_fs) 
-- Go to "Settings" > "About phone"
-- Tap on "Build number" 7 times until it says "You are now a developer!"
-- Go back to "Settings" > "System" > "Developer options"
-- Find and turn "ON" the "USB debugging" toggle.
+### Step 2: Access ADB (Web Interface)
+For convenience, you can use a web-based ADB shell:
+1. Go to [app.webadb.com/shell](https://app.webadb.com/shell).
+2. Click **Add** > Select **DX340** > Click **Connect**.
+3. Open the **Interactive Shell**.
 
-##### Step 3 : Connect to PC
+### Step 3: Debloating
+Choose one of the following options based on your usage:
 
-- Connect your DX340 to your computer via USB.
-- On the DX340, a popup "Allow USB debugging?" will appear. -> Check "Always allow" and tap "Allow".
+* **Option 1: Basic Debloat (Recommended)**
+    ```bash
+    curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/basic_debloat.sh | sh
+    ```
+* **Option 2: Max Debloat (Local Play Only)** *Removes Google Play, Chrome, and most background services.*
+    ```bash
+    curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/max_debloat.sh | sh
+    ```
 
-##### Step 4: Connect ADB via web.
-- Go to: https://app.webadb.com/shell
-- Click Add -> Select Device -> Click Connect
-- Open Interactive Shell
+> [!IMPORTANT]
+> Once the script shows "Debloat Complete," you **MUST** reboot your device: `reboot`
 
-### Debloating
+### Step 4: Rooting
+* Supports Firmware **v1.07** and later.
+* Installs the Magisk app automatically.
+* **Note:** This step requires a local terminal (WebADB is not supported for rooting).
 
-####  Option 1: Basic Debloating (Recommend for all user)
-
-"Run" (Execute) the online script:
-```
-curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/basic_debloat.sh | sh
-```
-
-####  Option 2: Max Debloating (Remove GooglePlay, Chrome for local play only)
-
-"Run" (Execute) the online script:
-```
-curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/max_debloat.sh | sh
-```
-
-When the script is finished (shows Debloat Complete), you MUST Reboot your device:
-```
-reboot
-```
-
-
-##  Rooting DX340 (Recommend, very easy)
-- Support only FW version 1.07 and later.
-- NOT Support WebADB.
-- This will install Magisk app automatically.
-
-"Run" (Execute) the online script:
-```
+```bash
 adb root
 adb shell 
 curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/root.sh | sh
-
 ```
 
 #### [Rooting via Fastboot (Optional)](Rooting.md)
