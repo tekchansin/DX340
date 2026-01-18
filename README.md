@@ -142,61 +142,71 @@ curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/root
 - [mattClarke18 @Headfi](https://www.head-fi.org/members/mattclarke18.585003/)
 - [Whitigir @Headfi](https://www.head-fi.org/members/whitigir.378966/)
 
+# iBasso DX340 Maintenance & Recovery Guide
 
-# How to Unroot
-- Open to Magisk App
-- Click "Uninstall Magisk" (Red button on home tap)
-- DX340 will reboot and it will be unrooted.
-- Remove Magisk App
-- If you want to send to iBasso service, I recommend to do factory reset.
+This guide provides instructions for unrooting and recovering the iBasso DX340 from soft-brick or hard-brick states.
+
+---
+
+## 1. How to Unroot
+1. Open the **Magisk** app.
+2. Select **"Uninstall Magisk"** (the red button located on the Home tab).
+3. The DX340 will automatically reboot and the device will be unrooted.
+4. Uninstall the **Magisk** app from your device.
+5. **Note:** If you plan to send your device to iBasso for service, it is highly recommended to perform a **Factory Reset** after unrooting.
+
+---
+
+## 2. How to Recover (Soft Brick)
+If your device is stuck in a boot loop or failing to boot:
+1. Turn the DX340 **OFF**.
+2. Press and hold the **Bottom Side Button** (the last button) and the **Power Button** simultaneously.
+3. When the iBasso logo appears, **release the Power Button** but continue holding the **Bottom Side Button**.
+4. A screen with white text on a black background will appear.
+5. Use the side buttons to navigate and select **"Recovery Mode"**, then press the **Power Button** to confirm.
+6. Once in Recovery Mode, select **"Wipe data/factory reset"** > **"Factory data reset"**.
+7. Select **"Reboot system now"** once the process is complete.
+
+---
+
+## 3. How to Recover (Hard Brick)
+The iBasso DX340 uses a Qualcomm SoC, which allows you to flash the entire firmware via **QFIL (Qualcomm Flash Image Loader)**.
+
+> [!IMPORTANT]  
+> View the full documentation [here](https://drive.google.com/file/d/15Fzf8U1YbBecVIcsOP35qu2iupTHoZQq/view) (Special thanks to **@mattClarke18**).
+
+### Preparation
+* **System:** Windows PC (or macOS via VirtualBox/Parallels).
+* **Hardware:** High-quality USB-C cable.
+* **Drivers:** [Qualcomm USB Driver v1.0.10065.1](https://drive.google.com/drive/folders/1qrl4OfUJKiOsnOVH4_5GGncfFPdYWIvY?usp=sharing)
+* **Software:** [QPST/QFIL Tool](https://drive.google.com/drive/folders/1qrl4OfUJKiOsnOVH4_5GGncfFPdYWIvY?usp=sharing)
+* **Firmware:** [iBasso DX340 Full Firmware 1.07](https://drive.google.com/drive/folders/1qrl4OfUJKiOsnOVH4_5GGncfFPdYWIvY?usp=sharing) (`DX340_20251227_1.07.726_256G_img.zip`)
+
+### Steps to Flash
+1. Extract the firmware zip file.
+2. Launch QFIL located at: `C:\Program Files (x86)\Qualcomm\QPST\bin\Qfil.exe`
+
+#### QFIL Configuration
+* **Select Port:** Ensure the device is detected as **"Qualcomm HS-USB QDLoader 9008"**.
+* **Select Build Type:** Select **Flat Build**.
+* **Select Programmer:** Click **"Browse"**, navigate to the firmware folder, and select the `prog_xxx.elf` file.
+* **Load XML:** Click **"Load XML"**, navigate to the firmware folder, and select all available **rawprogram** and **patch** XML files.
+
+#### Format All Partitions
+1. Go to **Tools** > **Partition Manager**.
+2. Right-click on any row in the list.
+3. Select **"Erase Entire Flash"**.
+4. When prompted "Would you like to erase entire flash?", select **Yes**.
+5. When prompted "Would you like to erase GPT?", select **Yes**.
+6. Click **OK** and return to the QFIL main screen.
+
+#### Flash Firmware
+1. Once the partitions are formatted and XML files are loaded, the **"Download"** button will be active.
+2. Click **"Download"** and wait (approx. 5-10 minutes) until the progress bar completes.
+3. **Troubleshooting:** This process has a variable success rate. If it fails, unplug the USB cable, restart QFIL, and try again. You can repeat this process until it completes successfully.
+4. Reboot the device.
 
 
-# How to Recovery DX340 (Soft brick)
-- turn DX340 off
-- Hold side (bottom / last) button and press power button 
-- When iBasso logo shown, release Power button, and still hold bottom button.
-- The White text and Black screen, will show.
-- select Recovery Mode via side button. (use Power button to confirm)
-- Now. You are in Recovery Mode.
-- select "Wipe data/factory reset" > "Factory data reset"
-- reboot device
-
-# How to Recovery DX340 (Hard brick)
-- iBasso DX340 use Qualcomm SOC chip, that can format and flash new entire firmware via QFIL.
-- Full document [here](https://drive.google.com/file/d/15Fzf8U1YbBecVIcsOP35qu2iupTHoZQq/view) thanks @mattClarke18
-### Overview steps here
-#### Preparation
-- Need Windows PC, or VirtualBox/Paralells on MacOS
-- Good USBC Cable
-- Install Qualcomm USB Driver (Qualcomm_USB_Driver_v1.0.10065.1.zip)
-- Install Flash software (QPST/QFIL) (qpst.win.2.7_OlderVer.zip)
-- iBasso DX340 Full Firmware 1.07 (DX340_20251227_1.07.726_256G_img.zip)
-- Download Link [here](https://drive.google.com/drive/folders/1qrl4OfUJKiOsnOVH4_5GGncfFPdYWIvY?usp=sharing)
-
-### Steps to Flash DX340
-- Extract DX340_20251227_1.07.726_256G_img.zip
-- Open Program in "C:\Program Files (x86)\Qualcomm\QPST\bin\Qfil.exe"
-
-##### Qfil configuration
-- SelectPort : You will see "Qualcomm HS-USB QDLoader 9008" 
-- Select Build Type : Flat Build
-- Select Programmer -> "Browse" button: "DX340_20251227_1.07.726_256G_img" folder and select prog_xxx.elf file.
-- Select Flat build -> "Load XML" button: "DX340_20251227_1.07.726_256G_img" folder and select all file (rawprogram and patch xml files).
-
-##### Format DX340 all Partition
-- Tool > Partition Manager 
-- Click right on any row
-- Select: Erase Entire Flash 
-- "Would you like to erase entire flash" : Yes
-- "Would you like to erase GPT" : Yes
-- Check OK and go back Qfil home
-
-##### Flash Firmware
-- once you formatted entire partition and selected programmer and xmls. You can see "Download" button. (under Load XML)
-- Click "Download" and wait 5-10 mins until blue progress bar is completed.
-- This may be 50/50% chain to flash it. If you have problem. just unplug usb and reopen qfil and do it again. you can try many times until it complete.
-- Reboot device
-- Done.
 
 ## Appendix: How to Install ADB (Android Debug Bridge)
 
