@@ -279,7 +279,8 @@ The iBasso DX340 uses a Qualcomm SoC, which allows you to flash the entire firmw
 4. Reboot the device.
 
 
-## 3. How to Undebloat
+## 4. How to Undebloat
 ```bash
+adb shell
 curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/undebloat.sh | sh
 ```
