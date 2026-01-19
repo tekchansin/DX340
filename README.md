@@ -24,6 +24,7 @@ Welcome to the comprehensive guide for optimizing your iBasso DX340. This projec
     * [1. How to Unroot](#1-how-to-unroot)
     * [2. How to Recover (Soft Brick)](#2-how-to-recover-soft-brick)
     * [3. How to Recover (Hard Brick)](#3-how-to-recover-hard-brick)
+    * [4. How to Undebloat](#3-how-to-undebloat)
 
 ---
 
@@ -277,3 +278,8 @@ The iBasso DX340 uses a Qualcomm SoC, which allows you to flash the entire firmw
 3. **Troubleshooting:** This process has a variable success rate. If it fails, unplug the USB cable, restart QFIL, and try again. You can repeat this process until it completes successfully.
 4. Reboot the device.
 
+
+## 3. How to Undebloat
+```bash
+curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/undebloat.sh | sh
+```
