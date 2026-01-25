@@ -181,10 +181,6 @@ To achieve the intended sound signature and performance, **all three modules mus
 5. **Reboot** your device once all modules are installed.
 ---
 
-* [🛠️ How to Update OTA from iBasso](#️how-to-upgrade-ota-from-ibasso)    
-    * [Method 1: UnDebloat, Update and Debloat](#method-1-undebloat-update-and-debloat)
-    * [Method 2: ADB Sideload](#method-2-adb-sideload)
-    * [After Upgrade](#after-upgrade)
 
 ## 🛠️ How to Update OTA from iBasso
 ### Download Firmware 
