@@ -14,6 +14,10 @@ Welcome to the comprehensive guide for optimizing your iBasso DX340. This projec
     * [Step 3: Debloating](#step-3-debloating)
     * [Step 4: Rooting](#step-4-rooting)
     * [Step 5: 📦 Download Magisk Modules and install](#-download-magisk-modules)
+* [🛠️ How to Update OTA from iBasso](#️how-to-upgrade-ota-from-ibasso)    
+    * [Method 1: UnDebloat, Update and Debloat](#method-1-undebloat-update-and-debloat)
+    * [Method 2: ADB Sideload](#method-2-adb-sideload)
+    * [Post Upgrade](#Post-upgrade)
 * [🛠️ Usage Instructions](#️-usage-instructions)
     * [Configuring Anantar Harmonic](#configuring-anantar-harmonic)
     * [Configuring Anantar Boot](#configuring-anantar-boot)
@@ -168,6 +172,40 @@ To achieve the intended sound signature and performance, **all three modules mus
 3. Open the **Magisk App** > Go to the **Modules** tab.
 4. Select **Install from storage** and pick each ZIP file.
 5. **Reboot** your device once all modules are installed.
+---
+
+* [🛠️ How to Update OTA from iBasso](#️how-to-upgrade-ota-from-ibasso)    
+    * [Method 1: UnDebloat, Update and Debloat](#method-1-undebloat-update-and-debloat)
+    * [Method 2: ADB Sideload](#method-2-adb-sideload)
+    * [After Upgrade](#after-upgrade)
+
+## 🛠️ How to Update OTA from iBasso
+### Download Firmware 
+- Download firmware from https://drive.google.com/drive/folders/1qrl4OfUJKiOsnOVH4_5GGncfFPdYWIvY?usp=sharing
+- Download file DX340FW-ota-xxx.zip
+- unzip. DX340_full_ota_xxx ( has 2 files inside, readme and DX340_full_ota_xxx.zip )
+- Use "DX340_full_ota_xxx.zip" for update
+
+
+### **Method 1: UnDebloat, Update and Debloat**
+- [UnDebload via script](#3-how-to-undebloat)
+- Open Setting -> System -> Updater -> local update
+- Select File
+- Update
+- [Debload again](#step-3-debloating)
+
+### **Method 2: ADB Sideload**
+- Upload ota file to sdcard
+- adb reboot recovery
+- "Apply update from SD Card"
+- Select OTA file
+- update and reboot
+
+
+### **Post Upgrade**
+- After You upgrade to latest firmware, You need to root again via script.
+- [Root via scritpt](#step-4-rooting)
+- Update Modules to latest
 
 ---
 
