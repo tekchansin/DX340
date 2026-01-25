@@ -132,11 +132,13 @@ Choose one of the following options based on your usage:
 * **Option 1: Basic Debloat (Recommended)**
     ```bash
     adb shell
+    ## For Windows "Type adb.exe shell" in cmd prompt
     curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/basic_debloat.sh | sh
     ```
 * **Option 2: Max Debloat (Local Play Only)** *Removes Google Play, Chrome, and most background services.*
     ```bash
     adb shell
+    ## For Windows "Type adb.exe shell" in cmd prompt
     curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/max_debloat.sh | sh
     ```
 
@@ -151,6 +153,7 @@ Choose one of the following options based on your usage:
 ```bash
 adb root
 adb shell 
+## For Windows "Type adb.exe shell" in cmd prompt
 curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/root.sh | sh
 ```
 ### 🔑 Rooting & Module Installation
@@ -324,5 +327,6 @@ The iBasso DX340 uses a Qualcomm SoC, which allows you to flash the entire firmw
 ## 4. How to Undebloat
 ```bash
 adb shell
+## For Windows "Type adb.exe shell" in cmd prompt
 curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/undebloat.sh | sh
 ```
