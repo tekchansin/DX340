@@ -148,7 +148,7 @@ Choose one of the following options based on your usage:
 ### Step 4: Rooting
 * Supports Firmware **v1.07** and later.
 * Installs the Magisk app automatically.
-* **Note:** This step requires a local terminal (WebADB is not supported for rooting).
+* **Note:** Follow step 2 above and run CMD from Address bar (WebADB is not supported for rooting).
 
 ```bash
 adb root
@@ -156,6 +156,9 @@ adb shell
 ## For Windows "Type adb.exe shell" in cmd prompt
 curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/root.sh | sh
 ```
+* DX340 will reboot and rooted.
+* Magisk is installed.
+
 ### 🔑 Rooting & Module Installation
 
 > [!TIP]
