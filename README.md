@@ -14,7 +14,7 @@ Welcome to the comprehensive guide for optimizing your iBasso DX340. This projec
     * [Step 3: Debloating](#step-3-debloating)
     * [Step 4: Rooting](#step-4-rooting)
     * [Step 5: 📦 Download Magisk Modules and install](#-download-magisk-modules)
-* [🛠️ How to Update OTA from iBasso](#️how-to-upgrade-ota-from-ibasso)    
+* [🛠️ How to Update OTA from iBasso](#️how-to-update-ota-from-ibasso)    
     * [Method 1: UnDebloat, Update and Debloat](#method-1-undebloat-update-and-debloat)
     * [Method 2: ADB Sideload](#method-2-adb-sideload)
     * [Post Upgrade](#Post-upgrade)
