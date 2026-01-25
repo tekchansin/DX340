@@ -35,6 +35,8 @@ echo "[*] Firmware Version: $FULL_FW_VER"
 echo "[*] Target Patch File: $IMG_NAME"
 
 # 4. เตรียมพื้นที่และดาวน์โหลด
+rm -f "$ZIP_FILE"
+rm -rf "$TMP_DIR"
 mkdir -p $TMP_DIR
 echo "[*] Downloading firmware package..."
 curl -L "$ZIP_URL" -o "$ZIP_FILE"
