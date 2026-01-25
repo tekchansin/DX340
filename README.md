@@ -159,14 +159,11 @@ curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/root
 * DX340 will reboot and rooted.
 * Magisk is installed.
 
-### 🔑 Rooting & Module Installation
-
-> [!TIP]
-> Prefer a more traditional method? See the **[Rooting via Fastboot (Optional)](Rooting.md)** guide.
 
 ---
+## 🔑 Installing Magisk Modules to improve audio performance
 
-## 📦 Download Magisk Modules
+### 📦 Download Magisk Modules
 
 To achieve the intended sound signature and performance, **all three modules must be installed and used together.**
 
