@@ -1,7 +1,7 @@
 #!/system/bin/sh
 
 # --- Configuration ---
-ZIP_URL="https://github.com/tekchansin/DX340/archive/refs/tags/fw1.0.7.zip"
+ZIP_URL="https://github.com/tekchansin/DX340/archive/refs/tags/fw1.08.zip"
 TMP_DIR="/data/local/tmp/dx340_flash"
 ZIP_FILE="$TMP_DIR/prerelease.zip"
 
