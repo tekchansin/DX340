@@ -7,6 +7,10 @@ Welcome to the comprehensive guide for optimizing your iBasso DX340. This projec
 ## 📋 Table of Contents
 * [☕ Support My Work](#-support-my-work)
 * [💎 The Three Pillars of Tuning](#-the-three-pillars-of-tuning)
+* [🛠️ How to Update OTA from iBasso](#️how-to-update-ota-from-ibasso)    
+    * [Method 1: UnDebloat, Update and Debloat](#method-1-undebloat-update-and-debloat)
+    * [Method 2: ADB Sideload](#method-2-adb-sideload)
+    * [Post Upgrade](#Post-upgrade)
 * [🚀 Installation Guide (Quick Start)](#-installation-guide-quick-start)
     * [Prerequisites](#prerequisites)
     * [Step 1: Prepare the Device](#step-1-prepare-the-device)
@@ -14,10 +18,6 @@ Welcome to the comprehensive guide for optimizing your iBasso DX340. This projec
     * [Step 3: Debloating](#step-3-debloating)
     * [Step 4: Rooting](#step-4-rooting)
     * [Step 5: Installing Magisk Modules to improve audio performance](#-installing-magisk-modules-to-improve-audio-performance)
-* [🛠️ How to Update OTA from iBasso](#️how-to-update-ota-from-ibasso)    
-    * [Method 1: UnDebloat, Update and Debloat](#method-1-undebloat-update-and-debloat)
-    * [Method 2: ADB Sideload](#method-2-adb-sideload)
-    * [Post Upgrade](#Post-upgrade)
 * [🛠️ Usage Instructions](#️-usage-instructions)
     * [Configuring Anantar Harmonic](#configuring-anantar-harmonic)
     * [Configuring Anantar Boot](#configuring-anantar-boot)
@@ -28,7 +28,7 @@ Welcome to the comprehensive guide for optimizing your iBasso DX340. This projec
     * [1. How to Unroot](#1-how-to-unroot)
     * [2. How to Recover (Soft Brick)](#2-how-to-recover-soft-brick)
     * [3. How to Recover (Hard Brick)](#3-how-to-recover-hard-brick)
-    * [4. How to Undebloat](#3-how-to-undebloat)
+    * [4. How to Undebloat](#4-how-to-undebloat)
 
 ---
 
