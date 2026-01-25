@@ -170,7 +170,7 @@ To achieve the intended sound signature and performance, **all three modules mus
 | :--- | :--- | :--- |
 | **MoonDiamond v2** | System-wide efficiency & clarity | [Download](https://drive.google.com/uc?export=download&id=1nf8vj3xREEH7XH-CXwDLXw8PMSib4lT2) |
 | **Anantar Harmonic v2** | FPGA & Timbre adjustments | [Download](https://drive.google.com/file/d/1eWah8O9dKdWaFbWdiT1ys0UtxtZUvcIi/view?usp=sharing) |
-| **Anantar Boot v2** | Kernel-level core optimization | [Download](https://drive.google.com/file/d/16qlTgcb0mNPqF2X-V2b4AmWGQ8AcomLs/view?usp=sharing) |
+| **Anantar Boot v3** | Kernel-level core optimization | [Download](https://drive.google.com/file/d/1McLLFfJjW5ABWH4UiOtY3eOeGW0n7VCL/view?usp=sharing) |
 
 ### **How to Install**
 1. **Download** the ZIP files provided above.
