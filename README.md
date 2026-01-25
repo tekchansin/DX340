@@ -99,6 +99,7 @@ If you do not have ADB installed, here is the simplest way to get it.
 brew install --cask android-platform-tools
 ```
 - Verify the installation by plugging in your DX340 and running adb devices.
+- adb shell
 
 #### On Windows (Recommended: Platform-Tools ZIP)
 
@@ -114,6 +115,7 @@ CRITICAL: You must run the commands from this folder.
 - Type cmd and press Enter.
 - This will open a Command Prompt in the correct location.
 - Verify the installation by plugging in your DX340 and running adb devices.
+- adb.exe shell
 
 ##### Windows 11 to fix fastboot driver. (thanks koala13 @headfi)
 
@@ -129,10 +131,12 @@ Choose one of the following options based on your usage:
 
 * **Option 1: Basic Debloat (Recommended)**
     ```bash
+    adb shell
     curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/basic_debloat.sh | sh
     ```
 * **Option 2: Max Debloat (Local Play Only)** *Removes Google Play, Chrome, and most background services.*
     ```bash
+    adb shell
     curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/max_debloat.sh | sh
     ```
 
