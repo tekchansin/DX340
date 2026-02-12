@@ -1,3 +1,8 @@
+### V2.2
+- Intorduce Anantar Ultimate - Upgraded version.
+- Fix permission on File and explorer 3rd party user
+- Improve I/O discard for streaming app
+
 ### V2.1
 - Fix scrolling lag on Qobuz app
 
