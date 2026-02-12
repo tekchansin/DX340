@@ -19,17 +19,10 @@
 * **Global USB DAC Support:** Enjoy high-fidelity USB DAC functionality across the entire Android system. You are no longer restricted to using the MangoPlayer; use your preferred apps like Tidal, Apple Music, or Spotify with full optimization.
 
 ### Screenshots
-| Quick Settings | Boot Profiles | Harmonic Menu |
+| Quick Settings | Boot Profiles | OverSampling | USB DAC Support |
 | :---: | :---: | :---: |
-| ![Tile Layout](img/Tile.png) | ![Boot Profiles](img/Boot.png) | ![Harmonic Menu](img/Harmonic.png) |
+| ![Tile Layout](img/Tile.png) | ![Boot Profiles](img/Boot.png) | ![OverSampling Mode](img/OverSampling.png)  | ![USB DAC](img/USBDAC.png)  |
 
-| Water Series | Sky Series | Fire Series |
-| :---: | :---: | :---: |
-| ![Water Series](img/Water.png) | ![Sky Series](img/Sky.png) | ![Fire Series](img/Fire.png) |
-
-| OverSampling | USB DAC Support |
-| :---: | :---: |
-| ![OverSampling Mode](img/OverSampling.png) | ![USB DAC](img/USBDAC.png) |
 
 ---
 
@@ -63,7 +56,10 @@ Control system processing and power delivery at the core:
 ## Harmonic Profiles Engine
 Over 10+ customized harmonic profiles categorized into three signature series:
 
-![Harmonic Selector Menu](link_to_your_harmonic_menu_image.png)
+|Harmonic Menu| Water Series | Sky Series | Fire Series |
+| :---: | :---: | :---: |
+| ![Harmonic Menu](img/Harmonic.png) | ![Water Series](img/Water.png) | ![Sky Series](img/Sky.png) | ![Fire Series](img/Fire.png) |
+
 
 ### 💧 Water Series
 * **TaiRai / TaiKei** | **EnON / EnONX** | **Amazakura** | **Zenbu** | **Water / Water MAX**
