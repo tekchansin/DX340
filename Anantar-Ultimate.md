@@ -80,7 +80,9 @@ Over 18+ customized harmonic profiles categorized into three signature series:
 
 ## ☕ Support My Work
 
-Anantar Ultimate is a premium release. Your support via donation fuels the ongoing research into kernel optimization and audio fine-tuning for the iBasso platform.
+I have previously released free versions of my mods, including **Anantar Sound, Anantar Kernel, and MoonDiamond**. These free modules already offer a significant sound upgrade and are available for everyone to enjoy.
+
+However, the **Anantar Ultimate** edition is a premium version created specifically for those who wish to support my ongoing research and development. This version includes exclusive features, deeper kernel tuning, and a unified interface that isn't available in the free versions. Your support helps me spend more time fine-tuning the DX340 to its absolute limit.
 
 | Platform | Donation Link / Address |
 | :--- | :--- |
@@ -89,7 +91,7 @@ Anantar Ultimate is a premium release. Your support via donation fuels the ongoi
 
 ### How to Get the Module
 1. Send your donation via one of the platforms above.
-2. Please send your transaction proof to **justice.form@gmail.com**.
+2. Please send your proof to **justice.form@gmail.com**.
 3. Once confirmed, I will reply with the download link for the Anantar Ultimate module.
 
 ---
