@@ -79,7 +79,7 @@ Over **18+ customized harmonic profiles** categorized into three signature serie
 * **TaiRai / TaiKei** | **EnON / EnONX** | **Amazakura** | **Zenbu** | **Water / Water MAX**
 
 ### ☁️ Sky Series
-* **Zen / ZeNo** | **TenGen** | **Sky / Sky MAX**
+* **Zen (Exclusive)** | **ZeNo** | **TenGen** | **Sky** | **Sky MAX**
 
 ### 🔥 Fire Series
 * **Nap on Beach** | **Epitome (Exclusive)** | **Sigma Delt Max** | **Fire**
