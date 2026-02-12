@@ -3,30 +3,44 @@
 **Anantar Ultimate** is a complete, fresh re-rework built upon the foundations of the original Anantar projects. This version consolidates and improves upon the legacy modules (**Anantar Sound, Anantar Kernel, and MoonDiamond**) into a single, high-performance "Ultimate" edition for a streamlined and superior experience.
 
 > [!IMPORTANT]
-> **Compatibility Note:** Before installing Anantar Ultimate, please **Disable or Remove** the following legacy modules:
-> * Anantar Sound Profile
-> * Anantar Kernel Boot
-> * MoonDiamond
+> **Compatibility & Requirements:**
+> * **Firmware Requirement:** This module supports **iBasso Firmware 1.08 or higher** only.
+> * **Module Conflict:** Before installing Anantar Ultimate, please **Disable or Remove** legacy modules: *Anantar Sound Profile, Anantar Kernel Boot, and MoonDiamond.*
 
 ---
 
-## Key Features
-* **MangoOS Compatibility:** Experience Anantar optimizations even in MangoOS. By configuring your profiles in Android first, the optimizations carry over to the dedicated OS.
-* **New UI Design:** Featuring a refreshed interface and dedicated **Quick Settings Tiles** on the status bar for instant control.
-* **Enhanced Sound Signature:** Improved clarity, better instrument separation, and a more natural, warm vocal delivery.
-* **USB Mass Storage (UMS):** Full support for SD Card mass storage mode, enabling ultra-fast file transfers from MacOS and Android.
-* **System Optimization:** Automatically cleans empty Android junk folders on your SD Card to maintain filesystem health.
-* **Global USB DAC Support:** Enjoy high-fidelity USB DAC functionality across the entire Android system. You are no longer restricted to using the MangoPlayer; use your preferred apps like Tidal, Apple Music, or Spotify with full optimization.
+## 🚀 Key Features
 
-### Screenshots
+### 🌐 **Global USB DAC Support**
+Enjoy high-fidelity USB DAC functionality across the entire Android system. No longer restricted to MangoPlayer—use **Tidal, Apple Music, or Spotify** with full optimization.
+
+### 🔄 **MangoOS Compatibility**
+Experience Anantar optimizations even in MangoOS. Configure your profiles in Android, and the settings will **persist even after booting into MangoOS**.
+
+### 🎨 **New UI & Quick Access**
+A completely refreshed interface with dedicated **Quick Settings Tiles** on the status bar for instant, on-the-fly control of your audio profiles.
+
+### 🎼 **Enhanced Sound Signature**
+Advanced tuning for improved **Clarity**, superior **Instrument Separation**, and a more natural, **Warm Vocal** delivery.
+
+### ⚡ **High-Speed File Transfer (UMS)**
+Full support for **USB Mass Storage (UMS)** on SD Cards. Transfer files at ultra-high speeds directly from MacOS and Android devices.
+
+### 🧹 **System Health Optimization**
+Keeps your storage clean by automatically removing empty Android junk folders on your SD Card, ensuring a lean and efficient filesystem.
+
+---
+
+### 📱 Screenshots
 
 | Quick Settings | Boot Profiles | OverSampling | USB DAC Support |
 | :---: | :---: | :---: | :---: |
 | <img src="img/Tile.png" width="200"> | <img src="img/Boot.png" width="200"> | <img src="img/OverSampling.png" width="200"> | <img src="img/USBDAC.png" width="200"> |
 
+
 ---
 
-## MangoOS Integration
+## 📂 MangoOS Integration
 Anantar Ultimate is designed to influence the system at a low level, allowing its benefits to persist across both OS environments.
 
 **How to use with MangoOS:**
@@ -37,7 +51,7 @@ Anantar Ultimate is designed to influence the system at a low level, allowing it
 
 ---
 
-## Audio & Kernel Profiles
+## 🎼 Audio & Kernel Profiles
 
 ### 🎧 OverSampling Modes
 Select your preferred digital-to-analog processing style:
@@ -53,12 +67,13 @@ Control system processing and power delivery at the core:
 
 ---
 
-## Harmonic Profiles Engine
-Over 18+ customized harmonic profiles categorized into three signature series:
+## 💎 Harmonic Profiles Engine
+Over **18+ customized harmonic profiles** categorized into three signature series:
 
 | Harmonic Menu | Water Series | Sky Series | Fire Series |
 | :---: | :---: | :---: | :---: |
 | <img src="img/Harmonic.png" width="200"> | <img src="img/Water.png" width="200"> | <img src="img/Sky.png" width="200"> | <img src="img/Fire.png" width="200"> |
+
 
 ### 💧 Water Series
 * **TaiRai / TaiKei** | **EnON / EnONX** | **Amazakura** | **Zenbu** | **Water / Water MAX**
@@ -82,21 +97,20 @@ Over 18+ customized harmonic profiles categorized into three signature series:
 
 I have previously released free versions of my mods, including **Anantar Sound, Anantar Kernel, and MoonDiamond**. These free modules already offer a significant sound upgrade and are available for everyone to enjoy.
 
-However, the **Anantar Ultimate** edition is a premium version created specifically for those who wish to support my ongoing research and development. This version includes exclusive features, deeper kernel tuning, and a unified interface that isn't available in the free versions. Your support helps me spend more time fine-tuning the DX340 to its absolute limit.
+However, the **Anantar Ultimate** edition is a premium version created specifically for those who wish to support my ongoing research and development. This version includes **exclusive features, deeper kernel tuning, and a unified interface** that isn't available in the free versions. Your support helps me spend more time fine-tuning the DX340 to its absolute limit.
 
 | Platform | Donation Link / Address |
 | :--- | :--- |
 | **PayPal** | [![PayPal](https://img.shields.io/badge/Donate-PayPal-00457C?style=flat-square&logo=paypal&logoColor=white)](https://www.paypal.me/CharnsilpChinprasert) |
 | **Bitcoin** | `0x794161ef033bd117a45f4dbeda023b5a69cc7cd5` |
 
-### How to Get the Module
+### 📥 How to Get the Module
 1. Send your donation via one of the platforms above.
-2. Please send your proof to **justice.form@gmail.com**.
-3. Once confirmed, I will reply with the download link for the Anantar Ultimate module.
+2. Please send your transaction proof to **justice.form@gmail.com**.
+3. Once confirmed, I will reply with the download link for the **Anantar Ultimate** module.
 
 ---
 
-## Contact & Feedback
+## 📩 Contact & Feedback
 For support or feedback, please send a Private Message (PM) via **Head-Fi**:
 * **Profile:** [tekchansin on Head-Fi](https://www.head-fi.org/members/tekchansin.500217/)
-
