@@ -16,6 +16,20 @@
 * **Enhanced Sound Signature:** Improved clarity, better instrument separation, and a more natural, warm vocal delivery.
 * **USB Mass Storage (UMS):** Full support for SD Card mass storage mode, enabling ultra-fast file transfers from MacOS and Android.
 * **System Optimization:** Automatically cleans empty Android junk folders on your SD Card to maintain filesystem health.
+* **Global USB DAC Support:** Enjoy high-fidelity USB DAC functionality across the entire Android system. You are no longer restricted to using the MangoPlayer; use your preferred apps like Tidal, Apple Music, or Spotify with full optimization.
+
+### Screenshots
+| Quick Settings | Boot Profiles | Harmonic Menu |
+| :---: | :---: | :---: |
+| ![Tile Layout](img/Tile.png) | ![Boot Profiles](img/Boot.png) | ![Harmonic Menu](img/Harmonic.png) |
+
+| Water Series | Sky Series | Fire Series |
+| :---: | :---: | :---: |
+| ![Water Series](img/Water.png) | ![Sky Series](img/Sky.png) | ![Fire Series](img/Fire.png) |
+
+| OverSampling | USB DAC Support |
+| :---: | :---: |
+| ![OverSampling Mode](img/OverSampling.png) | ![USB DAC](img/USBDAC.png) |
 
 ---
 
@@ -49,23 +63,23 @@ Control system processing and power delivery at the core:
 ## Harmonic Profiles Engine
 Over 10+ customized harmonic profiles categorized into three signature series:
 
+![Harmonic Selector Menu](link_to_your_harmonic_menu_image.png)
+
 ### 💧 Water Series
-* **TaiRai / TaiKei:** Precision and balance.
-* **EnON / EnONX:** Enhanced brilliance and clarity.
-* **Amazakura:** Sweet, melodic tuning—optimized for vocals.
-* **Zenbu:** The versatile "all-in-one" profile.
-* **Water / Water MAX:** Maximum fluidity with an expansive soundstage.
+* **TaiRai / TaiKei** | **EnON / EnONX** | **Amazakura** | **Zenbu** | **Water / Water MAX**
 
 ### ☁️ Sky Series
-* **Zen / ZeNo:** Black background and precise imaging.
-* **TenGen:** High-fidelity focus on micro-details.
-* **Sky / Sky MAX:** Maximum air and "out-of-head" holographic experience.
+* **Zen / ZeNo** | **TenGen** | **Sky / Sky MAX**
 
 ### 🔥 Fire Series
-* **Nap on Beach:** Warm, relaxed, and fatigue-free for long listening sessions.
-* **Epitome (Exclusive):** The flagship profile for bass enthusiasts—deep extension and powerful impact.
-* **Sigma Delt Max:** Tuned for maximum dynamic range.
-* **Fire:** Energetic, forward, and highly engaging.
+* **Nap on Beach** | **Epitome (Exclusive)** | **Sigma Delt Max** | **Fire**
+
+---
+
+## ⚠️ Known Issues
+* **Module Deactivation after MangoOS Reboot:** When rebooting from **MangoOS back to Android**, the Magisk module may occasionally become disabled or "drop out."
+    * **How to Check:** Pay attention to the **Boot Animation**. If you do not see the custom Anantar boot animation, the module has likely been disabled.
+    * **Solution:** Simply go into the Magisk app and **Re-enable** the Anantar Ultimate module, then reboot once more.
 
 ---
 
@@ -88,3 +102,4 @@ Anantar Ultimate is a premium release. Your support via donation fuels the ongoi
 ## Contact & Feedback
 For support or feedback, please send a Private Message (PM) via **Head-Fi**:
 * **Profile:** [tekchansin on Head-Fi](https://www.head-fi.org/members/tekchansin.500217/)
+
