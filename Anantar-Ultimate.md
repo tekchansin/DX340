@@ -7,9 +7,7 @@
 > * **Firmware Requirement:** This module supports **iBasso Firmware 1.08 or higher** only.
 > * **Module Conflict:** Before installing Anantar Ultimate, please **Disable or Remove** legacy modules: *Anantar Sound Profile, Anantar Kernel Boot, and MoonDiamond.*
 ---
-Here is the comprehensive Table of Contents in Markdown format, organized logically based on the content you provided. You can paste this at the very top of your document.
 
-Markdown
 # Table of Contents
 
 - [🚀 Key Features](#-key-features)
@@ -32,6 +30,7 @@ Markdown
     - [How to Format back to exFat](#format-back-to-exfat)
 - [⚠️ Known Issues](#-known-issues)
 - [☕ Support My Work](#-support-my-work)
+- [📥 How to Get the Module](#-how-to-get-the-module)
 - [📩 Contact & Feedback](#-contact--feedback)
 ---
 
@@ -289,7 +288,7 @@ However, the **Anantar Ultimate** edition is a premium version created specifica
 | **PayPal** | [![PayPal](https://img.shields.io/badge/Donate-PayPal-00457C?style=flat-square&logo=paypal&logoColor=white)](https://www.paypal.me/CharnsilpChinprasert) |
 | **Bitcoin** | `0x794161ef033bd117a45f4dbeda023b5a69cc7cd5` |
 
-### 📥 How to Get the Module
+## 📥 How to Get the Module
 1. Send your donation via one of the platforms above.
 2. Please send your transaction proof to **justice.form@gmail.com**.
 3. Once confirmed, I will reply with the download link for the **Anantar Ultimate** module.
