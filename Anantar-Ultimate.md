@@ -17,11 +17,14 @@ Enjoy high-fidelity USB DAC functionality across the entire Android system. No l
 ### 🔄 **MangoOS Compatibility**
 Experience Anantar optimizations even in MangoOS. Configure your profiles in Android, and the settings will **persist even after booting into MangoOS**.
 
+### 💿 **Native EXT4 Support**
+Unlock maximum audio potential with **Native EXT4 File System** support. By eliminating the exFAT translation layer, it reduces CPU overhead and jitter, resulting in a **10-15% improvement** in soundstage depth and micro-detail resolution.
+
 ### 🎨 **New UI & Quick Access**
 A completely refreshed interface with dedicated **Quick Settings Tiles** on the status bar for instant, on-the-fly control of your audio profiles.
 
 ### 🎼 **Enhanced Sound Signature**
-Advanced tuning for improved **Clarity**, superior **Instrument Separation**, and a more natural, **Warm Vocal** delivery.
+Advanced tuning for improved **3D Large SoundStage**, **Clarity**, superior **Instrument Separation**, and a more natural, **Warm Vocal** delivery.
 
 ### ⚡ **High-Speed File Transfer (UMS)**
 Full support for **USB Mass Storage (UMS)** on SD Cards. Transfer files at ultra-high speeds directly from MacOS and Android devices.
@@ -83,6 +86,50 @@ Over **18+ customized harmonic profiles** categorized into three signature serie
 
 ### 🔥 Fire Series
 * **Nap on Beach** | **Epitome (Exclusive)** | **Sigma Delt Max** | **Fire**
+
+---
+
+
+## 💡 Why EXT4?
+
+* **Native Compatibility:** EXT4 is the native file system for the Linux Kernel and Android; every system partition on your device already uses EXT4.
+* **Lower Overhead:** Unlike exFAT, which requires an extra software layer (FUSE/Driver), EXT4 is handled directly by the kernel, reducing CPU load and electrical noise.
+* **MangoOS Support:** **Anantar Ultimate** provides full native support for EXT4 on MangoOS.
+* **SQ Improvement:** You can expect a **10-15%** improvement in sound quality, characterized by a significantly larger stage, better 3D positioning, and enhanced resolution.
+
+## 🛠 Step-by-Step: Formatting via ADB
+
+Execute these commands via **ADB Shell** (Root access required) to format your microSD card with optimized parameters for high-fidelity audio playback.
+
+### 1. Identify & Unmount Volume
+First, identify your card's ID and unmount it to prepare for formatting.
+
+#### adb command
+```
+su
+sm list-volumes public
+sm unmount public:179,1
+
+###Format SD, select Y
+mke2fs -t ext4 -b 4096 -O ^has_journal,extent,sparse_super -m 0 -L Swissbit /dev/block/vold/public:179,1
+
+sm list-volumes
+sm mount public:179,1
+
+TARGET=$(mount | grep "/dev/block/vold/public:179,1" | awk '{print $3}') && chown -R 1023:1023 $TARGET && chmod -R 775 $TARGET
+```
+
+## ⚠️ Limitations of EXT4
+
+While EXT4 offers superior audio performance, it is important to understand the compatibility constraints:
+
+* **No Direct Mounting on PC/Mac:** Windows and macOS do not natively support EXT4. You cannot simply plug your microSD card into a card reader and expect it to show up as a drive.
+* **MTP Transfer Required:** To add or manage music, you must connect your **DX340** to your computer via USB and use **MTP (Media Transfer Protocol)** mode.
+* **Software for macOS:** For Mac users, the native "Android File Transfer" can be unstable. It is highly recommended to use **"MacDroid"** for faster and more reliable file management via ADB/MTP.
+* **Android/Linux Only:** This card will only be readable by Android devices or computers running a Linux distribution.
+
+### Format back to exFat
+* Go to Setting -> Storage -> select SDcard -> top 3 dot -> format
 
 ---
 
