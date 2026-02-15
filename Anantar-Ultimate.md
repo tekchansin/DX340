@@ -6,7 +6,46 @@
 > **Compatibility & Requirements:**
 > * **Firmware Requirement:** This module supports **iBasso Firmware 1.08 or higher** only.
 > * **Module Conflict:** Before installing Anantar Ultimate, please **Disable or Remove** legacy modules: *Anantar Sound Profile, Anantar Kernel Boot, and MoonDiamond.*
+---
+Here is the comprehensive Table of Contents in Markdown format, organized logically based on the content you provided. You can paste this at the very top of your document.
 
+Markdown
+# Table of Contents
+
+- [🚀 Key Features](#-key-features)
+    - [🌐 Global USB DAC Support](#-global-usb-dac-support)
+    - [🔄 MangoOS Compatibility](#-mangoos-compatibility)
+    - [💿 Native EXT4 Support](#-native-ext4-support)
+    - [🎨 New UI & Quick Access](#-new-ui--quick-access)
+    - [🎼 Enhanced Sound Signature](#-enhanced-sound-signature)
+    - [⚡ High-Speed File Transfer (UMS)](#-high-speed-file-transfer-ums)
+    - [🧹 System Health Optimization](#-system-health-optimization)
+- [📱 Screenshots](#-screenshots)
+- [📂 MangoOS Integration](#-mangoos-integration)
+- [🎼 Audio & Kernel Profiles](#-audio--kernel-profiles)
+    - [🎧 OverSampling Modes](#-oversampling-modes)
+    - [⚙️ Kernel Boot Profiles](#-kernel-boot-profiles)
+- [💎 Harmonic Profiles Engine](#-harmonic-profiles-engine)
+    - [💧 Water Series](#-water-series)
+    - [☁️ Sky Series](#-sky-series)
+    - [🔥 Fire Series](#-fire-series)
+- [🚀 Installation Guide (Quick Start)](#-installation-guide-quick-start)
+    - [Prerequisites](#prerequisites)
+    - [Step 1: Prepare the Device](#step-1-prepare-the-device)
+    - [Step 2: Install ADB (Android Debug Bridge)](#step-2-install-adb-android-debug-bridge)
+    - [Step 3: Debloating (10-15 Minutes)](#step-3-debloating-10-15-minutes)
+    - [Step 4: Rooting](#step-4-rooting)
+    - [Step 5: Installing Magisk Modules](#step-5-installing-magisk-modules-to-improve-audio-performance)
+- [💡 Why EXT4? (Technical Deep Dive)](#-why-ext4)
+- [🛠 Step-by-Step: Formatting via ADB](#-step-by-step-formatting-via-adb)
+    - [1. Identify & Unmount Volume](#1-identify--unmount-volume)
+    - [2. Formatting Commands](#adb-command)
+- [⚠️ Limitations of EXT4](#-limitations-of-ext4)
+    - [How to Format back to exFat](#format-back-to-exfat)
+- [⚠️ Known Issues](#-known-issues)
+- [☕ Support My Work](#-support-my-work)
+    - [📥 How to Get the Module](#-how-to-get-the-module)
+- [📩 Contact & Feedback](#-contact--feedback)
 ---
 
 ## 🚀 Key Features
