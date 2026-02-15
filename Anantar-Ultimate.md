@@ -13,22 +13,10 @@ Markdown
 # Table of Contents
 
 - [🚀 Key Features](#-key-features)
-    - [🌐 Global USB DAC Support](#-global-usb-dac-support)
-    - [🔄 MangoOS Compatibility](#-mangoos-compatibility)
-    - [💿 Native EXT4 Support](#-native-ext4-support)
-    - [🎨 New UI & Quick Access](#-new-ui--quick-access)
-    - [🎼 Enhanced Sound Signature](#-enhanced-sound-signature)
-    - [⚡ High-Speed File Transfer (UMS)](#-high-speed-file-transfer-ums)
-    - [🧹 System Health Optimization](#-system-health-optimization)
 - [📱 Screenshots](#-screenshots)
 - [📂 MangoOS Integration](#-mangoos-integration)
 - [🎼 Audio & Kernel Profiles](#-audio--kernel-profiles)
-    - [🎧 OverSampling Modes](#-oversampling-modes)
-    - [⚙️ Kernel Boot Profiles](#-kernel-boot-profiles)
 - [💎 Harmonic Profiles Engine](#-harmonic-profiles-engine)
-    - [💧 Water Series](#-water-series)
-    - [☁️ Sky Series](#-sky-series)
-    - [🔥 Fire Series](#-fire-series)
 - [🚀 Installation Guide (Quick Start)](#-installation-guide-quick-start)
     - [Prerequisites](#prerequisites)
     - [Step 1: Prepare the Device](#step-1-prepare-the-device)
@@ -44,7 +32,6 @@ Markdown
     - [How to Format back to exFat](#format-back-to-exfat)
 - [⚠️ Known Issues](#-known-issues)
 - [☕ Support My Work](#-support-my-work)
-    - [📥 How to Get the Module](#-how-to-get-the-module)
 - [📩 Contact & Feedback](#-contact--feedback)
 ---
 
