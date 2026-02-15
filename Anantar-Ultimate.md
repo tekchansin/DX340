@@ -4,7 +4,7 @@
 
 > [!IMPORTANT]
 > **Compatibility & Requirements:**
-> * **Firmware Requirement:** This module supports **iBasso Firmware 1.08 or higher** only.
+> * **Firmware Requirement:** This module supports **iBasso Firmware 1.07 or higher** only.
 > * **Module Conflict:** Before installing Anantar Ultimate, please **Disable or Remove** legacy modules: *Anantar Sound Profile, Anantar Kernel Boot, and MoonDiamond.*
 ---
 
