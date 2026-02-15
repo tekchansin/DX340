@@ -1,3 +1,6 @@
+# Anantar Ultimate 
+[See detail here](./Anantar-Ultimate.md)
+
 # DX340 Rooting & Optimization Guide
 
 Welcome to the comprehensive guide for optimizing your iBasso DX340. This project introduces the **Three Pillars of Tuning**, designed to elevate your listening experience through kernel-level modifications and FPGA optimizations.
@@ -7,9 +10,9 @@ Welcome to the comprehensive guide for optimizing your iBasso DX340. This projec
 ## 📋 Table of Contents
 * [☕ Support My Work](#-support-my-work)
 * [💎 The Three Pillars of Tuning](#-the-three-pillars-of-tuning)
-* [🛠️ How to Update OTA from iBasso](#️how-to-update-ota-from-ibasso)    
-    * [Method 1: UnDebloat, Update and Debloat](#method-1-undebloat-update-and-debloat)
-    * [Method 2: ADB Sideload](#method-2-adb-sideload)
+* [🛠️ How to Update OTA from iBasso (If needed)](#️how-to-update-ota-from-ibasso)    
+    * [Method 1: ADB Sideload (Recommend)](#method-1-adb-sideload)
+    * [Method 2: UnDebloat, Update and Debloat](#method-2-undebloat-update-and-debloat)
     * [Post Upgrade](#Post-upgrade)
 * [🚀 Installation Guide (Quick Start)](#-installation-guide-quick-start)
     * [Prerequisites](#prerequisites)
@@ -126,7 +129,7 @@ If you are using Windows 11, you can follow these steps to make fastboot work:
 - Now you can run fastboot command
 
 
-### Step 3: Debloating
+### Step 3: Debloating (10-15 Minutes)
 Choose one of the following options based on your usage:
 
 * **Option 1: Basic Debloat (Recommended)**
@@ -188,20 +191,19 @@ To achieve the intended sound signature and performance, **all three modules mus
 - unzip. DX340_full_ota_xxx ( has 2 files inside, readme and DX340_full_ota_xxx.zip )
 - Use "DX340_full_ota_xxx.zip" for update
 
-
-### **Method 1: UnDebloat, Update and Debloat**
-- [UnDebload via script](#3-how-to-undebloat)
-- Open Setting -> System -> Updater -> local update
-- Select File
-- Update
-- [Debload again](#step-3-debloating)
-
-### **Method 2: ADB Sideload**
+### **Method 1: ADB Sideload**
 - Upload ota file to sdcard
 - adb reboot recovery
 - "Apply update from SD Card"
 - Select OTA file
 - update and reboot
+
+### **Method 2: UnDebloat, Update and Debloat**
+- [UnDebload via script](#3-how-to-undebloat)
+- Open Setting -> System -> Updater -> local update
+- Select File
+- Update
+- [Debload again](#step-3-debloating)
 
 
 ### **Post Upgrade**
