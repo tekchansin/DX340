@@ -90,6 +90,118 @@ Over **18+ customized harmonic profiles** categorized into three signature serie
 ---
 
 
+## 🚀 Installation Guide (Quick Start)
+
+Estimated time: **15 minutes**
+
+1. **Debloat:** Remove unnecessary system apps.
+2. **Root:** Gain administrative access (Magisk).
+3. **Install Modules:** Flash the Three Pillars via Magisk.
+4. **Enjoy:** Experience the new sound signature.
+
+### Prerequisites
+- A computer (PC or Mac) with **ADB (Android Debug Bridge)** installed.
+- A high-quality USB-C cable.
+
+### Step 1: Prepare the Device
+1. **Enable Developer Options:** Go to `Settings` > `About phone` > Tap `Build number` 7 times.
+2. **Enable USB Debugging:** Go to `Settings` > `System` > `Developer options` > Turn on `USB debugging`.
+3. **Authorize Connection:** Connect the DX340 to your PC. On the device popup, select "Always allow" and tap "Allow."
+
+### Step 2: Install ADB (Android Debug Bridge)
+
+If you do not have ADB installed, here is the simplest way to get it.
+
+#### On macOS (Recommended: Homebrew)
+
+- Open the "Terminal" app.
+- Install Homebrew (if you don't have it) by pasting this command:
+```
+/bin/bash -c "$(curl -fsSL [https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh](https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh))"
+```
+
+- Install Android Platform Tools (this includes ADB):
+```
+brew install --cask android-platform-tools
+```
+- Verify the installation by plugging in your DX340 and running adb devices.
+- adb shell
+
+#### On Windows (Recommended: Platform-Tools ZIP)
+
+- Go to the official Android developer website and download "SDK Platform-Tools for Windows":
+https://developer.android.com/studio/releases/platform-tools
+- Unzip the file to a simple location you can remember (e.g., C:\platform-tools)
+- This folder (C:\platform-tools) now contains adb.exe.
+
+CRITICAL: You must run the commands from this folder.
+
+- Open the C:\platform-tools folder in Windows File Explorer.
+- Click in the "address bar" (where it says C:\platform-tools).
+- Type cmd and press Enter.
+- This will open a Command Prompt in the correct location.
+- Verify the installation by plugging in your DX340 and running adb devices.
+- adb.exe shell
+
+##### Windows 11 to fix fastboot driver. (thanks koala13 @headfi)
+
+If you are using Windows 11, you can follow these steps to make fastboot work:
+- After you enter fastboot, open Device Manager -> Other devices then you should see device name "trinket for arm64".
+- You need to install the driver for fastboot device: Driver -> Update Driver -> Browse My Computer for Drivers -> Let me pick from a list... -> WinUsb Device -> ADB Device
+- Install the driver -> reboot DX340 -> enter fastboot again and now you can see your device in Device Manager -> Universal Serial Bus Device -> trinket for arm64
+- Now you can run fastboot command
+
+
+### Step 3: Debloating (10-15 Minutes)
+Choose one of the following options based on your usage:
+
+* **Option 1: Basic Debloat (Recommended)**
+    ```bash
+    adb shell
+    ## For Windows "Type adb.exe shell" in cmd prompt
+    curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/basic_debloat.sh | sh
+    ```
+* **Option 2: Max Debloat (Local Play Only)** *Removes Google Play, Chrome, and most background services.*
+    ```bash
+    adb shell
+    ## For Windows "Type adb.exe shell" in cmd prompt
+    curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/max_debloat.sh | sh
+    ```
+
+> [!IMPORTANT]
+> Once the script shows "Debloat Complete," you **MUST** reboot your device: `reboot`
+
+### Step 4: Rooting
+* Supports Firmware **v1.07** and later.
+* Installs the Magisk app automatically.
+* **Note:** Follow step 2 above and run CMD from Address bar (WebADB is not supported for rooting).
+
+```bash
+adb root
+adb shell 
+## For Windows "Type adb.exe shell" in cmd prompt
+curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/root.sh | sh
+```
+* DX340 will reboot and rooted.
+* Magisk is installed.
+
+
+### Step 5: Installing Magisk Modules to improve audio performance
+
+### 📦 Download Magisk Modules
+
+* Note: Unzip it, it has another zip inside. use that zip to install.
+
+### **How to Install**
+1. **Download** the ZIP files provided above.
+2. **Transfer** (Upload) the files to your DX340 internal storage.
+3. Open the **Magisk App** > Go to the **Modules** tab.
+4. Select **Install from storage** and pick each ZIP file.
+5. **Reboot** your device once all modules are installed.
+---
+
+---
+
 ## 💡 Why EXT4?
 
 * **Native Compatibility:** EXT4 is the native file system for the Linux Kernel and Android; every system partition on your device already uses EXT4.
