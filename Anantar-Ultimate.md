@@ -107,7 +107,7 @@ Over **18+ customized harmonic profiles** categorized into three signature serie
 * **TaiRai / TaiKei** | **EnON / EnONX** | **Amazakura** | **Zenbu** | **Water / Water MAX**
 
 ### ☁️ Sky Series
-* **Zen (Exclusive)** | **ZeNo** | **TenGen** | **Sky** | **Sky MAX**
+* **Maven (Exclusive)** | **Zen (Exclusive)** | **ZeNo** | **TenGen** | **Sky** | **Sky MAX**
 
 ### 🔥 Fire Series
 * **Nap on Beach** | **Epitome (Exclusive)** | **Sigma Delt Max** | **Fire**
@@ -238,10 +238,16 @@ curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/root
 
 Execute these commands via **ADB Shell** (Root access required) to format your microSD card with optimized parameters for high-fidelity audio playback.
 
-### 1. Identify & Unmount Volume
-First, identify your card's ID and unmount it to prepare for formatting.
+### 1. Insert microSD card into DX340
 
-#### adb command
+### 2. Connect DX340 to PC 
+### 3. Format microSD via DX340
+* adb shell
+```
+adb shell
+```
+
+* adb command
 ```
 su
 sm list-volumes public
@@ -287,6 +293,7 @@ However, the **Anantar Ultimate** edition is a premium version created specifica
 | :--- | :--- |
 | **PayPal** | [![PayPal](https://img.shields.io/badge/Donate-PayPal-00457C?style=flat-square&logo=paypal&logoColor=white)](https://www.paypal.me/CharnsilpChinprasert) |
 | **Bitcoin** | `0x794161ef033bd117a45f4dbeda023b5a69cc7cd5` |
+| **AliPay** | [Alipay QR](img/alipay.jpg) |
 
 ## 📥 How to Get the Module
 1. Send your donation via one of the platforms above.
