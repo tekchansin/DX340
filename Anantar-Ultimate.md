@@ -248,15 +248,19 @@ Execute these commands via **ADB Shell** (Root access required) to format your m
 adb shell
 ```
 
-* adb command
+* unmount microSD
 ```
 su
 sm list-volumes public
 sm unmount public:179,1
-
-###Format SD, select Y
+```
+* Format microSD
+This step will be confirmation promt, you need to type "y". please copy this command without new line.
+```
 mke2fs -t ext4 -b 4096 -O ^has_journal,extent,sparse_super -m 0 -L Swissbit /dev/block/vold/public:179,1
-
+```
+* Mount microSD and fix permission
+```
 sm list-volumes
 sm mount public:179,1
 
