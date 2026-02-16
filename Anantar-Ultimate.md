@@ -238,10 +238,11 @@ curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/root
 
 Execute these commands via **ADB Shell** (Root access required) to format your microSD card with optimized parameters for high-fidelity audio playback.
 
-### 1. Insert microSD card into DX340
-
-### 2. Connect DX340 to PC 
-### 3. Format microSD via DX340
+### 1. Backup your microSDcard 
+* I recommend to backup songs from microSD to localstorage, it is easy when you transfer it back after you format it.
+### 2. Insert microSD card into DX340
+### 3. Connect DX340 to PC 
+### 4. Format microSD via DX340
 * adb shell
 ```
 adb shell
