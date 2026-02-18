@@ -29,7 +29,7 @@
     - [2. Formatting Commands](#adb-command)
 - [⚠️ Limitations of EXT4](#-limitations-of-ext4)
     - [How to Format back to exFat](#format-back-to-exfat)
-- [⚠️ Modding Risks & Safety](#-modding-risks--safety)
+- [⚠️ Modding Risks & Safety](#%EF%B8%8F-modding-risks--safety)
 - [⚠️ Known Issues](#-known-issues)
 - [☕ Support My Work](#-support-my-work)
 - [📥 How to Get the Module](#-how-to-get-the-module)
