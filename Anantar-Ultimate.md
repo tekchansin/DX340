@@ -15,6 +15,7 @@
 - [📂 MangoOS Integration](#-mangoos-integration)
 - [🎼 Audio & Kernel Profiles](#-audio--kernel-profiles)
 - [💎 Harmonic Profiles Engine](#-harmonic-profiles-engine)
+- [🔋 DeepSleep Mode](#-deepsleep-mode)
 - [🚀 Installation Guide (Quick Start)](#-installation-guide-quick-start)
     - [Prerequisites](#prerequisites)
     - [Step 1: Prepare the Device](#step-1-prepare-the-device)
@@ -28,6 +29,7 @@
     - [2. Formatting Commands](#adb-command)
 - [⚠️ Limitations of EXT4](#-limitations-of-ext4)
     - [How to Format back to exFat](#format-back-to-exfat)
+- [⚠️ Modding Risks & Safety](#-modding-risks--safety)
 - [⚠️ Known Issues](#-known-issues)
 - [☕ Support My Work](#-support-my-work)
 - [📥 How to Get the Module](#-how-to-get-the-module)
@@ -56,6 +58,9 @@ Full support for **USB Mass Storage (UMS)** on SD Cards. Transfer files at ultra
 
 ### 🧹 **System Health Optimization**
 Keeps your storage clean by automatically removing empty Android junk folders on your SD Card, ensuring a lean and efficient filesystem.
+
+### 🔋 **DeepSleep Mode** 
+an automated power-management feature designed to maximize battery longevity by strictly limiting hardware activity during periods of inactivity.
 
 ---
 
@@ -113,7 +118,28 @@ Over **18+ customized harmonic profiles** categorized into three signature serie
 * **Nap on Beach** | **Epitome (Exclusive)** | **Sigma Delt Max** | **Fire**
 
 ---
+### 🔋 DeepSleep Mode
 
+The **DeepSleep Mode** is an automated power-management feature designed to maximize battery longevity by strictly limiting hardware activity during periods of inactivity.
+
+#### **Trigger Logic**
+The system will transition into DeepSleep mode if the following conditions persist for **15 minutes**:
+* **No Audio Playback:** No active media or music streams are detected.
+* **No USB Connectivity:** The device is not connected to a computer or a power source via USB.
+
+
+
+#### **System Optimizations**
+Once activated, the system enforces the following power-saving protocols:
+* **CPU Frequency Scaling:** Forces the processor to its lowest possible frequency and power state.
+* **Radio Shutdown:** Automatically disables **Wi-Fi** and **Bluetooth** to eliminate idle battery drain.
+* **Background Suspension:** Terminates or freezes all background applications and non-essential system processes.
+
+#### **Instant Resume**
+To maintain a seamless user experience, the device monitors the display status. As soon as the **screen is turned on**, the system performs an **instant state resume**. This restores all previous network connections and application states immediately, allowing for extreme power efficiency without the delay of a full reboot.
+
+
+---
 
 ## 🚀 Installation Guide (Quick Start)
 
@@ -285,6 +311,23 @@ While EXT4 offers superior audio performance, it is important to understand the 
 * **Module Deactivation after MangoOS Reboot:** When rebooting from **MangoOS back to Android**, the Magisk module may occasionally become disabled or "drop out."
     * **How to Check:** Pay attention to the **Boot Animation**. If you do not see the custom Anantar boot animation, the module has likely been disabled.
     * **Solution:** Simply go into the Magisk app and **Re-enable** the Anantar Ultimate module, then reboot once more.
+
+---
+
+### ⚠️ Modding Risks & Safety
+
+While system modification always carries a degree of responsibility, this project is designed with multiple safety nets to ensure your device remains protected.
+
+#### **Software Integrity**
+There is **virtually no risk of a permanent software brick**. iBasso provides official **Qualcomm factory images (.img)** that can be flashed via **QFIL (Qualcomm Flash Image Loader)**. 
+* **Recovery:** In the event of a boot loop or system instability, you can simply reflash the stock firmware to restore the device to its factory state.
+* **Serviceability:** Once restored to the original firmware, the device can be sent to iBasso’s official service centers for hardware support if needed.
+
+#### **Official Stance**
+It is important to note that **iBasso is fully aware of these community modifications**. They have shown a supportive and non-adversarial stance toward the modding community, recognizing the value of user-driven optimization. As long as the issues are not caused by physical hardware damage during the modding process, the software remains fully recoverable.
+
+> [!TIP]
+> Always keep a copy of the official Qualcomm image and QFIL tools on your PC before performing deep system modifications.
 
 ---
 
