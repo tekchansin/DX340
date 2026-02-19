@@ -8,7 +8,6 @@ Welcome to the comprehensive guide for optimizing your iBasso DX340. This projec
 ---
 
 ## 📋 Table of Contents
-* [☕ Support My Work](#-support-my-work)
 * [💎 The Three Pillars of Tuning](#-the-three-pillars-of-tuning)
 * [🛠️ How to Update OTA from iBasso (If needed)](#️how-to-update-ota-from-ibasso)    
     * [Method 1: ADB Sideload (Recommend)](#method-1-adb-sideload)
@@ -34,17 +33,6 @@ Welcome to the comprehensive guide for optimizing your iBasso DX340. This projec
     * [4. How to Undebloat](#4-how-to-undebloat)
 
 ---
-
----
-
-## ☕ Support My Work
-
-If you find these mods helpful and wish to support further development, consider buying me a coffee!
-
-| Platform | Donation Link / Address |
-| :--- | :--- |
-| **PayPal** | [![PayPal](https://img.shields.io/badge/Donate-PayPal-00457C?style=flat-square&logo=paypal&logoColor=white)](https://www.paypal.me/CharnsilpChinprasert) |
-| **Bitcoin** | `0x794161ef033bd117a45f4dbeda023b5a69cc7cd5` |
 
 ---
 

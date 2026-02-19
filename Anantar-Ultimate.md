@@ -31,8 +31,6 @@
     - [How to Format back to exFat](#format-back-to-exfat)
 - [⚠️ Modding Risks & Safety](#%EF%B8%8F-modding-risks--safety)
 - [⚠️ Known Issues](#-known-issues)
-- [☕ Support My Work](#-support-my-work)
-- [📥 How to Get the Module](#-how-to-get-the-module)
 - [📩 Contact & Feedback](#-contact--feedback)
 ---
 
@@ -331,24 +329,7 @@ It is important to note that **iBasso is fully aware of these community modifica
 
 ---
 
-## ☕ Support My Work
 
-I have previously released free versions of my mods, including **Anantar Sound, Anantar Kernel, and MoonDiamond**. These free modules already offer a significant sound upgrade and are available for everyone to enjoy.
-
-However, the **Anantar Ultimate** edition is a premium version created specifically for those who wish to support my ongoing research and development. This version includes **exclusive features, deeper kernel tuning, and a unified interface** that isn't available in the free versions. Your support helps me spend more time fine-tuning the DX340 to its absolute limit.
-
-| Platform | Donation Link / Address |
-| :--- | :--- |
-| **PayPal** | [![PayPal](https://img.shields.io/badge/Donate-PayPal-00457C?style=flat-square&logo=paypal&logoColor=white)](https://www.paypal.me/CharnsilpChinprasert) |
-| **Bitcoin** | `0x794161ef033bd117a45f4dbeda023b5a69cc7cd5` |
-| **AliPay** | [Alipay QR](img/alipay.jpg) |
-
-## 📥 How to Get the Module
-1. Send your donation via one of the platforms above.
-2. Please send your transaction proof to **justice.form@gmail.com**.
-3. Once confirmed, I will reply with the download link for the **Anantar Ultimate** module.
-
----
 
 ## 📩 Contact & Feedback
 For support or feedback, please send a Private Message (PM) via **Head-Fi**:
