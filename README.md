@@ -1,5 +1,5 @@
 # Introducing Anantar Ultimate 
-Upgrade to Ultimate version [See detail here](./Anantar-Ultimate.md)
+[See detail here](./Anantar-Ultimate.md)
 
 # DX340 Rooting & Optimization Guide
 
