@@ -1,5 +1,6 @@
 # Anantar Ultimate for iBasso DX340 
-### Researched and Developed tekChansin (Thailand) @headfi
+### Researched and Developed tekChansin (Thailand🇹🇭) @headfi
+
 💸 **100% FREE TO USE** — *Anantar Ultimate is a passionate community-driven project provided completely free of charge. No hidden fees, no premium tiers.*
 
 🔥 **NOW WITH 1-CLICK SEAMLESS INSTALLATION!** 🔥
@@ -35,30 +36,57 @@
 - [🛠️ Maintenance & Recovery Guide](#ibasso-dx340-maintenance--recovery-guide)
 ---
 
+## 📝 Release Notes
+
+#### **v3.2** *Latest Release*
+<details>
+
+<summary>ChangeLog</summary>
+**✨ New Features & Enhancements:**
+* **New "Velvet" Profile:** Introducing the new Harmonic Profile specifically tuned for the **AMP18** module, delivering a highly musical, lush, and engaging sound signature.
+* **MangoOS DeepSleep:** Successfully integrated the automated **DeepSleep Mode** natively into MangoOS to maximize battery longevity during inactivity.
+* **Auto "Sensors Off":** The system now automatically enables the "Sensors Off" feature by default to minimize background noise, reduce CPU interrupts, and lower system overhead.
+
+**🐛 Bug Fixes:**
+* **NOS Mode Seamless Playback:** Resolved the micro-pause/stutter issue that occurred in NOS (Non-OverSampling) mode when transitioning between different bit depths (16/24/32-bit) and DSD formats.
+</details>
+
+
+#### **v3.1**
+<details>
+
+<summary>ChangeLog</summary>
+
+
+**🐛 Bug Fixes:**
+* **Bluetooth Connectivity:** Fixed a critical bug where Bluetooth was not initializing or functioning properly.
+* **Quick Settings Layout:** Resolved an issue that caused the Quick Settings Tile positions to reset to their default layout after every system reboot.
+</details>
+
 ## 🚀 Key Features
 
-### 🌐 **Global USB DAC Support**
+#### 🌐 **Global USB DAC Support**
 Enjoy high-fidelity USB DAC functionality across the entire Android system. No longer restricted to MangoPlayer—use **Tidal, Apple Music, or Spotify** with full optimization.
 
-### 🔄 **MangoOS Compatibility**
+#### 🔄 **MangoOS Compatibility**
 Experience Anantar optimizations even in MangoOS. Configure your profiles in Android, and the settings will **persist even after booting into MangoOS**.
 
-### 💿 **Native EXT4 Support**
+#### 💿 **Native EXT4 Support**
 Unlock maximum audio potential with **Native EXT4 File System** support. By eliminating the exFAT translation layer, it reduces CPU overhead and jitter, resulting in a **10-15% improvement** in soundstage depth and micro-detail resolution.
 
-### 🎨 **New UI & Quick Access**
+#### 🎨 **New UI & Quick Access**
 A completely refreshed interface with dedicated **Quick Settings Tiles** on the status bar for instant, on-the-fly control of your audio profiles.
 
-### 🎼 **Enhanced Sound Signature**
+#### 🎼 **Enhanced Sound Signature**
 Advanced tuning for improved **3D Large SoundStage**, **Clarity**, superior **Instrument Separation**, and a more natural, **Warm Vocal** delivery.
 
-### ⚡ **High-Speed File Transfer (UMS)**
+#### ⚡ **High-Speed File Transfer (UMS)**
 Full support for **USB Mass Storage (UMS)** on SD Cards. Transfer files at ultra-high speeds directly from MacOS and Android devices.
 
-### 🧹 **System Health Optimization**
+#### 🧹 **System Health Optimization**
 Keeps your storage clean by automatically removing empty Android junk folders on your SD Card, ensuring a lean and efficient filesystem.
 
-### 🔋 **DeepSleep Mode** 
+#### 🔋 **DeepSleep Mode** 
 an automated power-management feature designed to maximize battery longevity by strictly limiting hardware activity during periods of inactivity.
 
 ---
@@ -147,10 +175,10 @@ Over **18+ customized harmonic profiles** categorized into three signature serie
 * **TaiRai / TaiKei** | **EnON / EnONX** | **Amazakura** | **Zenbu** | **Water / Water MAX**
 
 ### ☁️ Sky Series
-* **Maven (Exclusive)** | **Zen (Exclusive)** | **ZeNo** | **TenGen** | **Sky** | **Sky MAX**
+* **Velvet** | **Maven** | **Zen** | **ZeNo** | **TenGen** | **Sky** | **Sky MAX**
 
 ### 🔥 Fire Series
-* **Nap on Beach** | **Epitome (Exclusive)** | **Sigma Delt Max** | **Fire**
+* **Nap on Beach** | **Epitome** | **Sigma Delt Max** | **Fire**
 
 ---
 ### 🔋 DeepSleep Mode
@@ -218,11 +246,12 @@ TARGET=$(mount | grep "/dev/block/vold/public:179,1" | awk '{print $3}') && chow
 ## ⚠️ Limitations of EXT4
 
 While EXT4 offers superior audio performance, it is important to understand the compatibility constraints:
-
+<details>
 * **No Direct Mounting on PC/Mac:** Windows and macOS do not natively support EXT4. You cannot simply plug your microSD card into a card reader and expect it to show up as a drive.
 * **MTP Transfer Required:** To add or manage music, you must connect your **DX340** to your computer via USB and use **MTP (Media Transfer Protocol)** mode.
 * **Software for macOS:** For Mac users, the native "Android File Transfer" can be unstable. It is highly recommended to use **"MacDroid"** for faster and more reliable file management via ADB/MTP.
 * **Android/Linux Only:** This card will only be readable by Android devices or computers running a Linux distribution.
+</details>
 
 ### Format back to exFat
 * Go to Setting -> Storage -> select SDcard -> top 3 dot -> format
@@ -264,6 +293,7 @@ For support or feedback, please send an email or a Private Message (PM) via **He
 
 ---
 
+
 # Manual Installation (For Power Users)
 
 If you prefer to run the commands yourself, follow these steps:
@@ -271,6 +301,7 @@ If you prefer to run the commands yourself, follow these steps:
 #### **Step 1: Install ADB (Android Debug Bridge)**
 
 If you do not have ADB installed, here is the simplest way to get it.
+<details>
 
 #### On macOS (Recommended: Homebrew)
 
@@ -310,7 +341,7 @@ If you are using Windows 11, you can follow these steps to make fastboot work:
 - You need to install the driver for fastboot device: Driver -> Update Driver -> Browse My Computer for Drivers -> Let me pick from a list... -> WinUsb Device -> ADB Device
 - Install the driver -> reboot DX340 -> enter fastboot again and now you can see your device in Device Manager -> Universal Serial Bus Device -> trinket for arm64
 - Now you can run fastboot command
-
+</details>
 
 ### Step 2: Debloating (10-15 Minutes)
 Choose one of the following options based on your usage:
@@ -390,6 +421,7 @@ If your device is stuck in a boot loop or failing to boot:
 
 ## 3. How to Recover (Hard Brick)
 The iBasso DX340 uses a Qualcomm SoC, which allows you to flash the entire firmware via **QFIL (Qualcomm Flash Image Loader)**.
+<details>
 
 > [!IMPORTANT]  
 > View the full documentation [here](https://drive.google.com/file/d/15Fzf8U1YbBecVIcsOP35qu2iupTHoZQq/view) (Special thanks to **@mattClarke18**).
@@ -424,7 +456,7 @@ The iBasso DX340 uses a Qualcomm SoC, which allows you to flash the entire firmw
 2. Click **"Download"** and wait (approx. 5-10 minutes) until the progress bar completes.
 3. **Troubleshooting:** This process has a variable success rate. If it fails, unplug the USB cable, restart QFIL, and try again. You can repeat this process until it completes successfully.
 4. Reboot the device.
-
+</details>
 
 ## 4. How to Undebloat
 ```bash
