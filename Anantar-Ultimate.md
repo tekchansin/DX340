@@ -1,4 +1,6 @@
-# Anantar Ultimate for iBasso DX340
+# Anantar Ultimate for iBasso DX340 
+### Researched and Developed tekChansin (Thailand) @headfi
+💸 **100% FREE TO USE** — *Anantar Ultimate is a passionate community-driven project provided completely free of charge. No hidden fees, no premium tiers.*
 
 🔥 **NOW WITH 1-CLICK SEAMLESS INSTALLATION!** 🔥
 > **Experience the ultimate sound without the hassle.** We have developed a dedicated automated installer program. Installing Anantar Ultimate has never been easier—just download, click once, and let our script automatically handle everything from Debloating, Rooting, to Module Installation in under 10 minutes!
@@ -166,10 +168,6 @@ Once activated, the system enforces the following power-saving protocols:
 
 #### **Instant Resume**
 To maintain a seamless user experience, the device monitors the display status. As soon as the **screen is turned on**, the system performs an **instant state resume**. This restores all previous network connections and application states immediately, allowing for extreme power efficiency without the delay of a full reboot.
-
-
-
-
 
 ---
 
