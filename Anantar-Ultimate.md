@@ -32,6 +32,11 @@
 - [⚠️ Known Issues](#-known-issues)
 - [📩 Contact & Feedback](#-contact--feedback)
  - [Manual Installation (For Power Users)](#manual-installation-for-power-users)
+- [🛠️ Maintenance & Recovery Guide](#️-maintenance--recovery-guide)
+    - [1. How to Unroot](#1-how-to-unroot)
+    - [2. How to Recover (Soft Brick)](#2-how-to-recover-soft-brick)
+    - [3. How to Recover (Hard Brick)](#3-how-to-recover-hard-brick)
+    - [4. How to Undebloat](#4-how-to-undebloat) 
 ---
 
 ## 🚀 Key Features
@@ -71,7 +76,7 @@ an automated power-management feature designed to maximize battery longevity by 
 
 ---
 
-## 🚀 Installation Guide (Quick Start)
+# 🚀 Installation Guide (Quick Start)
 
 ### Prerequisites
 - A computer (PC or Mac) with **ADB (Android Debug Bridge)** installed.
@@ -115,7 +120,7 @@ Anantar Ultimate is designed to influence the system at a low level, allowing it
 
 ---
 
-## 🎼 Audio & Kernel Profiles
+# 🎼 Audio & Kernel Profiles
 
 ### 🎧 OverSampling Modes
 Select your preferred digital-to-analog processing style:
@@ -131,7 +136,7 @@ Control system processing and power delivery at the core:
 
 ---
 
-## 💎 Harmonic Profiles Engine
+# 💎 Harmonic Profiles Engine
 Over **18+ customized harmonic profiles** categorized into three signature series:
 
 | Harmonic Menu | Water Series | Sky Series | Fire Series |
@@ -252,8 +257,10 @@ It is important to note that **iBasso is fully aware of these community modifica
 
 
 ## 📩 Contact & Feedback
-For support or feedback, please send a Private Message (PM) via **Head-Fi**:
+For support or feedback, please send an email or a Private Message (PM) via **Head-Fi**:
+* **Email:** [Email](mailto:justice.form@gmail.com)
 * **Profile:** [tekchansin on Head-Fi](https://www.head-fi.org/members/tekchansin.500217/)
+
 
 
 ---
@@ -353,3 +360,76 @@ curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/root
 4. Select **Install from storage** and pick each ZIP file.
 5. **Reboot** your device once all modules are installed.
 ---
+
+
+# iBasso DX340 Maintenance & Recovery Guide
+
+This guide provides instructions for unrooting and recovering the iBasso DX340 from soft-brick or hard-brick states.
+
+---
+
+## 1. How to Unroot
+1. Open the **Magisk** app.
+2. Select **"Uninstall Magisk"** (the red button located on the Home tab).
+3. The DX340 will automatically reboot and the device will be unrooted.
+4. Uninstall the **Magisk** app from your device.
+5. **Note:** If you plan to send your device to iBasso for service, it is highly recommended to perform a **Factory Reset** after unrooting.
+
+---
+
+## 2. How to Recover (Soft Brick)
+If your device is stuck in a boot loop or failing to boot:
+1. Turn the DX340 **OFF**.
+2. Press and hold the **Bottom Side Button** (the last button) and the **Power Button** simultaneously.
+3. When the iBasso logo appears, **release the Power Button** but continue holding the **Bottom Side Button**.
+4. A screen with white text on a black background will appear.
+5. Use the side buttons to navigate and select **"Recovery Mode"**, then press the **Power Button** to confirm.
+6. Once in Recovery Mode, select **"Wipe data/factory reset"** > **"Factory data reset"**.
+7. Select **"Reboot system now"** once the process is complete.
+
+---
+
+## 3. How to Recover (Hard Brick)
+The iBasso DX340 uses a Qualcomm SoC, which allows you to flash the entire firmware via **QFIL (Qualcomm Flash Image Loader)**.
+
+> [!IMPORTANT]  
+> View the full documentation [here](https://drive.google.com/file/d/15Fzf8U1YbBecVIcsOP35qu2iupTHoZQq/view) (Special thanks to **@mattClarke18**).
+
+### Preparation
+* **System:** Windows PC (or macOS via VirtualBox/Parallels).
+* **Hardware:** High-quality USB-C cable.
+* **Drivers:** [Qualcomm USB Driver v1.0.10065.1](https://drive.google.com/drive/folders/1qrl4OfUJKiOsnOVH4_5GGncfFPdYWIvY?usp=sharing)
+* **Software:** [QPST/QFIL Tool](https://drive.google.com/drive/folders/1qrl4OfUJKiOsnOVH4_5GGncfFPdYWIvY?usp=sharing)
+* **Firmware:** [iBasso DX340 Full Firmware 1.07](https://drive.google.com/drive/folders/1qrl4OfUJKiOsnOVH4_5GGncfFPdYWIvY?usp=sharing) (`DX340_20251227_1.07.726_256G_img.zip`)
+
+### Steps to Flash
+1. Extract the firmware zip file.
+2. Launch QFIL located at: `C:\Program Files (x86)\Qualcomm\QPST\bin\Qfil.exe`
+
+#### QFIL Configuration
+* **Select Port:** Ensure the device is detected as **"Qualcomm HS-USB QDLoader 9008"**.
+* **Select Build Type:** Select **Flat Build**.
+* **Select Programmer:** Click **"Browse"**, navigate to the firmware folder, and select the `prog_xxx.elf` file.
+* **Load XML:** Click **"Load XML"**, navigate to the firmware folder, and select all available **rawprogram** and **patch** XML files.
+
+#### Format All Partitions
+1. Go to **Tools** > **Partition Manager**.
+2. Right-click on any row in the list.
+3. Select **"Erase Entire Flash"**.
+4. When prompted "Would you like to erase entire flash?", select **Yes**.
+5. When prompted "Would you like to erase GPT?", select **Yes**.
+6. Click **OK** and return to the QFIL main screen.
+
+#### Flash Firmware
+1. Once the partitions are formatted and XML files are loaded, the **"Download"** button will be active.
+2. Click **"Download"** and wait (approx. 5-10 minutes) until the progress bar completes.
+3. **Troubleshooting:** This process has a variable success rate. If it fails, unplug the USB cable, restart QFIL, and try again. You can repeat this process until it completes successfully.
+4. Reboot the device.
+
+
+## 4. How to Undebloat
+```bash
+adb shell
+## For Windows "Type adb.exe shell" in cmd prompt
+curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/undebloat.sh | sh
+```
