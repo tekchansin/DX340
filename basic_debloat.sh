@@ -82,7 +82,7 @@ com.google.android.onetimeinitializer
 com.google.android.printservice.recommendation
 com.google.android.syncadapters.calendar
 com.ibasso.caputurelog
-com.ibasso.updater
+
 com.qti.dcf
 com.qti.dpmserviceapp
 com.qti.qcc
@@ -112,7 +112,7 @@ com.google.android.contactkeys
 com.google.android.safetycore
 com.android.providers.contacts
 "
-
+#com.ibasso.updater
 #com.android.launcher3
 
 # 4. Loop and Uninstall
@@ -150,40 +150,40 @@ rm simplekeyboard.apk
 
 settings put secure default_input_method rkr.simplekeyboard.inputmethod/.latin.LatinIME
 
-settings put global activity_starts_logging_enabled 0
-settings put global bug_report 0    
-settings put global multi_cb 0   
-settings put secure send_action_app_error 0  
-settings put system send_security_reports 0   
-settings put secure location_mode 0
-settings put secure notification_bubbles 0
-settings put global animator_duration_scale 0.5
-settings put global transition_animation_scale 0.5
-settings put global window_animation_scale 0.5
-settings put secure ui_night_mode 2 
+# settings put global activity_starts_logging_enabled 0
+# settings put global bug_report 0    
+# settings put global multi_cb 0   
+# settings put secure send_action_app_error 0  
+# settings put system send_security_reports 0   
+# settings put secure location_mode 0
+# settings put secure notification_bubbles 0
+# settings put global animator_duration_scale 0.5
+# settings put global transition_animation_scale 0.5
+# settings put global window_animation_scale 0.5
+# settings put secure ui_night_mode 2 
 
-settings put global wifi_scan_throttling_enabled 0
-settings put global wifi_networks_available_notification_on 0
-settings put global mobile_data_always_on 0
+# settings put global wifi_scan_throttling_enabled 0
+# settings put global wifi_networks_available_notification_on 0
+# settings put global mobile_data_always_on 0
 
-settings put global cell_on 0
-settings put global cdma_cell_broadcast_sms 0
-settings put global auto_wifi 0
+# settings put global cell_on 0
+# settings put global cdma_cell_broadcast_sms 0
+# settings put global auto_wifi 0
 
-settings put global heads_up_notifications_enabled 0
-settings put global auto_time 1
-settings put global auto_time_zone 1
-settings put global usb_configuration_sticky mtp,adb
-settings put system system_capabilities_usb_default_config mtp,adb
-settings put global device_idle_constants \
-"inactive_to=600000,\
-idle_after_inactive_to=600000,\
-light_after_inactive_to=300000,\
-light_idle_to=300000,\
-quick_doze_delay_to=60000"
+# settings put global heads_up_notifications_enabled 0
+# settings put global auto_time 1
+# settings put global auto_time_zone 1
+# settings put global usb_configuration_sticky mtp,adb
+# settings put system system_capabilities_usb_default_config mtp,adb
+# settings put global device_idle_constants \
+# "inactive_to=600000,\
+# idle_after_inactive_to=600000,\
+# light_after_inactive_to=300000,\
+# light_idle_to=300000,\
+# quick_doze_delay_to=60000"
 
-resetprop persist.vendor.usb.config mtp,adb
-resetprop persist.sys.usb.config mtp,adb
+# resetprop persist.vendor.usb.config mtp,adb
+# resetprop persist.sys.usb.config mtp,adb
 
 # echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 # echo "This process takes 15-30 minutes to complete."
@@ -192,13 +192,13 @@ resetprop persist.sys.usb.config mtp,adb
 # pm compile -a --check-prof false -m everything
 # pm compile -a --check-prof false --compile-layouts
 # pm bg-dexopt-job
-for pkg in $(pm list packages -e | cut -d: -f2); do
-    echo "Processing Active App: $pkg"
-    # Compile Code
-    pm compile -m everything --check-prof false $pkg
-    # Compile UI Layouts
-    pm compile --compile-layouts $pkg
-done
+# for pkg in $(pm list packages -e | cut -d: -f2); do
+#     echo "Processing Active App: $pkg"
+#     # Compile Code
+#     pm compile -m everything --check-prof false $pkg
+#     # Compile UI Layouts
+#     pm compile --compile-layouts $pkg
+# done
 # echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
 # echo "Some package could not be re-compiled. That's normal."
 # echo "!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!"
@@ -211,8 +211,8 @@ ime enable rkr.simplekeyboard.inputmethod/.latin.LatinIME
 ime set rkr.simplekeyboard.inputmethod/.latin.LatinIME
 
 echo "--- Permanent Debloat Complete ---"
-echo "Rebooting your device NOW"
-reboot
+# echo "Rebooting your device NOW"
+# reboot
 
 
 
