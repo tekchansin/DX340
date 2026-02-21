@@ -6,6 +6,8 @@
 🔥 **NOW WITH 1-CLICK SEAMLESS INSTALLATION!** 🔥
 > **Experience the ultimate sound without the hassle.** We have developed a dedicated automated installer program. Installing Anantar Ultimate has never been easier—just download, click once, and let our script automatically handle everything from Debloating, Rooting, to Module Installation in under 10 minutes!
 
+> **Automatic uninstall other mods via ADB remount (Stouthart or SealPoint) without data loss**
+
 **Anantar Ultimate** is a complete, fresh re-rework built upon the foundations of the original Anantar projects. This version consolidates and improves upon the legacy modules (**Anantar Sound, Anantar Kernel, and MoonDiamond**) into a single, high-performance "Ultimate" edition for a streamlined and superior experience.
 
 > [!IMPORTANT]
@@ -116,6 +118,10 @@ an automated power-management feature designed to maximize battery longevity by 
  <img src="img/installer.png" width="600">
 
 This is the fully automated, 1-click method. The script handles ADB checks, debloating, rooting, and module installation automatically.
+
+> **Automatic uninstall other mods via ADB remount (Stouthart or SealPoint) without data loss**
+
+> **This Installation script can re-run without problem**
 
 ## Download Link: [Anantar-Ultimate-Installer](https://tekfile.s3-bkk.nipa.cloud/anantar-ultimate/Anantar-Ultimate-Installer.zip)
 
