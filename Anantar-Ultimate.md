@@ -117,7 +117,9 @@ Anantar Ultimate is designed to influence the system at a low level, allowing it
 
 ---
 
-# 🎼 Audio & Kernel Profiles
+# 🎼 Audio & Kernel Profiles 
+
+ <img src="img/OverSampling.png" width="200">
 
 ### 🎧 OverSampling Modes
 Select your preferred digital-to-analog processing style:
