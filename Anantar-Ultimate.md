@@ -32,11 +32,7 @@
 - [⚠️ Known Issues](#-known-issues)
 - [📩 Contact & Feedback](#-contact--feedback)
  - [Manual Installation (For Power Users)](#manual-installation-for-power-users)
-- [🛠️ Maintenance & Recovery Guide](#️-maintenance--recovery-guide)
-    - [1. How to Unroot](#1-how-to-unroot)
-    - [2. How to Recover (Soft Brick)](#2-how-to-recover-soft-brick)
-    - [3. How to Recover (Hard Brick)](#3-how-to-recover-hard-brick)
-    - [4. How to Undebloat](#4-how-to-undebloat) 
+- [🛠️ Maintenance & Recovery Guide](#ibasso-dx340-maintenance--recovery-guide)
 ---
 
 ## 🚀 Key Features
@@ -98,12 +94,13 @@ This is the fully automated, 1-click method. The script handles ADB checks, debl
 1. **Download & Extract:** Download and extract the ZIP file to a folder on your computer.
 2. **Connect Device:** Connect your DX340 to your computer via a USB cable. 
    *(Note: If prompted on your DX340 screen, check "Always allow from this computer" and tap **Allow**).*
-3. **Run the Installer:** Open the extracted folder and double-click the script for your operating system:
+3. **Connect Wifi:** Keep Wifi connected during the installation process.
+4. **Run the Installer:** Open the extracted folder and double-click the script for your operating system:
    * **Windows:** Double-click `Windows-Anantar-Ultimate-Installer.bat`
    * **macOS / Linux:** Double-click `MacOS-Anantar-Ultimate-Installer.command`
      *(macOS Tip: If it fails to run, open Terminal, type `chmod +x `, drag the `.command` file into the Terminal, press Enter, then try double-clicking again).*
-4. **Follow On-Screen Prompts:** The script will automatically open the Magisk app on your DX340 during the process. If Magisk prompts you for **"Additional Setup"**, simply tap **"OK"**. The script will wait patiently if the device reboots.
-5. **Done!** Once you see the **ANANTAR ULTIMATE** ASCII logo in the terminal window, the installation is complete and your device will reboot automatically.
+5. **Follow On-Screen Prompts:** The script will automatically open the Magisk app on your DX340 during the process. If Magisk prompts you for **"Additional Setup"**, simply tap **"OK"**. The script will wait patiently if the device reboots.
+6. **Done!** Once you see the **ANANTAR ULTIMATE** ASCII logo in the terminal window, the installation is complete and your device will reboot automatically.
 
 
 
@@ -265,7 +262,7 @@ For support or feedback, please send an email or a Private Message (PM) via **He
 
 ---
 
-### Manual Installation (For Power Users)
+# Manual Installation (For Power Users)
 
 If you prefer to run the commands yourself, follow these steps:
 
