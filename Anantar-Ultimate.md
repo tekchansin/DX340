@@ -15,11 +15,11 @@
 
 - [🚀 Key Features](#-key-features)
 - [📱 Screenshots](#-screenshots)
+- [⚡ Seamless Installation Anantar Ultimate (10Mins - Supereasy)](#seamless-installation-anantar-ultimate-10mins---recommended)
 - [📂 MangoOS Integration](#-mangoos-integration)
 - [🎼 Audio & Kernel Profiles](#-audio--kernel-profiles)
 - [💎 Harmonic Profiles Engine](#-harmonic-profiles-engine)
 - [🔋 DeepSleep Mode](#-deepsleep-mode)
-- [⚡ Seamless Installation Anantar Ultimate (10Mins - Recommended)](#seamless-installation-anantar-ultimate-10mins---recommended)
 - [💡 Why EXT4? (Technical Deep Dive)](#-why-ext4)
 - [🛠 Step-by-Step: Formatting via ADB](#-step-by-step-formatting-via-adb)
     - [1. Identify & Unmount Volume](#1-identify--unmount-volume)
@@ -82,9 +82,13 @@ an automated power-management feature designed to maximize battery longevity by 
 
 ### Seamless Installation Anantar Ultimate (10Mins - Recommended)
 
+ <img src="img/installer.png" width="400">
+
 This is the fully automated, 1-click method. The script handles ADB checks, debloating, rooting, and module installation automatically.
 
-1. **Download & Extract:** Download the **[Anantar-Ultimate-Installer](blob:https://github.com/9985462f-4ab9-4a8f-882a-33f6c731e398)** and extract the ZIP file to a folder on your computer.
+## Download Link: [Anantar-Ultimate-Installer](https://tekfile.s3-bkk.nipa.cloud/anantar-ultimate/Anantar-Ultimate-Installer.zip)
+
+1. **Download & Extract:** Download and extract the ZIP file to a folder on your computer.
 2. **Connect Device:** Connect your DX340 to your computer via a USB cable. 
    *(Note: If prompted on your DX340 screen, check "Always allow from this computer" and tap **Allow**).*
 3. **Run the Installer:** Open the extracted folder and double-click the script for your operating system:
