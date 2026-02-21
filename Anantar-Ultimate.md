@@ -82,9 +82,9 @@ an automated power-management feature designed to maximize battery longevity by 
 2. **Enable USB Debugging:** Go to `Settings` > `System` > `Developer options` > Turn on `USB debugging`.
 3. **Authorize Connection:** Connect the DX340 to your PC. On the device popup, select "Always allow" and tap "Allow."
 
-### Seamless Installation Anantar Ultimate (10Mins - Recommended)
+## Seamless Installation Anantar Ultimate (10Mins - Recommended)
 
- <img src="img/installer.png" width="400">
+ <img src="img/installer.png" width="600">
 
 This is the fully automated, 1-click method. The script handles ADB checks, debloating, rooting, and module installation automatically.
 
