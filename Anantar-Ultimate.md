@@ -1,10 +1,13 @@
 # Anantar Ultimate for iBasso DX340
 
+🔥 **NOW WITH 1-CLICK SEAMLESS INSTALLATION!** 🔥
+> **Experience the ultimate sound without the hassle.** We have developed a dedicated automated installer program. Installing Anantar Ultimate has never been easier—just download, click once, and let our script automatically handle everything from Debloating, Rooting, to Module Installation in under 10 minutes!
+
 **Anantar Ultimate** is a complete, fresh re-rework built upon the foundations of the original Anantar projects. This version consolidates and improves upon the legacy modules (**Anantar Sound, Anantar Kernel, and MoonDiamond**) into a single, high-performance "Ultimate" edition for a streamlined and superior experience.
 
 > [!IMPORTANT]
 > **Compatibility & Requirements:**
-> * **Firmware Requirement:** This module supports **iBasso Firmware 1.07 or higher** only.
+> * **Firmware Requirement:** This module supports **iBasso Firmware 1.08 or higher** only.
 > * **Module Conflict:** Before installing Anantar Ultimate, please **Disable or Remove** legacy modules: *Anantar Sound Profile, Anantar Kernel Boot, and MoonDiamond.*
 ---
 
@@ -16,13 +19,9 @@
 - [🎼 Audio & Kernel Profiles](#-audio--kernel-profiles)
 - [💎 Harmonic Profiles Engine](#-harmonic-profiles-engine)
 - [🔋 DeepSleep Mode](#-deepsleep-mode)
-- [🚀 Installation Guide (Quick Start)](#-installation-guide-quick-start)
-    - [Prerequisites](#prerequisites)
-    - [Step 1: Prepare the Device](#step-1-prepare-the-device)
-    - [Step 2: Install ADB (Android Debug Bridge)](#step-2-install-adb-android-debug-bridge)
-    - [Step 3: Debloating (10-15 Minutes)](#step-3-debloating-10-15-minutes)
-    - [Step 4: Rooting](#step-4-rooting)
-    - [Step 5: Installing Magisk Modules](#step-5-installing-magisk-modules-to-improve-audio-performance)
+- [⚡ Installation Guide](#-installation-guide)
+    - [Option A: Seamless Installation Anantar Ultimate (10Mins - Recommended)](#option-a-seamless-installation-anantar-ultimate-10mins---recommended)
+    - [Option B: Manual Installation (For Power Users)](#option-b-manual-installation-for-power-users)
 - [💡 Why EXT4? (Technical Deep Dive)](#-why-ext4)
 - [🛠 Step-by-Step: Formatting via ADB](#-step-by-step-formatting-via-adb)
     - [1. Identify & Unmount Volume](#1-identify--unmount-volume)
@@ -152,12 +151,37 @@ Estimated time: **15 minutes**
 - A computer (PC or Mac) with **ADB (Android Debug Bridge)** installed.
 - A high-quality USB-C cable.
 
-### Step 1: Prepare the Device
+### Step 0: Prepare the Device
 1. **Enable Developer Options:** Go to `Settings` > `About phone` > Tap `Build number` 7 times.
 2. **Enable USB Debugging:** Go to `Settings` > `System` > `Developer options` > Turn on `USB debugging`.
 3. **Authorize Connection:** Connect the DX340 to your PC. On the device popup, select "Always allow" and tap "Allow."
 
-### Step 2: Install ADB (Android Debug Bridge)
+### Option A: Seamless Installation Anantar Ultimate (10Mins - Recommended)
+
+This is the fully automated, 1-click method. The script handles ADB checks, debloating, rooting, and module installation automatically.
+#### **For Windows Users:**
+1. Download **[Anantar-Ultimate-Installer](/seamless-installation/Anantar-Ultimate-Installer.zip)** 
+2. **Extract/Unzip** the downloaded file to a folder on your computer.
+3. Connect your DX340 to your PC via a USB cable.
+4. Open the extracted folder and double-click the **`Windows-Anantar-Ultimate-Installer.bat`** file.
+5. *Note:* If a prompt appears on your DX340 screen asking to "Allow USB debugging", check "Always allow from this computer" and tap **Allow**.
+6. The script will open Magisk automatically during the process. If it prompts you for **"Additional Setup"**, simply tap **"OK"**. The script will wait patiently if the device needs to reboot.
+7. Once you see the **ANANTAR ULTIMATE** ASCII logo, the installation is complete and your device will reboot automatically.
+
+#### **For macOS / Linux Users:**
+1. Download **[Anantar-Ultimate-Installer](/seamless-installation/Anantar-Ultimate-Installer.zip)** 
+2. **Extract/Unzip** the downloaded file to a folder on your computer.
+3. Connect your DX340 to your Mac/Linux via a USB cable.
+4. Open the extracted folder and double-click the **`MacOS-Anantar-Ultimate-Installer.command`** file.
+   * *(If macOS prevents it from running, open Terminal, type `chmod +x `, drag the file into Terminal, press Enter, and try double-clicking again).*
+5. The script will open Magisk automatically. Tap **"OK"** if prompted for **"Additional Setup"**.
+6. Wait for the success logo and automatic reboot.
+
+### Option B: Manual Installation (For Power Users)
+
+If you prefer to run the commands yourself, follow these steps:
+
+#### **Step 1: Install ADB (Android Debug Bridge)**
 
 If you do not have ADB installed, here is the simplest way to get it.
 
@@ -201,7 +225,7 @@ If you are using Windows 11, you can follow these steps to make fastboot work:
 - Now you can run fastboot command
 
 
-### Step 3: Debloating (10-15 Minutes)
+### Step 2: Debloating (10-15 Minutes)
 Choose one of the following options based on your usage:
 
 * **Option 1: Basic Debloat (Recommended)**
@@ -220,7 +244,7 @@ Choose one of the following options based on your usage:
 > [!IMPORTANT]
 > Once the script shows "Debloat Complete," you **MUST** reboot your device: `reboot`
 
-### Step 4: Rooting
+### Step 3: Rooting
 * Supports Firmware **v1.07** and later.
 * Installs the Magisk app automatically.
 * **Note:** Follow step 2 above and run CMD from Address bar (WebADB is not supported for rooting).
@@ -235,7 +259,7 @@ curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/root
 * Magisk is installed.
 
 
-### Step 5: Installing Magisk Modules to improve audio performance
+### Step 4: Installing Magisk Modules to improve audio performance
 
 ### 📦 Download Magisk Modules
 
