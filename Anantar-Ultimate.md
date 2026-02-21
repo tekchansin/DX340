@@ -19,9 +19,7 @@
 - [🎼 Audio & Kernel Profiles](#-audio--kernel-profiles)
 - [💎 Harmonic Profiles Engine](#-harmonic-profiles-engine)
 - [🔋 DeepSleep Mode](#-deepsleep-mode)
-- [⚡ Installation Guide](#-installation-guide)
-    - [Option A: Seamless Installation Anantar Ultimate (10Mins - Recommended)](#option-a-seamless-installation-anantar-ultimate-10mins---recommended)
-    - [Option B: Manual Installation (For Power Users)](#option-b-manual-installation-for-power-users)
+- [⚡ Seamless Installation Anantar Ultimate (10Mins - Recommended)](#seamless-installation-anantar-ultimate-10mins---recommended)
 - [💡 Why EXT4? (Technical Deep Dive)](#-why-ext4)
 - [🛠 Step-by-Step: Formatting via ADB](#-step-by-step-formatting-via-adb)
     - [1. Identify & Unmount Volume](#1-identify--unmount-volume)
@@ -31,6 +29,7 @@
 - [⚠️ Modding Risks & Safety](#%EF%B8%8F-modding-risks--safety)
 - [⚠️ Known Issues](#-known-issues)
 - [📩 Contact & Feedback](#-contact--feedback)
+ - [Manual Installation (For Power Users)](#manual-installation-for-power-users)
 ---
 
 ## 🚀 Key Features
@@ -66,6 +65,35 @@ an automated power-management feature designed to maximize battery longevity by 
 | Quick Settings | Boot Profiles | OverSampling | USB DAC Support |
 | :---: | :---: | :---: | :---: |
 | <img src="img/Tile.png" width="200"> | <img src="img/Boot.png" width="200"> | <img src="img/OverSampling.png" width="200"> | <img src="img/USBDAC.png" width="200"> |
+
+
+---
+
+## 🚀 Installation Guide (Quick Start)
+
+### Prerequisites
+- A computer (PC or Mac) with **ADB (Android Debug Bridge)** installed.
+- A high-quality USB-C cable.
+
+### Step 0: Prepare the Device
+1. **Enable Developer Options:** Go to `Settings` > `About phone` > Tap `Build number` 7 times.
+2. **Enable USB Debugging:** Go to `Settings` > `System` > `Developer options` > Turn on `USB debugging`.
+3. **Authorize Connection:** Connect the DX340 to your PC. On the device popup, select "Always allow" and tap "Allow."
+
+### Seamless Installation Anantar Ultimate (10Mins - Recommended)
+
+This is the fully automated, 1-click method. The script handles ADB checks, debloating, rooting, and module installation automatically.
+
+1. **Download & Extract:** Download the **[Anantar-Ultimate-Installer](blob:https://github.com/9985462f-4ab9-4a8f-882a-33f6c731e398)** and extract the ZIP file to a folder on your computer.
+2. **Connect Device:** Connect your DX340 to your computer via a USB cable. 
+   *(Note: If prompted on your DX340 screen, check "Always allow from this computer" and tap **Allow**).*
+3. **Run the Installer:** Open the extracted folder and double-click the script for your operating system:
+   * **Windows:** Double-click `Windows-Anantar-Ultimate-Installer.bat`
+   * **macOS / Linux:** Double-click `MacOS-Anantar-Ultimate-Installer.command`
+     *(macOS Tip: If it fails to run, open Terminal, type `chmod +x `, drag the `.command` file into the Terminal, press Enter, then try double-clicking again).*
+4. **Follow On-Screen Prompts:** The script will automatically open the Magisk app on your DX340 during the process. If Magisk prompts you for **"Additional Setup"**, simply tap **"OK"**. The script will wait patiently if the device reboots.
+5. **Done!** Once you see the **ANANTAR ULTIMATE** ASCII logo in the terminal window, the installation is complete and your device will reboot automatically.
+
 
 
 ---
@@ -136,48 +164,99 @@ Once activated, the system enforces the following power-saving protocols:
 To maintain a seamless user experience, the device monitors the display status. As soon as the **screen is turned on**, the system performs an **instant state resume**. This restores all previous network connections and application states immediately, allowing for extreme power efficiency without the delay of a full reboot.
 
 
+
+
+
 ---
 
-## 🚀 Installation Guide (Quick Start)
+## 💡 Why EXT4?
 
-Estimated time: **15 minutes**
+* **Native Compatibility:** EXT4 is the native file system for the Linux Kernel and Android; every system partition on your device already uses EXT4.
+* **Lower Overhead:** Unlike exFAT, which requires an extra software layer (FUSE/Driver), EXT4 is handled directly by the kernel, reducing CPU load and electrical noise.
+* **MangoOS Support:** **Anantar Ultimate** provides full native support for EXT4 on MangoOS.
+* **SQ Improvement:** You can expect a **10-15%** improvement in sound quality, characterized by a significantly larger stage, better 3D positioning, and enhanced resolution.
 
-1. **Debloat:** Remove unnecessary system apps.
-2. **Root:** Gain administrative access (Magisk).
-3. **Install Modules:** Flash the Three Pillars via Magisk.
-4. **Enjoy:** Experience the new sound signature.
+## 🛠 Step-by-Step: Formatting via ADB
 
-### Prerequisites
-- A computer (PC or Mac) with **ADB (Android Debug Bridge)** installed.
-- A high-quality USB-C cable.
+Execute these commands via **ADB Shell** (Root access required) to format your microSD card with optimized parameters for high-fidelity audio playback.
 
-### Step 0: Prepare the Device
-1. **Enable Developer Options:** Go to `Settings` > `About phone` > Tap `Build number` 7 times.
-2. **Enable USB Debugging:** Go to `Settings` > `System` > `Developer options` > Turn on `USB debugging`.
-3. **Authorize Connection:** Connect the DX340 to your PC. On the device popup, select "Always allow" and tap "Allow."
+### 1. Backup your microSDcard 
+* I recommend to backup songs from microSD to localstorage, it is easy when you transfer it back after you format it.
+### 2. Insert microSD card into DX340
+### 3. Connect DX340 to PC 
+### 4. Format microSD via DX340
+* adb shell
+```
+adb shell
+```
 
-### Option A: Seamless Installation Anantar Ultimate (10Mins - Recommended)
+* unmount microSD
+```
+su
+sm list-volumes public
+sm unmount public:179,1
+```
+* Format microSD
+This step will be confirmation promt, you need to type "y". please copy this command without new line.
+```
+mke2fs -t ext4 -b 4096 -O ^has_journal,extent,sparse_super -m 0 -L Swissbit /dev/block/vold/public:179,1
+```
+* Mount microSD and fix permission
+```
+sm list-volumes
+sm mount public:179,1
 
-This is the fully automated, 1-click method. The script handles ADB checks, debloating, rooting, and module installation automatically.
-#### **For Windows Users:**
-1. Download **[Anantar-Ultimate-Installer](/seamless-installation/Anantar-Ultimate-Installer.zip)** 
-2. **Extract/Unzip** the downloaded file to a folder on your computer.
-3. Connect your DX340 to your PC via a USB cable.
-4. Open the extracted folder and double-click the **`Windows-Anantar-Ultimate-Installer.bat`** file.
-5. *Note:* If a prompt appears on your DX340 screen asking to "Allow USB debugging", check "Always allow from this computer" and tap **Allow**.
-6. The script will open Magisk automatically during the process. If it prompts you for **"Additional Setup"**, simply tap **"OK"**. The script will wait patiently if the device needs to reboot.
-7. Once you see the **ANANTAR ULTIMATE** ASCII logo, the installation is complete and your device will reboot automatically.
+TARGET=$(mount | grep "/dev/block/vold/public:179,1" | awk '{print $3}') && chown -R 1023:1023 $TARGET && chmod -R 775 $TARGET
+```
 
-#### **For macOS / Linux Users:**
-1. Download **[Anantar-Ultimate-Installer](/seamless-installation/Anantar-Ultimate-Installer.zip)** 
-2. **Extract/Unzip** the downloaded file to a folder on your computer.
-3. Connect your DX340 to your Mac/Linux via a USB cable.
-4. Open the extracted folder and double-click the **`MacOS-Anantar-Ultimate-Installer.command`** file.
-   * *(If macOS prevents it from running, open Terminal, type `chmod +x `, drag the file into Terminal, press Enter, and try double-clicking again).*
-5. The script will open Magisk automatically. Tap **"OK"** if prompted for **"Additional Setup"**.
-6. Wait for the success logo and automatic reboot.
+## ⚠️ Limitations of EXT4
 
-### Option B: Manual Installation (For Power Users)
+While EXT4 offers superior audio performance, it is important to understand the compatibility constraints:
+
+* **No Direct Mounting on PC/Mac:** Windows and macOS do not natively support EXT4. You cannot simply plug your microSD card into a card reader and expect it to show up as a drive.
+* **MTP Transfer Required:** To add or manage music, you must connect your **DX340** to your computer via USB and use **MTP (Media Transfer Protocol)** mode.
+* **Software for macOS:** For Mac users, the native "Android File Transfer" can be unstable. It is highly recommended to use **"MacDroid"** for faster and more reliable file management via ADB/MTP.
+* **Android/Linux Only:** This card will only be readable by Android devices or computers running a Linux distribution.
+
+### Format back to exFat
+* Go to Setting -> Storage -> select SDcard -> top 3 dot -> format
+
+---
+
+## ⚠️ Known Issues
+* **Module Deactivation after MangoOS Reboot:** When rebooting from **MangoOS back to Android**, the Magisk module may occasionally become disabled or "drop out."
+    * **How to Check:** Pay attention to the **Boot Animation**. If you do not see the custom Anantar boot animation, the module has likely been disabled.
+    * **Solution:** Simply go into the Magisk app and **Re-enable** the Anantar Ultimate module, then reboot once more.
+
+---
+
+### ⚠️ Modding Risks & Safety
+
+While system modification always carries a degree of responsibility, this project is designed with multiple safety nets to ensure your device remains protected.
+
+#### **Software Integrity**
+There is **virtually no risk of a permanent software brick**. iBasso provides official **Qualcomm factory images (.img)** that can be flashed via **QFIL (Qualcomm Flash Image Loader)**. 
+* **Recovery:** In the event of a boot loop or system instability, you can simply reflash the stock firmware to restore the device to its factory state.
+* **Serviceability:** Once restored to the original firmware, the device can be sent to iBasso’s official service centers for hardware support if needed.
+
+#### **Official Stance**
+It is important to note that **iBasso is fully aware of these community modifications**. They have shown a supportive and non-adversarial stance toward the modding community, recognizing the value of user-driven optimization. As long as the issues are not caused by physical hardware damage during the modding process, the software remains fully recoverable.
+
+> [!TIP]
+> Always keep a copy of the official Qualcomm image and QFIL tools on your PC before performing deep system modifications.
+
+---
+
+
+
+## 📩 Contact & Feedback
+For support or feedback, please send a Private Message (PM) via **Head-Fi**:
+* **Profile:** [tekchansin on Head-Fi](https://www.head-fi.org/members/tekchansin.500217/)
+
+
+---
+
+### Manual Installation (For Power Users)
 
 If you prefer to run the commands yourself, follow these steps:
 
@@ -272,89 +351,3 @@ curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/root
 4. Select **Install from storage** and pick each ZIP file.
 5. **Reboot** your device once all modules are installed.
 ---
-
----
-
-## 💡 Why EXT4?
-
-* **Native Compatibility:** EXT4 is the native file system for the Linux Kernel and Android; every system partition on your device already uses EXT4.
-* **Lower Overhead:** Unlike exFAT, which requires an extra software layer (FUSE/Driver), EXT4 is handled directly by the kernel, reducing CPU load and electrical noise.
-* **MangoOS Support:** **Anantar Ultimate** provides full native support for EXT4 on MangoOS.
-* **SQ Improvement:** You can expect a **10-15%** improvement in sound quality, characterized by a significantly larger stage, better 3D positioning, and enhanced resolution.
-
-## 🛠 Step-by-Step: Formatting via ADB
-
-Execute these commands via **ADB Shell** (Root access required) to format your microSD card with optimized parameters for high-fidelity audio playback.
-
-### 1. Backup your microSDcard 
-* I recommend to backup songs from microSD to localstorage, it is easy when you transfer it back after you format it.
-### 2. Insert microSD card into DX340
-### 3. Connect DX340 to PC 
-### 4. Format microSD via DX340
-* adb shell
-```
-adb shell
-```
-
-* unmount microSD
-```
-su
-sm list-volumes public
-sm unmount public:179,1
-```
-* Format microSD
-This step will be confirmation promt, you need to type "y". please copy this command without new line.
-```
-mke2fs -t ext4 -b 4096 -O ^has_journal,extent,sparse_super -m 0 -L Swissbit /dev/block/vold/public:179,1
-```
-* Mount microSD and fix permission
-```
-sm list-volumes
-sm mount public:179,1
-
-TARGET=$(mount | grep "/dev/block/vold/public:179,1" | awk '{print $3}') && chown -R 1023:1023 $TARGET && chmod -R 775 $TARGET
-```
-
-## ⚠️ Limitations of EXT4
-
-While EXT4 offers superior audio performance, it is important to understand the compatibility constraints:
-
-* **No Direct Mounting on PC/Mac:** Windows and macOS do not natively support EXT4. You cannot simply plug your microSD card into a card reader and expect it to show up as a drive.
-* **MTP Transfer Required:** To add or manage music, you must connect your **DX340** to your computer via USB and use **MTP (Media Transfer Protocol)** mode.
-* **Software for macOS:** For Mac users, the native "Android File Transfer" can be unstable. It is highly recommended to use **"MacDroid"** for faster and more reliable file management via ADB/MTP.
-* **Android/Linux Only:** This card will only be readable by Android devices or computers running a Linux distribution.
-
-### Format back to exFat
-* Go to Setting -> Storage -> select SDcard -> top 3 dot -> format
-
----
-
-## ⚠️ Known Issues
-* **Module Deactivation after MangoOS Reboot:** When rebooting from **MangoOS back to Android**, the Magisk module may occasionally become disabled or "drop out."
-    * **How to Check:** Pay attention to the **Boot Animation**. If you do not see the custom Anantar boot animation, the module has likely been disabled.
-    * **Solution:** Simply go into the Magisk app and **Re-enable** the Anantar Ultimate module, then reboot once more.
-
----
-
-### ⚠️ Modding Risks & Safety
-
-While system modification always carries a degree of responsibility, this project is designed with multiple safety nets to ensure your device remains protected.
-
-#### **Software Integrity**
-There is **virtually no risk of a permanent software brick**. iBasso provides official **Qualcomm factory images (.img)** that can be flashed via **QFIL (Qualcomm Flash Image Loader)**. 
-* **Recovery:** In the event of a boot loop or system instability, you can simply reflash the stock firmware to restore the device to its factory state.
-* **Serviceability:** Once restored to the original firmware, the device can be sent to iBasso’s official service centers for hardware support if needed.
-
-#### **Official Stance**
-It is important to note that **iBasso is fully aware of these community modifications**. They have shown a supportive and non-adversarial stance toward the modding community, recognizing the value of user-driven optimization. As long as the issues are not caused by physical hardware damage during the modding process, the software remains fully recoverable.
-
-> [!TIP]
-> Always keep a copy of the official Qualcomm image and QFIL tools on your PC before performing deep system modifications.
-
----
-
-
-
-## 📩 Contact & Feedback
-For support or feedback, please send a Private Message (PM) via **Head-Fi**:
-* **Profile:** [tekchansin on Head-Fi](https://www.head-fi.org/members/tekchansin.500217/)
