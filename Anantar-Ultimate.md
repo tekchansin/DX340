@@ -224,7 +224,12 @@ Execute these commands via **ADB Shell** (Root access required) to format your m
 * I recommend to backup songs from microSD to localstorage, it is easy when you transfer it back after you format it.
 ### 2. Insert microSD card into DX340
 ### 3. Connect DX340 to PC 
-### 4. Format microSD via DX340
+### 4. Grant Shell Permission
+- Go to Magisk App
+- Superuser tab
+- Enable "Shell"
+
+### 5. Format microSD via DX340
 * adb shell
 ```
 adb shell
