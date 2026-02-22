@@ -74,43 +74,43 @@
 ## 🚀 Key Features
 
 #### 🎼 **Enhanced Sound Signature**
-Advanced tuning that delivers a **3D Large SoundStage**, **Clarity**, superior **Instrument Separation**, excellent **Dynamic** range, and a more natural, **Warm Vocal** delivery.
+* Advanced tuning that delivers a **3D Large SoundStage**, **Clarity**, superior **Instrument Separation**, excellent **Dynamic** range, and a more natural, **Warm Vocal** delivery.
 
 #### 🤖 **Auto Profile Selection**
-Not sure which profile to choose? The system automatically selects the optimal default profile that perfectly matches your currently installed AMP module. Enjoy a simple, flexible, and hassle-free listening experience right out of the box.
+* Not sure which profile to choose? The system automatically selects the optimal default profile that perfectly matches your currently installed AMP module. Enjoy a simple, flexible, and hassle-free listening experience right out of the box.
 
 #### 🔋 **Flawless 32-Bit/192kHz Playback** 
-Completely resolved the stalling and lagging issues present during high-resolution playback. You can now flawlessly play heavy, high-res audio files without any stuttering, dropouts, or performance bottlenecks.
+* Completely resolved the stalling and lagging issues present during high-resolution playback. You can now flawlessly play heavy, high-res audio files without any stuttering, dropouts, or performance bottlenecks.
 
 #### 🎶 **FW 1.08 Sound Signature Correction**
-Fixed the overly bright and dynamically flat sound profile introduced in stock firmware 1.08. This optimization restores the lost dynamics and musicality, bringing back an engaging, full-bodied, and punchy listening experience.
+* Fixed the overly bright and dynamically flat sound profile introduced in stock firmware 1.08. This optimization restores the lost dynamics and musicality, bringing back an engaging, full-bodied, and punchy listening experience.
 
 #### 🔄 **MangoOS Compatibility**
-Experience Anantar optimizations even in MangoOS. Configure your profiles in Android, and the settings will **persist even after booting into MangoOS**.
+* Experience Anantar optimizations even in MangoOS. Configure your profiles in Android, and the settings will **persist even after booting into MangoOS**.
 
 #### 💿 **Native EXT4 Support**
-Unlock maximum audio potential with **Native EXT4 File System** support. By eliminating the exFAT translation layer, it reduces CPU overhead and jitter, resulting in a **10-15% improvement** in soundstage depth and micro-detail resolution.
+* Unlock maximum audio potential with **Native EXT4 File System** support. By eliminating the exFAT translation layer, it reduces CPU overhead and jitter, resulting in a **10-15% improvement** in soundstage depth and micro-detail resolution.
 
 #### 🎨 **New UI & Quick Access**
-A completely refreshed interface with dedicated **Quick Settings Tiles** on the status bar for instant, on-the-fly control of your audio profiles.
+* A completely refreshed interface with dedicated **Quick Settings Tiles** on the status bar for instant, on-the-fly control of your audio profiles.
 
 #### 🖥️ **Intelligent Desktop Mode & Auto Battery Bypass**
-Transform your DX340 into a true desktop powerhouse. When connected to a >9V USB power source or a Linear Power Supply (such as LHY Audio), Anantar Ultimate intelligently commands the USB chip to **automatically disconnect the internal battery the moment you hit play**. This drastically eliminates battery-induced noise, delivering an ultra-clean, pure desktop-grade audio experience. Once playback stops, the system seamlessly reconnects the battery, providing a fully automated, true desktop mode without any manual switching.
+* Transform your DX340 into a true desktop powerhouse. When connected to a >9V USB power source or a Linear Power Supply (such as LHY Audio), Anantar Ultimate intelligently commands the USB chip to **automatically disconnect the internal battery the moment you hit play**. This drastically eliminates battery-induced noise, delivering an ultra-clean, pure desktop-grade audio experience. Once playback stops, the system seamlessly reconnects the battery, providing a fully automated, true desktop mode without any manual switching.
 
 #### 🌐 **Easy USB DAC on Tile**
-Enjoy high-fidelity USB DAC functionality across the entire Android system. No longer restricted to MangoPlayer—use **Tidal, Apple Music, or Spotify** with full optimization.
+* Enjoy high-fidelity USB DAC functionality across the entire Android system. No longer restricted to MangoPlayer—use **Tidal, Apple Music, or Spotify** with full optimization.
 
 #### 🔋 **DeepSleep Mode** 
-an automated power-management feature designed to maximize battery longevity by strictly limiting hardware activity during periods of inactivity.
+* an automated power-management feature designed to maximize battery longevity by strictly limiting hardware activity during periods of inactivity.
 
 #### ⚡ **High-Speed File Transfer (UMS)**
-Full support for **USB Mass Storage (UMS)** on SD Cards. Transfer files at ultra-high speeds directly from MacOS and Android devices.
+* Full support for **USB Mass Storage (UMS)** on SD Cards. Transfer files at ultra-high speeds directly from MacOS and Android devices.
 
 #### 🧹 **System Health Optimization**
-Keeps your storage clean by automatically removing empty Android junk folders on your SD Card, ensuring a lean and efficient filesystem.
+* Keeps your storage clean by automatically removing empty Android junk folders on your SD Card, ensuring a lean and efficient filesystem.
 
 #### 📲 **Seamless OTA Updates**
-Updating Anantar Ultimate is now easier than ever. Say goodbye to connecting your DX340 to a PC—receive the latest features, sound optimizations, and bug fixes directly over-the-air (OTA). Keep your device up to date instantly and effortlessly with just a few taps.
+* Updating Anantar Ultimate is now easier than ever. Say goodbye to connecting your DX340 to a PC—receive the latest features, sound optimizations, and bug fixes directly over-the-air (OTA). Keep your device up to date instantly and effortlessly with just a few taps.
 
 ---
 
