@@ -23,6 +23,7 @@
 # Table of Contents
 
 - [🚀 Key Features](#-key-features)
+- [📝 Release Note](#-release-notes)
 - [📱 Screenshots](#-screenshots)
 - [⚡ Seamless Installation Anantar Ultimate (10Mins - Supereasy)](#seamless-installation-anantar-ultimate-10mins---recommended)
 - [📂 MangoOS Integration](#-mangoos-integration)
@@ -39,39 +40,6 @@
  - [Manual Installation (For Power Users)](#manual-installation-for-power-users)
 - [🛠️ Maintenance & Recovery Guide](#ibasso-dx340-maintenance--recovery-guide)
 ---
-
-## 📝 Release Notes
-
-#### **v3.2** *Latest Release*
-<details>
-
-<summary>ChangeLog</summary>
-
-**✨ New Features & Enhancements:**
-
-* **New "Velvet" Profile:** Introducing the new Harmonic Profile specifically tuned for the **AMP18** module, delivering a highly musical, lush, and engaging sound signature.
-* **MangoOS DeepSleep:** Successfully integrated the automated **DeepSleep Mode** natively into MangoOS to maximize battery longevity during inactivity.
-* **Auto "Sensors Off":** The system now automatically enables the "Sensors Off" feature by default to minimize background noise, reduce CPU interrupts, and lower system overhead.
-* **Auto Profile:** Now Anantar will automatic select the best profile to match your Amp card.
-* **OTA Notification:** System will check Anantar Ultiamte OTA Update and send notification to you.
-
-
-**🐛 Bug Fixes:**
-* **NOS Mode Seamless Playback:** Resolved the micro-pause/stutter issue that occurred in NOS (Non-OverSampling) mode when transitioning between different bit depths (16/24/32-bit) and DSD formats.
-
-</details>
-
-
-#### **v3.1**
-<details>
-
-<summary>ChangeLog</summary>
-
-
-**🐛 Bug Fixes:**
-* **Bluetooth Connectivity:** Fixed a critical bug where Bluetooth was not initializing or functioning properly.
-* **Quick Settings Layout:** Resolved an issue that caused the Quick Settings Tile positions to reset to their default layout after every system reboot.
-</details>
 
 ## 🚀 Key Features
 
@@ -499,3 +467,45 @@ adb shell
 ## For Windows "Type adb.exe shell" in cmd prompt
 curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/undebloat.sh | sh
 ```
+
+
+
+## 📝 Release Notes
+
+#### **v3.3** *Latest Release*
+<details>
+
+<summary>ChangeLog</summary>
+Fix minor bug, Auto profile don't select when user reinstall Anantar-Ultimate.
+</details>
+
+#### **v3.2**
+<details>
+
+<summary>ChangeLog</summary>
+
+**✨ New Features & Enhancements:**
+
+* **New "Velvet" Profile:** Introducing the new Harmonic Profile specifically tuned for the **AMP18** module, delivering a highly musical, lush, and engaging sound signature.
+* **MangoOS DeepSleep:** Successfully integrated the automated **DeepSleep Mode** natively into MangoOS to maximize battery longevity during inactivity.
+* **Auto "Sensors Off":** The system now automatically enables the "Sensors Off" feature by default to minimize background noise, reduce CPU interrupts, and lower system overhead.
+* **Auto Profile:** Now Anantar will automatic select the best profile to match your Amp card.
+* **OTA Notification:** System will check Anantar Ultiamte OTA Update and send notification to you.
+
+
+**🐛 Bug Fixes:**
+* **NOS Mode Seamless Playback:** Resolved the micro-pause/stutter issue that occurred in NOS (Non-OverSampling) mode when transitioning between different bit depths (16/24/32-bit) and DSD formats.
+
+</details>
+
+
+#### **v3.1**
+<details>
+
+<summary>ChangeLog</summary>
+
+
+**🐛 Bug Fixes:**
+* **Bluetooth Connectivity:** Fixed a critical bug where Bluetooth was not initializing or functioning properly.
+* **Quick Settings Layout:** Resolved an issue that caused the Quick Settings Tile positions to reset to their default layout after every system reboot.
+</details>
