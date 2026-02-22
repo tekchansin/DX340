@@ -56,6 +56,12 @@
 #### 🎶 **FW 1.08 Sound Signature Correction**
 * Fixed the overly bright and dynamically flat sound profile introduced in stock firmware 1.08. This optimization restores the lost dynamics and musicality, bringing back an engaging, full-bodied, and punchy listening experience.
 
+#### 🎛️ **Harmonic Profiles Engine (Hardware-Level)**
+A true hardware-level enhancement. Instead of relying on software DSP, this engine directly commands the DX340's internal FPGA to alter the harmonic sequence. Because the adjustment occurs entirely at the hardware level, it maintains absolute signal purity and fully supports all audio formats, including native DSD playback, with zero software-induced degradation.
+
+#### ⚙️ **Kernel Boot Profiles**
+* Deep system-level optimization that applies specialized kernel configurations right from the boot stage. This grants precise control over CPU governance, power management, and audio thread prioritization, ensuring the hardware runs at peak efficiency for the ultimate, jitter-free listening experience.
+
 #### 🔄 **MangoOS Compatibility**
 * Experience Anantar optimizations even in MangoOS. Configure your profiles in Android, and the settings will **persist even after booting into MangoOS**.
 
