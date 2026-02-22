@@ -27,10 +27,8 @@
 - [🔋 DeepSleep Mode](#-deepsleep-mode)
 - [💡 Why EXT4? (Technical Deep Dive)](#-why-ext4)
 - [🛠 Step-by-Step: Formatting via ADB](#-step-by-step-formatting-via-adb)
-    - [1. Identify & Unmount Volume](#1-identify--unmount-volume)
-    - [2. Formatting Commands](#adb-command)
-- [⚠️ Limitations of EXT4](#-limitations-of-ext4)
     - [How to Format back to exFat](#format-back-to-exfat)
+- [⚠️ Limitations of EXT4](#-limitations-of-ext4)
 - [⚠️ Modding Risks & Safety](#%EF%B8%8F-modding-risks--safety)
 - [⚠️ Known Issues](#-known-issues)
 - [📩 Contact & Feedback](#-contact--feedback)
@@ -76,6 +74,7 @@
 #### 🎼 **Enhanced Sound Signature**
 * Advanced tuning that delivers a **3D Large SoundStage**, **Clarity**, superior **Instrument Separation**, excellent **Dynamic** range, and a more natural, **Warm Vocal** delivery.
 
+
 #### 🤖 **Auto Profile Selection**
 * Not sure which profile to choose? The system automatically selects the optimal default profile that perfectly matches your currently installed AMP module. Enjoy a simple, flexible, and hassle-free listening experience right out of the box.
 
@@ -95,13 +94,14 @@
 * A completely refreshed interface with dedicated **Quick Settings Tiles** on the status bar for instant, on-the-fly control of your audio profiles.
 
 #### 🖥️ **Intelligent Desktop Mode & Auto Battery Bypass**
-* Transform your DX340 into a true desktop powerhouse. When connected to a >9V USB power source or a Linear Power Supply (such as LHY Audio), Anantar Ultimate intelligently commands the USB chip to **automatically disconnect the internal battery the moment you hit play**. This drastically eliminates battery-induced noise, delivering an ultra-clean, pure desktop-grade audio experience. Once playback stops, the system seamlessly reconnects the battery, providing a fully automated, true desktop mode without any manual switching.
+* Transform your DX340 into a true desktop powerhouse. When connected to a >9V and not exceed 12V USB power source or a Linear Power Supply (such as LHY Audio), Anantar Ultimate intelligently commands the USB chip to **automatically disconnect the internal battery the moment you hit play**. This drastically eliminates battery-induced noise, delivering an ultra-clean, pure desktop-grade audio experience. Once playback stops, the system seamlessly reconnects the battery, providing a fully automated, true desktop mode without any manual switching. 
+* Do not use USB C exceed than 12V.
 
 #### 🌐 **Easy USB DAC on Tile**
 * Enjoy high-fidelity USB DAC functionality across the entire Android system. No longer restricted to MangoPlayer—use **Tidal, Apple Music, or Spotify** with full optimization.
 
 #### 🔋 **DeepSleep Mode** 
-* an automated power-management feature designed to maximize battery longevity by strictly limiting hardware activity during periods of inactivity.
+* An automated power-management feature designed to maximize battery longevity by strictly limiting hardware activity during periods of inactivity.
 
 #### ⚡ **High-Speed File Transfer (UMS)**
 * Full support for **USB Mass Storage (UMS)** on SD Cards. Transfer files at ultra-high speeds directly from MacOS and Android devices.
@@ -155,8 +155,7 @@ This is the fully automated, 1-click method. The script handles ADB checks, debl
    * **macOS / Linux:** Double-click `MacOS-Anantar-Ultimate-Installer.command`
      *(macOS Tip: If it fails to run, open Terminal, type `chmod +x `, drag the `.command` file into the Terminal, press Enter, then try double-clicking again).*
 5. **Follow On-Screen Prompts:** The script will automatically open the Magisk app on your DX340 during the process. If Magisk prompts you for **"Additional Setup"**, simply tap **"OK"**. The script will wait patiently if the device reboots.
-6. **Done!** Once you see the **ANANTAR ULTIMATE** ASCII logo in the terminal window, the installation is complete and your device will reboot automatically.
-
+6. **Done!** Once you see the **ANANTAR ULTIMATE** logo in the terminal window, the installation is complete and your device will reboot automatically and wait for 15 seconds.
 
 
 ---
