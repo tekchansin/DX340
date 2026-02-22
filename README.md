@@ -6,7 +6,7 @@
 🔥 **NOW WITH 1-CLICK SEAMLESS INSTALLATION!** 🔥
 > **Experience the ultimate sound without the hassle.** We have developed a dedicated automated installer program. Installing Anantar Ultimate has never been easier—just download, click once, and let our script automatically handle everything from Debloating, Rooting, to Module Installation in under 10 minutes!
 
-> **Automatic uninstall other mods via ADB remount (Stouthart or SealPoint) without data loss**
+Automatic uninstall other mods via ADB remount (Stouthart or SealPoint) without data loss**
 
 **Anantar Ultimate** is a complete, fresh re-rework built upon the foundations of the original Anantar projects. This version consolidates and improves upon the legacy modules (**Anantar Sound, Anantar Kernel, and MoonDiamond**) into a single, high-performance "Ultimate" edition for a streamlined and superior experience.
 
@@ -14,6 +14,7 @@
 > **Compatibility & Requirements:**
 > * **Firmware Requirement:** This module supports **iBasso Firmware 1.08 or higher** only.
 > * **Module Conflict:** Before installing Anantar Ultimate, please **Disable or Remove** legacy modules: *Anantar Sound Profile, Anantar Kernel Boot, and MoonDiamond.*
+> * Automatic uninstall other mods via **ADB remount** (Stouthart or SealPoint) without data loss
 ---
 
 # Table of Contents
