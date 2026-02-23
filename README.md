@@ -15,7 +15,7 @@
 
 ---
 
-🔥 **NOW WITH 1-CLICK SEAMLESS INSTALLATION!** 🔥
+🔥 **NOW WITH SINGLE-STEP SEAMLESS INSTALLATION!** 🔥
 > **Experience the ultimate sound without the hassle.** We have developed a dedicated automated installer program. Installing Anantar Ultimate has never been easier—just download, click once, and let our script automatically handle everything from Debloating, Rooting, to Module Installation in under 10 minutes!
 
 ---
@@ -116,7 +116,7 @@ A true hardware-level enhancement. Instead of relying on software DSP, this engi
 
  <img src="img/installer.png" width="600">
 
-This is the fully automated, 1-click method. The script handles ADB checks, debloating, rooting, and module installation automatically.
+This is the fully automated, single-step method. The script handles ADB checks, debloating, rooting, and module installation automatically.
 
 > **Automatic uninstall other mods via ADB remount (Stouthart or SealPoint) without data loss**
 
@@ -407,7 +407,7 @@ This guide provides instructions for unrooting and recovering the iBasso DX340 f
 
 ---
 
-## 1. How to Unroot
+## How to Uninstall Anantar Ultimate
 1. Open the **Magisk** app.
 2. Select **"Uninstall Magisk"** (the red button located on the Home tab).
 3. The DX340 will automatically reboot and the device will be unrooted.
@@ -415,8 +415,51 @@ This guide provides instructions for unrooting and recovering the iBasso DX340 f
 5. **Note:** If you plan to send your device to iBasso for service, it is highly recommended to perform a **Factory Reset** after unrooting.
 
 ---
+## How to upgrade iBasso Firmware without dataloss
+Update FW to xx without wipe data.
 
-## 2. How to Recover (Soft Brick)
+Note: If you don't familiar with adb or fastboot. I recommend to wait full firmware and flash it via qfil.
+
+NOTE: Windows 11 has problem with fastboot, you need to use qfil or others
+
+#### Prerequisites (What you need)
+- adb and fastboot
+- good command adb or command line skill
+- A USB-C cable to connect the DX340 to your computer.
+
+#### Steps to update patch OTA
+1. Download firmware from https://ibasso.com/uploadfiles/download/DX340_full_ota_1.07.726.zip
+2. unzip. DX340_full_ota_1.07.726 ( has 2 files inside, readme and DX340_full_ota_1.07.726.zip )
+3. adb reboot recovery
+4. apply update from adb
+5. adb sideload DX340_full_ota_1.07.726.zip
+6. reboot device.
+
+#### Reinstall Anantar Ultimate again.
+
+---
+
+## How to Disable and Enable Anantar Ultimate for A/B Testing
+
+
+#### Disable Anantar Ultiate
+1. Go to Magisk App
+2. Go to Module section
+3. **Disable** Ananatar Ultimate
+4. Reboot
+5. You **will not see** Anantar Ultimate boot animation
+
+#### Enalbe Anantar Ultiate
+1. Go to Magisk App
+2. Go to Module section
+3. **Enable** Ananatar Ultimate
+4. Reboot
+5. You **will see** Anantar Ultimate boot animation
+
+
+---
+
+## How to Recover (Soft Brick)
 If your device is stuck in a boot loop or failing to boot:
 1. Turn the DX340 **OFF**.
 2. Press and hold the **Bottom Side Button** (the last button) and the **Power Button** simultaneously.
@@ -428,7 +471,7 @@ If your device is stuck in a boot loop or failing to boot:
 
 ---
 
-## 3. How to Recover (Hard Brick)
+## How to Recover (Hard Brick)
 The iBasso DX340 uses a Qualcomm SoC, which allows you to flash the entire firmware via **QFIL (Qualcomm Flash Image Loader)**.
 <details>
 
@@ -467,7 +510,7 @@ The iBasso DX340 uses a Qualcomm SoC, which allows you to flash the entire firmw
 4. Reboot the device.
 </details>
 
-## 4. How to Undebloat
+### How to Undebloat
 ```bash
 adb shell
 ## For Windows "Type adb.exe shell" in cmd prompt
@@ -515,3 +558,8 @@ Fix minor bug, Auto profile don't select when user reinstall Anantar-Ultimate.
 * **Bluetooth Connectivity:** Fixed a critical bug where Bluetooth was not initializing or functioning properly.
 * **Quick Settings Layout:** Resolved an issue that caused the Quick Settings Tile positions to reset to their default layout after every system reboot.
 </details>
+
+
+# Reviews
+
+| <img src="img/reviews/1.png" width="800"> | <img src="img/reviews/2.png" width="800"> |
