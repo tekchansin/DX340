@@ -122,7 +122,7 @@ This is the fully automated, single-step method. The script handles ADB checks, 
 
 > **This Installation script can re-run without problem**
 
-## Download Link: [Anantar-Ultimate-Installer](https://tekfile.s3-bkk.nipa.cloud/anantar-ultimate/Anantar-Ultimate-Installer.zip)
+## Download Link: [Anantar-Ultimate-Installer](https://pub-7d31638bb06b4f1ba9282512928751b3.r2.dev/Anantar-Ultimate/Anantar-Ultimate-Installer.zip)
 
 1. **Download & Extract:** Download and extract the ZIP file to a folder on your computer.
 2. **Connect Device:** Connect your DX340 to your computer via a USB cable. 
@@ -408,11 +408,15 @@ This guide provides instructions for unrooting and recovering the iBasso DX340 f
 ---
 
 ## How to Uninstall Anantar Ultimate
-1. Open the **Magisk** app.
-2. Select **"Uninstall Magisk"** (the red button located on the Home tab).
-3. The DX340 will automatically reboot and the device will be unrooted.
-4. Uninstall the **Magisk** app from your device.
-5. **Note:** If you plan to send your device to iBasso for service, it is highly recommended to perform a **Factory Reset** after unrooting.
+**Note: Boot Profile still persist when disable Anantar Ultimate. If you want to compare to original or other mod maker. Please change Boot profile to "Off" before disable Anantar Ultimate
+
+1. Change Boot profile to "Off"
+2. Disable Anantar are below
+   - Open the **Magisk** app.
+   - Select **"Uninstall Magisk"** (the red button located on the Home tab).
+   - The DX340 will automatically reboot and the device will be unrooted.
+   - Uninstall the **Magisk** app from your device.
+3. **Note:** If you plan to send your device to iBasso for service, it is highly recommended to perform a **Factory Reset** after unrooting.
 
 ---
 ## How to upgrade iBasso Firmware without dataloss
@@ -440,21 +444,24 @@ NOTE: Windows 11 has problem with fastboot, you need to use qfil or others
 ---
 
 ## How to Disable and Enable Anantar Ultimate for A/B Testing
-
+**Note: Boot Profile still persist when disable Anantar Ultimate. If you want to compare to original or other mod maker. Please change Boot profile to "Off" before disable Anantar Ultimate
 
 #### Disable Anantar Ultiate
-1. Go to Magisk App
-2. Go to Module section
-3. **Disable** Ananatar Ultimate
-4. Reboot
-5. You **will not see** Anantar Ultimate boot animation
+1. Change Boot profile to "Off"
+2. Disable Anantar are below
+ - Go to Magisk App
+ - Go to Module section
+ - **Disable** Ananatar Ultimate
+ - Reboot
+3. You **will not see** Anantar Ultimate boot animation
 
-#### Enalbe Anantar Ultiate
+#### Enable Anantar Ultiate
 1. Go to Magisk App
 2. Go to Module section
 3. **Enable** Ananatar Ultimate
 4. Reboot
 5. You **will see** Anantar Ultimate boot animation
+6. Enable your favourite Boot profile.
 
 
 ---
@@ -521,7 +528,15 @@ curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/unde
 
 ## 📝 Release Notes
 
-#### **v3.3** *Latest Release*
+#### V3.4-1 *Latest Release*
+- Fixed NOS mode not run only first play
+
+#### V3.4
+- Fix Harmonic and NOS/OS mode loading not properly when device boot
+- Improve FPGA power status checking before apply NOS mode
+- Fix USB Battery bypass notification
+
+#### **v3.3** 
 <details>
 
 <summary>ChangeLog</summary>
