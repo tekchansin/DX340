@@ -242,7 +242,7 @@ sm unmount public:179,1
 * Format microSD
 This step will be confirmation promt, you need to type "y". please copy this command without new line.
 ```
-mke2fs -t ext4 -b 4096 -O ^has_journal,extent,sparse_super -m 0 -L Swissbit /dev/block/vold/public:179,1
+mke2fs -t ext4 -b 4096 -O ^has_journal,extent,sparse_super -m 0 -L SDCard /dev/block/vold/public:179,1
 ```
 * Mount microSD and fix permission
 ```
