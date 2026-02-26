@@ -1,3 +1,8 @@
+# Drop Support!!!
+# Please Migrate to Anantar Ultimate
+# New level of DX340 Mod, easy install
+https://github.com/tekchansin/DX340
+
 ### Release Note 
 ### V2.1
 - Update New UI, make more simple.

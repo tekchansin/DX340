@@ -1,3 +1,8 @@
+# Drop Support!!!
+# Please Migrate to Anantar Ultimate
+# New level of DX340 Mod, easy install
+https://github.com/tekchansin/DX340
+
 ### V2.2
 - Intorduce Anantar Ultimate - Upgraded version.
 - Fix permission on File and explorer 3rd party user
