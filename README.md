@@ -104,7 +104,6 @@ A true hardware-level enhancement. Instead of relying on software DSP, this engi
 # 🚀 Installation Guide (Quick Start)
 
 ### Prerequisites
-- A computer (PC or Mac) with **ADB (Android Debug Bridge)** installed.
 - A high-quality USB-C cable.
 
 ### Step 0: Prepare the Device
