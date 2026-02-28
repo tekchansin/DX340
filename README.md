@@ -1,4 +1,4 @@
-# Anantar Ultimate for iBasso DX340 
+# Anantar Ultimate V4 for iBasso DX340 
 ### 🔥 Proudly Researched and Developed with Passion by tekChansin (Thailand 🇹🇭) | Head-Fi
 
 💸 **100% FREE TO USE** — *Anantar Ultimate is a passionate community-driven project provided completely free of charge. No hidden fees, no premium tiers.*
@@ -23,7 +23,7 @@
 # Table of Contents
 
 - [🚀 Key Features](#-key-features)
-- [📝 Release Note](#-release-notes)
+- [📝 Release Note](./ReleaseNote.md)
 - [📱 Screenshots](#-screenshots)
 - [⚡ Seamless Installation Anantar Ultimate (10Mins - Supereasy)](#seamless-installation-anantar-ultimate-10mins---recommended)
 - [📂 MangoOS Integration](#-mangoos-integration)
@@ -45,7 +45,8 @@
 
 #### 🎼 **Enhanced Sound Signature**
 * Advanced tuning that delivers a **3D Large SoundStage**, **Clarity**, superior **Instrument Separation**, excellent **Dynamic** range, and a more natural, **Warm Vocal** delivery.
-
+* Interrupt Tuning: Assigns audio-related tasks to specific CPU cores to prevent sudden latency spikes.
+* Uses a linear scheduling approach to prevent micro-stutters, ensuring a perfectly stable data stream for high-bitrate playback.
 
 #### 🤖 **Auto Profile Selection**
 * Not sure which profile to choose? The system automatically selects the optimal default profile that perfectly matches your currently installed AMP module. Enjoy a simple, flexible, and hassle-free listening experience right out of the box.
@@ -78,8 +79,11 @@ A true hardware-level enhancement. Instead of relying on software DSP, this engi
 #### 🌐 **Easy USB DAC on Tile**
 * Enjoy high-fidelity USB DAC functionality across the entire Android system. No longer restricted to MangoPlayer—use **Tidal, Apple Music, or Spotify** with full optimization.
 
-#### 🔋 **DeepSleep Mode** 
+#### 🔋 **DeepSleep Mode V2** 
 * An automated power-management feature designed to maximize battery longevity by strictly limiting hardware activity during periods of inactivity.
+* DeepSleep Stats: Integrated a new reporting system that provides notifications on cumulative sleep duration and real-time battery discharge rates.
+* Native Doze Integration: Deep-level integration with Android’s Doze mode, instructing the low-level OS to enter deep sleep states more effectively.
+* Instant Recovery (CPU Boost): To ensure a lag-free transition, the system triggers a 60-second MAX CPU Boost immediately upon restoring from DeepSleep.
 
 #### ⚡ **High-Speed File Transfer (UMS)**
 * Full support for **USB Mass Storage (UMS)** on SD Cards. Transfer files at ultra-high speeds directly from MacOS and Android devices.
@@ -89,6 +93,15 @@ A true hardware-level enhancement. Instead of relying on software DSP, this engi
 
 #### 📲 **Seamless OTA Updates**
 * Updating Anantar Ultimate is now easier than ever. Say goodbye to connecting your DX340 to a PC—receive the latest features, sound optimizations, and bug fixes directly over-the-air (OTA). Keep your device up to date instantly and effortlessly with just a few taps.
+
+#### 📱 Enhanced User Experience (UX/UI)
+
+* New Notification System
+* Native Integration: Fully migrated from Magisk-based app overlays to the Android Native Notification framework for improved stability and seamless UI integration.
+* Intuitive Messaging: All system notifications have been rewritten with clearer, more concise language, making it easier for users to understand system states and statistics at a glance.
+* Bubble Notifications: Added support for Bubble notifications, allowing for better multitasking and quicker access to essential controls.
+
+
 
 ---
 
@@ -522,58 +535,3 @@ adb shell
 ## For Windows "Type adb.exe shell" in cmd prompt
 curl -sS https://raw.githubusercontent.com/tekchansin/DX340/refs/heads/main/undebloat.sh | sh
 ```
-
-
-
-## 📝 Release Notes
-
-#### V3.4-1 *Latest Release*
-- Fixed NOS mode not run only first play
-
-#### V3.4
-- Fix Harmonic and NOS/OS mode loading not properly when device boot
-- Improve FPGA power status checking before apply NOS mode
-- Fix USB Battery bypass notification
-
-#### **v3.3** 
-<details>
-
-<summary>ChangeLog</summary>
-Fix minor bug, Auto profile don't select when user reinstall Anantar-Ultimate.
-</details>
-
-#### **v3.2**
-<details>
-
-<summary>ChangeLog</summary>
-
-**✨ New Features & Enhancements:**
-
-* **New "Velvet" Profile:** Introducing the new Harmonic Profile specifically tuned for the **AMP18** module, delivering a highly musical, lush, and engaging sound signature.
-* **MangoOS DeepSleep:** Successfully integrated the automated **DeepSleep Mode** natively into MangoOS to maximize battery longevity during inactivity.
-* **Auto "Sensors Off":** The system now automatically enables the "Sensors Off" feature by default to minimize background noise, reduce CPU interrupts, and lower system overhead.
-* **Auto Profile:** Now Anantar will automatic select the best profile to match your Amp card.
-* **OTA Notification:** System will check Anantar Ultiamte OTA Update and send notification to you.
-
-
-**🐛 Bug Fixes:**
-* **NOS Mode Seamless Playback:** Resolved the micro-pause/stutter issue that occurred in NOS (Non-OverSampling) mode when transitioning between different bit depths (16/24/32-bit) and DSD formats.
-
-</details>
-
-
-#### **v3.1**
-<details>
-
-<summary>ChangeLog</summary>
-
-
-**🐛 Bug Fixes:**
-* **Bluetooth Connectivity:** Fixed a critical bug where Bluetooth was not initializing or functioning properly.
-* **Quick Settings Layout:** Resolved an issue that caused the Quick Settings Tile positions to reset to their default layout after every system reboot.
-</details>
-
-
-# Reviews
-
-| <img src="img/reviews/1.png" width="800"> | <img src="img/reviews/2.png" width="800"> |
