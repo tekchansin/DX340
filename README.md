@@ -147,6 +147,12 @@ This is the fully automated, single-step method. The script handles ADB checks, 
 5. **Follow On-Screen Prompts:** The script will automatically open the Magisk app on your DX340 during the process. If Magisk prompts you for **"Additional Setup"**, simply tap **"OK"**. The script will wait patiently if the device reboots.
 6. **Done!** Once you see the **ANANTAR ULTIMATE** logo in the terminal window, the installation is complete and your device will reboot automatically and wait for 15 seconds.
 
+## 🚀 Quick OTA Upgrade Guide via Magisk
+
+## Open the Magisk app.
+- Go to the Modules tab (bottom right).
+- Find Anantar Ultimate and tap the Update button.
+- Wait for the flashing process to show "Finished" or "Success."
 
 ---
 
@@ -197,9 +203,16 @@ Over **18+ customized harmonic profiles** categorized into three signature serie
 * **Nap on Beach** | **Epitome** | **Sigma Delt Max** | **Fire**
 
 ---
-### 🔋 DeepSleep Mode
+### 🔋 DeepSleep Mode v2
+
+<img src="img/deepsleep2.png" width="200"> 
 
 The **DeepSleep Mode** is an automated power-management feature designed to maximize battery longevity by strictly limiting hardware activity during periods of inactivity.
+
+* DeepSleep Stats: View cumulative sleep time and battery drain via a new notification.
+* Smart Core Logic: Deactivates BIG cores during sleep and triggers a 60-second boost upon wake-up for instant responsiveness.
+* Android Doze Integration: Deep-level integration for better standby longevity.
+
 
 #### **Trigger Logic**
 The system will transition into DeepSleep mode if the following conditions persist for **15 minutes**:
