@@ -19,9 +19,18 @@
 > **Experience the ultimate sound without the hassle.** We have developed a dedicated automated installer program. Installing Anantar Ultimate has never been easier—just download, click once, and let our script automatically handle everything from Debloating, Rooting, to Module Installation in under 10 minutes!
 
 ---
+## ☕ Support My Work
+
+The **Anantar Ultimate** edition is a free created specifically for those who wish to support my ongoing research and development. This version includes **features, deeper kernel tuning, and a unified interface**. Your support helps me spend more time fine-tuning the DX340 to its absolute limit. **This is 100% Optional.**
+
+| Platform | Donation Link / Address |
+| :--- | :--- |
+| **PayPal** | [![PayPal](https://img.shields.io/badge/Donate-PayPal-00457C?style=flat-square&logo=paypal&logoColor=white)](https://www.paypal.me/CharnsilpChinprasert) |
+| **Bitcoin** | `0x794161ef033bd117a45f4dbeda023b5a69cc7cd5` |
+---
 
 # Table of Contents
-
+- [☕ Support My Work](#-support-my-work)
 - [🚀 Key Features](#-key-features)
 - [📝 Release Note](./ReleaseNote.md)
 - [📱 Screenshots](#-screenshots)
@@ -146,6 +155,8 @@ This is the fully automated, single-step method. The script handles ADB checks, 
      *(macOS Tip: If it fails to run, open Terminal, type `chmod +x `, drag the `.command` file into the Terminal, press Enter, then try double-clicking again).*
 5. **Follow On-Screen Prompts:** The script will automatically open the Magisk app on your DX340 during the process. If Magisk prompts you for **"Additional Setup"**, simply tap **"OK"**. The script will wait patiently if the device reboots.
 6. **Done!** Once you see the **ANANTAR ULTIMATE** logo in the terminal window, the installation is complete and your device will reboot automatically and wait for 15 seconds.
+
+# [☕ Buy me a drink](#-support-my-work)
 
 ## 🚀 Quick OTA Upgrade Guide via Magisk
 
