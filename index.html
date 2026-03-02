@@ -3,220 +3,275 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anantar Ultimate V4 | iBasso DX340</title>
+    <title>Anantar Ultimate V4 | iBasso DX340 Project</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
-        body { font-family: 'Inter', sans-serif; background-color: #0f172a; color: #f8fafc; }
-        .glass-card { background: rgba(30, 41, 59, 0.7); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
-        .gold-gradient { background: linear-gradient(90deg, #fbbf24, #d97706); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .terminal-box { background: #010409; border: 1px solid #30363d; font-family: 'Courier New', Courier, monospace; }
+        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+        body { font-family: 'Space Grotesk', sans-serif; background-color: #020617; color: #f8fafc; }
+        .glass { background: rgba(15, 23, 42, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.05); }
+        .accent-gold { color: #fbbf24; }
+        .bg-gold { background-color: #fbbf24; }
+        /* Spotlight Effect for Diagram */
+        .spotlight-container {
+            position: relative;
+            background: radial-gradient(circle at center, rgba(251, 191, 36, 0.15) 0%, transparent 70%);
+        }
+        .spotlight-image {
+            box-shadow: 0 0 50px rgba(251, 191, 36, 0.1);
+            border: 1px solid rgba(251, 191, 36, 0.2);
+            transition: all 0.5s ease;
+        }
+        .spotlight-image:hover {
+            box-shadow: 0 0 80px rgba(251, 191, 36, 0.2);
+            border-color: rgba(251, 191, 36, 0.4);
+        }
+        .terminal { background: #010409; border: 1px solid #30363d; font-family: 'Courier New', Courier, monospace; }
+        .alert-box { border-left: 4px solid #f59e0b; background: rgba(245, 158, 11, 0.05); padding: 1.5rem; border-radius: 1rem; }
     </style>
 </head>
 <body class="antialiased">
 
-    <nav class="fixed w-full z-50 glass-card border-b border-slate-800 px-6 py-4">
+    <nav class="fixed w-full z-50 glass border-b border-white/5 px-6 py-4">
         <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <div class="text-xl font-bold tracking-tighter">ANANTAR <span class="text-amber-500">ULTIMATE V4</span></div>
-            <div class="hidden md:flex space-x-8 text-sm font-medium text-slate-400">
-                <a href="#features" class="hover:text-amber-500 transition">Features</a>
-                <a href="#install" class="hover:text-amber-500 transition">Installation</a>
-                <a href="#profiles" class="hover:text-amber-500 transition">Profiles</a>
-                <a href="#ext4" class="hover:text-amber-500 transition">EXT4 Guide</a>
-                <a href="#recovery" class="hover:text-amber-500 transition">Recovery</a>
+            <div class="text-xl font-bold tracking-tighter uppercase">Anantar <span class="accent-gold italic">Ultimate V4</span></div>
+            <div class="hidden lg:flex gap-8 text-[10px] uppercase tracking-[0.2em] font-bold text-slate-400">
+                <a href="#hero" class="hover:text-amber-400">Arch</a>
+                <a href="#install" class="hover:text-amber-400">Install</a>
+                <a href="#features" class="hover:text-amber-400">Features</a>
+                <a href="#technical" class="hover:text-amber-400">Tech</a>
+                <a href="#recovery" class="hover:text-amber-400">Safety</a>
             </div>
-            <a href="https://www.paypal.me/CharnsilpChinprasert" class="bg-amber-500 hover:bg-amber-600 text-slate-900 px-5 py-2 rounded-full text-sm font-bold transition">Donate</a>
+            <a href="https://www.paypal.me/CharnsilpChinprasert" class="bg-gold text-slate-900 px-5 py-2 rounded-xl text-xs font-black uppercase hover:scale-105 transition">Buy me a drink</a>
         </div>
     </nav>
 
-    <section class="pt-32 pb-20 px-6 text-center relative overflow-hidden">
-        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-amber-500/10 via-transparent to-transparent -z-10"></div>
-        <h1 class="text-5xl md:text-8xl font-black mb-6 tracking-tight">ANANTAR <span class="gold-gradient">ULTIMATE</span></h1>
-        <p class="text-xl md:text-2xl text-slate-400 max-w-3xl mx-auto mb-4">The definitive system re-work for iBasso DX340.</p>
-        <div class="inline-block bg-slate-800 px-4 py-1 rounded-full text-xs font-semibold text-emerald-400 mb-8 border border-emerald-500/20">
-            <i class="fas fa-check-circle mr-2"></i>100% FREE & COMMUNITY DRIVEN
+    <header id="hero" class="pt-32 pb-16 px-6 text-center">
+        <div class="max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-8xl font-bold mb-6 tracking-tighter">ANANTAR ULTIMATE</h1>
+            <p class="text-slate-400 text-lg md:text-xl mb-8 leading-relaxed">
+                A complete re-work for <span class="text-white font-bold underline decoration-amber-500">iBasso DX340</span>. 
+                Consolidating legacy modules into one high-performance edition.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4 mb-12">
+                <span class="bg-emerald-500/10 text-emerald-500 px-4 py-1 rounded-full text-xs font-bold border border-emerald-500/20">100% FREE</span>
+                <span class="bg-slate-800 text-slate-400 px-4 py-1 rounded-full text-xs font-bold">Researched by tekChansin 🇹🇭</span>
+            </div>
         </div>
-        <p class="text-slate-500 mb-10 italic">Developed with Passion by tekChansin (Thailand 🇹🇭)</p>
-        <div class="flex flex-wrap justify-center gap-4">
-            <a href="#install" class="bg-white text-slate-900 px-8 py-4 rounded-xl font-bold hover:bg-slate-200 transition">Get Started</a>
-            <a href="https://pub-7d31638bb06b4f1ba9282512928751b3.r2.dev/Anantar-Ultimate/Anantar-Ultimate-Installer.zip" class="bg-slate-800 text-white px-8 py-4 rounded-xl font-bold hover:bg-slate-700 transition"><i class="fas fa-download mr-2"></i>Download Installer</a>
+
+        <div class="max-w-6xl mx-auto spotlight-container mt-10">
+            <div class="p-4 md:p-10">
+                <p class="text-[10px] uppercase tracking-[0.4em] text-amber-500 font-bold mb-6">/ System Architecture Spotlight /</p>
+                <img src="img/diagram.png" alt="Anantar Ultimate Diagram" class="w-full spotlight-image rounded-3xl mx-auto">
+            </div>
+        </div>
+    </header>
+
+    <section class="py-12 px-6">
+        <div class="max-w-4xl mx-auto alert-box">
+            <h3 class="text-amber-500 font-bold mb-4 flex items-center gap-2"><i class="fas fa-exclamation-circle"></i> COMPATIBILITY & REQUIREMENTS</h3>
+            <ul class="text-sm text-slate-300 space-y-3">
+                <li><i class="fas fa-check text-emerald-500 mr-2"></i><strong>Firmware:</strong> Supports <strong>iBasso Firmware 1.08 or higher</strong> only.</li>
+                <li><i class="fas fa-times text-red-500 mr-2"></i><strong>Conflict:</strong> Please <strong>Disable/Remove</strong> legacy modules (Sound Profile, Kernel Boot, MoonDiamond).</li>
+                <li><i class="fas fa-sync text-blue-500 mr-2"></i><strong>ADB Remount:</strong> Auto-uninstalls other mods without data loss.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="install" class="py-24 bg-slate-900/30 px-6 border-y border-white/5">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="text-3xl font-bold mb-16 text-center italic tracking-tight">🔥 SEAMLESS INSTALLATION (10 MINS)</h2>
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+                <div class="space-y-8">
+                    <p class="text-slate-400 leading-relaxed">
+                        Installing Anantar Ultimate has never been easier—just download, click once, and let our script handle everything 
+                        from <strong>Debloating, Rooting, to Module Installation</strong> automatically!
+                    </p>
+                    <a href="https://pub-7d31638bb06b4f1ba9282512928751b3.r2.dev/Anantar-Ultimate/Anantar-Ultimate-Installer.zip" 
+                       class="inline-block bg-white text-slate-900 px-8 py-4 rounded-2xl font-black uppercase hover:bg-amber-500 transition">
+                        Download Installer
+                    </a>
+                    <div class="space-y-4 pt-6 border-t border-white/5">
+                        <div class="flex items-center gap-4">
+                            <i class="fab fa-windows text-xl text-slate-500"></i>
+                            <span class="text-xs font-mono">Windows-Anantar-Ultimate-Installer.bat</span>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <i class="fab fa-apple text-xl text-slate-500"></i>
+                            <span class="text-xs font-mono">MacOS-Anantar-Ultimate-Installer.command</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="glass p-2 rounded-3xl shadow-2xl">
+                    <img src="img/installer.png" alt="Installer Interface" class="w-full rounded-2xl">
+                    <p class="text-center text-[10px] text-slate-500 mt-4 uppercase tracking-widest font-bold">Automated Installer Interface</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-24 px-6 bg-slate-950">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-2xl font-bold mb-16 text-center text-slate-500 uppercase tracking-widest">Interface & Controls</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <div class="group">
+                    <img src="img/Tile.png" class="rounded-2xl border border-white/10 group-hover:border-amber-500/50 transition">
+                    <p class="text-[10px] text-center mt-4 font-bold text-slate-600 uppercase">Quick Settings</p>
+                </div>
+                <div class="group">
+                    <img src="img/Boot.png" class="rounded-2xl border border-white/10 group-hover:border-amber-500/50 transition">
+                    <p class="text-[10px] text-center mt-4 font-bold text-slate-600 uppercase">Kernel Profiles</p>
+                </div>
+                <div class="group">
+                    <img src="img/OverSampling.png" class="rounded-2xl border border-white/10 group-hover:border-amber-500/50 transition">
+                    <p class="text-[10px] text-center mt-4 font-bold text-slate-600 uppercase">Oversampling</p>
+                </div>
+                <div class="group">
+                    <img src="img/USBDAC.png" class="rounded-2xl border border-white/10 group-hover:border-amber-500/50 transition">
+                    <p class="text-[10px] text-center mt-4 font-bold text-slate-600 uppercase">System USB DAC</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="features" class="py-24 px-6 max-w-7xl mx-auto">
-        <h2 class="text-3xl font-bold mb-16 text-center">Engineered Excellence</h2>
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div class="glass-card p-8 rounded-3xl hover:border-amber-500/50 transition duration-500">
-                <div class="w-12 h-12 bg-amber-500/20 rounded-2xl flex items-center justify-center mb-6">
-                    <i class="fas fa-music text-amber-500 text-xl"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-3">Enhanced Sound Signature</h3>
-                <p class="text-slate-400 leading-relaxed text-sm">3D Large SoundStage, superior separation, and warm natural vocals with optimized interrupt tuning.</p>
+        <h2 class="text-4xl font-bold mb-20 text-center tracking-tighter">ROCK-SOLID FEATURES</h2>
+        
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+            <div class="space-y-4">
+                <i class="fas fa-headphones accent-gold text-3xl"></i>
+                <h4 class="text-xl font-bold">Enhanced Sound Signature</h4>
+                <p class="text-sm text-slate-400 leading-relaxed">3D Large SoundStage, Clarity, superior Instrument Separation, and Warm Vocal delivery. restoration of lost dynamics from stock FW 1.08.</p>
             </div>
-            <div class="glass-card p-8 rounded-3xl hover:border-amber-500/50 transition duration-500">
-                <div class="w-12 h-12 bg-blue-500/20 rounded-2xl flex items-center justify-center mb-6">
-                    <i class="fas fa-microchip text-blue-500 text-xl"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-3">Harmonic Profiles Engine</h3>
-                <p class="text-slate-400 leading-relaxed text-sm">Hardware-level FPGA commands for absolute signal purity. Supports native DSD playback.</p>
+            <div class="space-y-4">
+                <i class="fas fa-gem accent-gold text-3xl"></i>
+                <h4 class="text-xl font-bold">Harmonic Profiles Engine</h4>
+                <p class="text-sm text-slate-400 leading-relaxed">Direct FPGA hardware commands for harmonic alteration. Absolute signal purity, supporting native DSD with zero software DSP.</p>
             </div>
-            <div class="glass-card p-8 rounded-3xl hover:border-amber-500/50 transition duration-500">
-                <div class="w-12 h-12 bg-emerald-500/20 rounded-2xl flex items-center justify-center mb-6">
-                    <i class="fas fa-battery-full text-emerald-500 text-xl"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-3">Desktop Mode & Bypass</h3>
-                <p class="text-slate-400 leading-relaxed text-sm">Automatically disconnects internal battery during playback when connected to external power (>9V).</p>
+            <div class="space-y-4">
+                <i class="fas fa-bolt text-emerald-500 text-3xl"></i>
+                <h4 class="text-xl font-bold">Battery Bypass Mode</h4>
+                <p class="text-sm text-slate-400 leading-relaxed">Intelligent Desktop Mode. Disconnects battery during playback when connected to >9V-12V power to eliminate noise.</p>
             </div>
-            <div class="glass-card p-8 rounded-3xl hover:border-amber-500/50 transition duration-500">
-                <div class="w-12 h-12 bg-purple-500/20 rounded-2xl flex items-center justify-center mb-6">
-                    <i class="fas fa-bolt text-purple-500 text-xl"></i>
+            <div class="space-y-4 lg:col-span-2 glass p-8 rounded-3xl flex flex-col md:flex-row gap-8 items-center">
+                <img src="img/deepsleep2.png" class="w-32 rounded-xl border border-white/10">
+                <div>
+                    <h4 class="text-xl font-bold mb-2">DeepSleep Mode V2</h4>
+                    <p class="text-sm text-slate-400 leading-relaxed">Automated power-management that limits hardware activity during inactivity. Integrates with Android Doze for maximum longevity.</p>
                 </div>
-                <h3 class="text-xl font-bold mb-3">Kernel Boot Profiles</h3>
-                <p class="text-slate-400 leading-relaxed text-sm">Extreme, Analog, and Default modes for precise control over CPU and jitter-free listening.</p>
             </div>
-            <div class="glass-card p-8 rounded-3xl hover:border-amber-500/50 transition duration-500">
-                <div class="w-12 h-12 bg-cyan-500/20 rounded-2xl flex items-center justify-center mb-6">
-                    <i class="fas fa-moon text-cyan-500 text-xl"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-3">DeepSleep Mode V2</h3>
-                <p class="text-slate-400 leading-relaxed text-sm">Advanced power management with smart core logic and instant recovery (CPU Boost).</p>
-            </div>
-            <div class="glass-card p-8 rounded-3xl hover:border-amber-500/50 transition duration-500">
-                <div class="w-12 h-12 bg-orange-500/20 rounded-2xl flex items-center justify-center mb-6">
-                    <i class="fas fa-database text-orange-500 text-xl"></i>
-                </div>
-                <h3 class="text-xl font-bold mb-3">Native EXT4 Support</h3>
-                <p class="text-slate-400 leading-relaxed text-sm">Eliminate exFAT overhead for 10-15% improvement in soundstage depth and resolution.</p>
+            <div class="space-y-4">
+                <i class="fas fa-cloud-download-alt text-blue-400 text-3xl"></i>
+                <h4 class="text-xl font-bold">Seamless OTA</h4>
+                <p class="text-sm text-slate-400 leading-relaxed">Updating is easier than ever. Receive latest sound optimizations directly over-the-air via Magisk.</p>
             </div>
         </div>
     </section>
 
-    <section id="install" class="py-24 bg-slate-900/50 px-6">
-        <div class="max-w-4xl mx-auto">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-bold mb-4">Seamless Installation</h2>
-                <p class="text-slate-400">Automated setup in under 10 minutes. No hassle, maximum results.</p>
-            </div>
-
-            <div class="space-y-8">
-                <div class="flex items-start gap-6">
-                    <div class="w-10 h-10 rounded-full bg-amber-500 flex items-center justify-center shrink-0 font-bold text-slate-900">1</div>
+    <section id="technical" class="py-24 bg-slate-900/40 px-6">
+        <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-20">
+            <div>
+                <h2 class="text-3xl font-bold mb-10 accent-gold italic">Audio & Kernel Profiles</h2>
+                <div class="space-y-12">
                     <div>
-                        <h4 class="text-lg font-bold mb-2">Enable Developer Options</h4>
-                        <p class="text-slate-400 text-sm">Go to Settings > About phone > Tap Build number 7 times. Then enable USB Debugging in System Settings.</p>
+                        <h4 class="text-lg font-bold mb-4">⚙️ Kernel Boot Profiles</h4>
+                        <p class="text-sm text-slate-400 mb-4 italic">Apply specialized configurations right from boot:</p>
+                        <ul class="text-sm space-y-3 text-slate-300">
+                            <li><strong>Extreme:</strong> Maximum CPU & system responsiveness.</li>
+                            <li><strong>Analog:</strong> Smooth, organic signature with reduced digital glare.</li>
+                            <li><strong>Default iBasso:</strong> Reverts to original specifications.</li>
+                        </ul>
                     </div>
-                </div>
-
-                <div class="flex items-start gap-6">
-                    <div class="w-10 h-10 rounded-full bg-amber-500 flex items-center justify-center shrink-0 font-bold text-slate-900">2</div>
-                    <div class="flex-1">
-                        <h4 class="text-lg font-bold mb-2">Run Automated Script</h4>
-                        <p class="text-slate-400 text-sm mb-4">Connect DX340 to PC and run the installer for your OS.</p>
-                        <div class="terminal-box p-4 rounded-xl text-xs md:text-sm text-slate-300">
-                            <p><span class="text-emerald-500"># For Windows</span></p>
-                            <p>Double-click Windows-Anantar-Ultimate-Installer.bat</p>
-                            <p class="mt-2"><span class="text-blue-400"># For macOS / Linux</span></p>
-                            <p>sh MacOS-Anantar-Ultimate-Installer.command</p>
+                    <div>
+                        <h4 class="text-lg font-bold mb-4">💿 Why Native EXT4?</h4>
+                        <p class="text-sm text-slate-400 mb-6 leading-relaxed">
+                            Native Linux/Android file system. Eliminates exFAT overhead, reducing CPU load and noise. 
+                            <strong>10-15% improvement</strong> in stage depth and detail.
+                        </p>
+                        <div class="terminal p-6 rounded-2xl text-[11px] text-emerald-400 leading-relaxed overflow-x-auto">
+                            <p># Format microSD via ADB</p>
+                            <p>adb shell su</p>
+                            <p>sm unmount public:179,1</p>
+                            <p class="text-white my-2 italic">mke2fs -t ext4 -b 4096 -O ^has_journal,extent,sparse_super -m 0 -L SDCard /dev/block/vold/public:179,1</p>
+                            <p>sm mount public:179,1</p>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="flex items-start gap-6">
-                    <div class="w-10 h-10 rounded-full bg-amber-500 flex items-center justify-center shrink-0 font-bold text-slate-900">3</div>
-                    <div>
-                        <h4 class="text-lg font-bold mb-2">Magisk Setup</h4>
-                        <p class="text-slate-400 text-sm">The script will open Magisk. If prompted for "Additional Setup", tap OK. The device will reboot and wait for 15 seconds.</p>
+            <div class="glass p-10 rounded-[3rem] border-white/10">
+                <h3 class="text-2xl font-bold mb-8 italic"><i class="fas fa-layer-group mr-2"></i> Harmonic Engine Series</h3>
+                <div class="space-y-8">
+                    <div class="group">
+                        <h5 class="text-blue-400 font-bold uppercase tracking-widest text-xs mb-3">💧 Water Series</h5>
+                        <p class="text-xs text-slate-500 leading-loose">TaiRai / TaiKei | EnON / EnONX | Amazakura | Zenbu | Water / Water MAX</p>
+                    </div>
+                    <div class="group">
+                        <h5 class="text-cyan-400 font-bold uppercase tracking-widest text-xs mb-3">☁️ Sky Series</h5>
+                        <p class="text-xs text-slate-500 leading-loose">Velvet | Maven | Zen | ZeNo | TenGen | Sky | Sky MAX</p>
+                    </div>
+                    <div class="group">
+                        <h5 class="text-orange-400 font-bold uppercase tracking-widest text-xs mb-3">🔥 Fire Series</h5>
+                        <p class="text-xs text-slate-500 leading-loose">Nap on Beach | Epitome | Sigma Delt Max | Fire</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="profiles" class="py-24 px-6 max-w-7xl mx-auto">
-        <div class="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-                <h2 class="text-3xl font-bold mb-6 italic">Harmonic Profiles Engine</h2>
-                <p class="text-slate-400 mb-8 leading-relaxed">Choose from 18+ hardware-level profiles categorized into Water, Sky, and Fire series to match your preferred signature.</p>
-                <div class="grid grid-cols-3 gap-4">
-                    <div class="bg-blue-900/30 p-4 rounded-2xl border border-blue-500/20 text-center">
-                        <span class="text-blue-400 font-bold block">Water</span>
-                        <span class="text-[10px] text-slate-500 uppercase tracking-widest">Liquid & Clear</span>
-                    </div>
-                    <div class="bg-cyan-900/30 p-4 rounded-2xl border border-cyan-500/20 text-center">
-                        <span class="text-cyan-400 font-bold block">Sky</span>
-                        <span class="text-[10px] text-slate-500 uppercase tracking-widest">Airy & Detailed</span>
-                    </div>
-                    <div class="bg-orange-900/30 p-4 rounded-2xl border border-orange-500/20 text-center">
-                        <span class="text-orange-400 font-bold block">Fire</span>
-                        <span class="text-[10px] text-slate-500 uppercase tracking-widest">Dynamic & Punchy</span>
-                    </div>
+    <section id="recovery" class="py-24 px-6 border-t border-white/5">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-3xl font-bold mb-20 text-center italic">MAINTENANCE & RECOVERY</h2>
+            <div class="grid md:grid-cols-3 gap-12 text-sm text-slate-400">
+                <div class="space-y-4">
+                    <h4 class="font-bold text-white uppercase text-xs tracking-widest">How to Uninstall</h4>
+                    <p>Change Boot profile to "Off". In Magisk, tap "Uninstall Magisk". The DX340 will reboot and be unrooted.</p>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="font-bold text-white uppercase text-xs tracking-widest">Soft Brick Recovery</h4>
+                    <p>Hold Bottom Side Button + Power. Release Power on Logo. Select "Recovery Mode" > "Wipe data/factory reset".</p>
+                </div>
+                <div class="space-y-4">
+                    <h4 class="font-bold text-white uppercase text-xs tracking-widest">Hard Brick (QFIL)</h4>
+                    <p>DX340 uses Qualcomm SoC. Flash firmware via QFIL on Windows using the official factory image.</p>
                 </div>
             </div>
-            <div class="glass-card p-6 rounded-3xl">
-                <h3 class="text-xl font-bold mb-4">Kernel Boot Options</h3>
-                <ul class="space-y-4">
-                    <li class="flex gap-4 p-3 hover:bg-white/5 rounded-xl transition">
-                        <span class="text-amber-500 font-bold">EXTREME:</span>
-                        <span class="text-slate-400 text-sm">Maximum responsiveness for precise processing.</span>
-                    </li>
-                    <li class="flex gap-4 p-3 hover:bg-white/5 rounded-xl transition">
-                        <span class="text-emerald-500 font-bold">ANALOG:</span>
-                        <span class="text-slate-400 text-sm">Organic, smooth sound signature with reduced glare.</span>
-                    </li>
-                    <li class="flex gap-4 p-3 hover:bg-white/5 rounded-xl transition">
-                        <span class="text-slate-400 font-bold">DEFAULT:</span>
-                        <span class="text-slate-400 text-sm">Reverts to original factory specifications.</span>
-                    </li>
-                </ul>
+            
+            <div class="mt-20 p-8 rounded-3xl bg-slate-900 border border-white/5">
+                <h4 class="font-bold text-white mb-4"><i class="fas fa-shield-alt mr-2 text-emerald-500"></i> Modding Risks & Safety</h4>
+                <p class="text-xs leading-relaxed opacity-60">
+                    Virtually no risk of a permanent brick. iBasso provides official images (.img) for QFIL recovery. 
+                    As long as no physical damage occurs, software is 100% recoverable. Always keep a copy of the official 
+                    Qualcomm image on your PC.
+                </p>
             </div>
         </div>
     </section>
 
-    <section class="py-20 px-6 bg-amber-500">
-        <div class="max-w-4xl mx-auto text-center text-slate-900">
-            <h2 class="text-4xl font-black mb-6">Support My Research</h2>
-            <p class="text-lg font-medium mb-10 opacity-80">This project is 100% free. Donations help me spend more time fine-tuning the DX340 to its absolute hardware limit.</p>
-            <div class="flex flex-wrap justify-center gap-6">
-                <a href="https://www.paypal.me/CharnsilpChinprasert" class="bg-slate-900 text-white px-8 py-4 rounded-2xl font-bold flex items-center gap-3 hover:scale-105 transition">
-                    <i class="fab fa-paypal"></i> PayPal
+    <footer class="py-24 bg-slate-950 px-6 text-center border-t border-white/5">
+        <div class="max-w-2xl mx-auto">
+            <h2 class="text-4xl font-black mb-8 italic accent-gold">Support My Work</h2>
+            <p class="text-slate-400 text-sm mb-12 leading-relaxed">
+                Anantar Ultimate is a labor of love for the community. If this project enhances your 
+                listening experience, consider supporting ongoing research. 100% Optional.
+            </p>
+            <div class="flex flex-wrap justify-center gap-6 mb-16">
+                <a href="https://www.paypal.me/CharnsilpChinprasert" class="bg-amber-600 hover:bg-amber-500 text-slate-900 px-8 py-4 rounded-2xl font-black uppercase flex items-center gap-3">
+                    <i class="fab fa-paypal"></i> PayPal Donation
                 </a>
-                <div class="bg-slate-900/10 border-2 border-slate-900 px-8 py-4 rounded-2xl font-mono text-sm break-all">
+                <div class="bg-slate-900 border border-white/10 px-8 py-4 rounded-2xl font-mono text-[11px] text-slate-500 flex items-center">
                     BTC: 0x794161ef033bd117a45f4dbeda023b5a69cc7cd5
                 </div>
             </div>
-        </div>
-    </section>
+            
+            <div class="flex justify-center gap-8 mb-12">
+                <a href="mailto:justice.form@gmail.com" class="text-slate-500 hover:text-white transition text-2xl"><i class="fas fa-envelope"></i></a>
+                <a href="https://www.head-fi.org/members/tekchansin.500217/" class="text-slate-500 hover:text-white transition text-2xl"><i class="fas fa-head-side-headphones"></i></a>
+            </div>
 
-    <footer id="recovery" class="py-24 px-6 border-t border-slate-800">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-12">
-            <div>
-                <h4 class="font-bold mb-6 uppercase text-xs tracking-widest text-slate-500">Maintenance</h4>
-                <ul class="space-y-3 text-sm text-slate-400">
-                    <li><a href="#" class="hover:text-amber-500">Unrooting Guide</a></li>
-                    <li><a href="#" class="hover:text-amber-500">OTA Upgrade via Magisk</a></li>
-                    <li><a href="#" class="hover:text-amber-500">A/B Testing Method</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-bold mb-6 uppercase text-xs tracking-widest text-slate-500">Recovery</h4>
-                <ul class="space-y-3 text-sm text-slate-400">
-                    <li><a href="#" class="hover:text-amber-500">Soft Brick (Recovery Mode)</a></li>
-                    <li><a href="#" class="hover:text-amber-500">Hard Brick (QFIL Method)</a></li>
-                    <li><a href="#" class="hover:text-amber-500">Official Qualcomm Images</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4 class="font-bold mb-6 uppercase text-xs tracking-widest text-slate-500">Contact</h4>
-                <p class="text-sm text-slate-400 mb-4">Feedback or support? Reach out via Head-Fi or Email.</p>
-                <div class="flex gap-4">
-                    <a href="mailto:justice.form@gmail.com" class="text-slate-400 hover:text-white text-xl transition"><i class="fas fa-envelope"></i></a>
-                    <a href="https://www.head-fi.org/members/tekchansin.500217/" class="text-slate-400 hover:text-white text-xl transition"><i class="fas fa-headset"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="max-w-7xl mx-auto mt-20 pt-8 border-t border-slate-900 text-center text-slate-600 text-[10px] uppercase tracking-widest">
-            &copy; 2026 ANANTAR ULTIMATE PROJECT | DEVELOPED BY TEKCHANSIN
+            <p class="text-[10px] text-slate-700 font-bold uppercase tracking-[0.6em]">
+                Developed with Passion by tekChansin 🇹🇭 &copy; 2026
+            </p>
         </div>
     </footer>
 
