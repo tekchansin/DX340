@@ -1,242 +1,894 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Anantar Ultimate V4 | Official Project Page</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
-        body { font-family: 'Space Grotesk', sans-serif; background-color: #020617; color: #f8fafc; line-height: 1.6; }
-        .glass { background: rgba(15, 23, 42, 0.8); backdrop-filter: blur(12px); border: 1px solid rgba(255,255,255,0.08); }
-        .accent-gold { color: #fbbf24; }
-        .bg-gold { background-color: #fbbf24; }
-        .spotlight-container {
-            position: relative;
-            background: radial-gradient(circle at center, rgba(251, 191, 36, 0.1) 0%, transparent 70%);
-        }
-        .spotlight-image {
-            box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-        .terminal { background: #010409; border: 1px solid #30363d; font-family: 'Courier New', Courier, monospace; }
-        .doc-link { color: #fbbf24; text-decoration: underline; text-underline-offset: 4px; transition: opacity 0.2s; }
-        .doc-link:hover { opacity: 0.8; }
-    </style>
-</head>
-<body class="antialiased text-slate-300">
+<html lang="en">
 
-    <nav class="fixed w-full z-50 glass border-b border-white/5 px-6 py-4">
-        <div class="max-w-7xl mx-auto flex justify-between items-center">
-            <div class="text-xl font-bold tracking-tighter uppercase text-white">Anantar <span class="accent-gold">Ultimate</span></div>
-            <div class="hidden lg:flex gap-8 text-xs uppercase tracking-[0.2em] font-bold">
-                <a href="#architecture" class="hover:text-amber-400">Arch</a>
-                <a href="#install" class="hover:text-amber-400">Install</a>
-                <a href="#features" class="hover:text-amber-400">Features</a>
-                <a href="#technical" class="hover:text-amber-400">Technical</a>
-                <a href="https://github.com/tekchansin/DX340/blob/main/ReleaseNote.md" class="text-amber-500">Release Notes</a>
-            </div>
-            <a href="https://www.paypal.me/CharnsilpChinprasert" class="bg-gold text-slate-900 px-5 py-2 rounded-xl text-xs font-black uppercase hover:scale-105 transition">Donate</a>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anantar Ultimate V4 — iBasso DX340</title>
+    <meta name="description"
+        content="Anantar Ultimate V4 — The definitive open-source audio optimization module for iBasso DX340. 3D soundstage, hardware-level harmonic tuning, DeepSleep V2, and more." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="assets/style.css" />
+</head>
+
+<body>
+
+    <!-- ───────────── NAV ───────────── -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <a href="#hero" class="nav-logo">
+                <span class="logo-glyph">◈</span>
+                <span>Anantar <strong>Ultimate</strong></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="#features">Features</a></li>
+                <li><a href="#architecture">Architecture</a></li>
+                <li><a href="#guide">Guides</a></li>
+                <li><a href="#profiles">Profiles</a></li>
+                <li><a href="#install">Install</a></li>
+                <li><a href="#ext4">EXT4</a></li>
+                <li><a href="#v4">V4 Notes</a></li>
+                <li><a href="#maintenance">Recovery</a></li>
+                <li><a href="#community">Community</a></li>
+            </ul>
+            <a href="https://pub-7d31638bb06b4f1ba9282512928751b3.r2.dev/Anantar-Ultimate/Anantar-Ultimate-Installer.zip"
+                class="btn-nav" target="_blank" rel="noopener">⬇ Download</a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
         </div>
     </nav>
 
-    <header id="architecture" class="pt-40 pb-20 px-6 text-center">
-        <div class="max-w-4xl mx-auto mb-16">
-            <h1 class="text-5xl md:text-7xl font-bold mb-6 tracking-tighter text-white">ANANTAR ULTIMATE V4</h1>
-            <p class="text-base md:text-lg text-slate-400 max-w-2xl mx-auto">
-                The next generation of system optimization for <span class="text-white font-bold">iBasso DX340</span>. 
-                Engineered for clarity, dynamics, and absolute purity.
-            </p>
-        </div>
-
-        <div class="max-w-4xl mx-auto spotlight-container">
-            <div class="p-6 md:p-8">
-                <p class="text-xs uppercase tracking-[0.4em] text-amber-500 font-bold mb-6">System Architecture Spotlight</p>
-                <img src="img/diagram.png" alt="Anantar Ultimate Diagram" class="w-full spotlight-image rounded-2xl mx-auto">
+    <!-- ───────────── HERO ───────────── -->
+    <header class="hero" id="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-orb orb1"></div>
+        <div class="hero-orb orb2"></div>
+        <div class="hero-orb orb3"></div>
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="pulse-dot"></span>
+                Passionately crafted by tekChansin · Bangkok 🇹🇭
             </div>
+            <h1 class="hero-title">
+                <span class="title-line1">Anantar Ultimate</span>
+                <span class="title-v4">V4</span>
+            </h1>
+            <p class="hero-subtitle">for iBasso DX340</p>
+            <p class="hero-desc">
+                The definitive hardware-level audio optimization module — delivering a 3D soundstage,
+                hardware harmonic tuning via FPGA, DeepSleep V2, EXT4 native support, and seamless
+                one-click installation. <strong>100% FREE.</strong>
+            </p>
+            <div class="hero-ctas">
+                <a href="https://pub-7d31638bb06b4f1ba9282512928751b3.r2.dev/Anantar-Ultimate/Anantar-Ultimate-Installer.zip"
+                    class="btn-primary" target="_blank" rel="noopener">
+                    ⬇ Download Installer
+                </a>
+                <a href="https://github.com/tekchansin/DX340" class="btn-ghost" target="_blank" rel="noopener">
+                    ⭐ GitHub Repo
+                </a>
+            </div>
+            <div class="hero-req">
+                ⚠ Requires iBasso Firmware <strong>1.08 or higher</strong>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <span>Scroll to explore</span>
+            <span class="scroll-arrow">↓</span>
         </div>
     </header>
 
-    <section class="py-12 px-6">
-        <div class="max-w-4xl mx-auto bg-amber-500/5 border-l-4 border-amber-500 p-8 rounded-r-2xl">
-            <h3 class="text-amber-500 font-bold mb-4 flex items-center gap-2 text-xl italic"><i class="fas fa-exclamation-triangle"></i> Important Requirements</h3>
-            <ul class="text-base space-y-3">
-                <li><i class="fas fa-check text-emerald-500 mr-2"></i><strong>Firmware:</strong> iBasso Firmware 1.08 or higher only.</li>
-                <li><i class="fas fa-minus-circle text-red-500 mr-2"></i><strong>Conflict:</strong> Please Remove/Disable legacy <em>Anantar</em> or <em>MoonDiamond</em> modules.</li>
-                <li><i class="fas fa-info-circle text-blue-400 mr-2"></i> Factory reset is <strong>not required</strong> for this installation.</li>
-            </ul>
-        </div>
-    </section>
+    <!-- ───────────── FEATURES ───────────── -->
+    <section class="section" id="features">
+        <div class="container">
+            <div class="section-tag">🚀 Key Features</div>
+            <h2 class="section-title">Everything You Need,<br />At the Hardware Level</h2>
+            <p class="section-sub">Anantar Ultimate consolidates sound, kernel, and power management into a single
+                unified module — no conflicts, no hassle.</p>
 
-    <section id="install" class="py-24 bg-slate-900/40 px-6 border-y border-white/5">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="text-3xl md:text-4xl font-bold mb-16 text-center italic text-white">🔥 Seamless Installation</h2>
-            <div class="grid lg:grid-cols-2 gap-16 items-center">
-                <div class="space-y-8">
-                    <p class="text-base md:text-lg leading-relaxed">
-                        Installing Anantar Ultimate is now automated. Our script handles <strong>Debloating, Rooting, and Module Setup</strong> in under 10 minutes.
+            <div class="feature-grid">
+
+                <div class="feature-card card-glow">
+                    <div class="feature-icon">🎼</div>
+                    <h3>Enhanced Sound Signature</h3>
+                    <p>3D Large SoundStage, superior instrument separation, and natural warm vocal delivery through
+                        advanced interrupt tuning that assigns audio tasks to dedicated CPU cores — eliminating latency
+                        spikes.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🎛️</div>
+                    <h3>Harmonic Profiles Engine</h3>
+                    <p>True hardware-level FPGA enhancement — no software DSP. Directly commands the DX340's internal
+                        FPGA to alter the harmonic sequence, maintaining absolute signal purity with native DSD support.
                     </p>
-                    <div class="flex flex-col sm:flex-row gap-4">
-                        <a href="https://pub-7d31638bb06b4f1ba9282512928751b3.r2.dev/Anantar-Ultimate/Anantar-Ultimate-Installer.zip" 
-                           class="bg-white text-slate-900 px-8 py-4 rounded-xl font-black uppercase text-center hover:bg-amber-500 transition">
-                            Download Installer
-                        </a>
-                        <a href="https://github.com/tekchansin/DX340#manual-installation-for-power-users" class="doc-link flex items-center justify-center font-bold">
-                            Manual Installation Guide <i class="fas fa-arrow-right ml-2"></i>
-                        </a>
-                    </div>
                 </div>
-                <div class="glass p-2 rounded-2xl shadow-2xl">
-                    <img src="img/installer.png" alt="Installer Interface" class="w-full rounded-xl">
+
+                <div class="feature-card">
+                    <div class="feature-icon">🤖</div>
+                    <h3>Auto Profile Selection</h3>
+                    <p>The system automatically detects your installed AMP module and selects the optimal default
+                        profile. Flexible and completely hassle-free out of the box.</p>
                 </div>
+
+                <div class="feature-card card-glow">
+                    <div class="feature-icon">🔋</div>
+                    <h3>Flawless 32-Bit/192kHz Playback</h3>
+                    <p>Completely resolved stalling and lagging during high-resolution playback. Native DSD, heavy FLAC,
+                        and hi-res streams play flawlessly without stuttering or dropouts.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🎶</div>
+                    <h3>FW 1.08 SQ Correction</h3>
+                    <p>Fixed the overly bright and dynamically flat sound introduced in stock firmware 1.08. Restored
+                        lost dynamics and musicality — full-bodied, engaging, punchy.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">⚙️</div>
+                    <h3>Kernel Boot Profiles</h3>
+                    <p>Deep system-level optimization applied at the kernel boot stage — precise control over CPU
+                        governance, power management, and audio thread prioritization for jitter-free listening.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🖥️</div>
+                    <h3>Intelligent Desktop Mode</h3>
+                    <p>When connected to a 9–12V USB source or Linear Power Supply, Anantar automatically disconnects
+                        the internal battery during playback — eliminating battery-induced noise for ultra-clean
+                        desktop-grade audio.</p>
+                </div>
+
+                <div class="feature-card card-glow">
+                    <div class="feature-icon">💿</div>
+                    <h3>Native EXT4 Support</h3>
+                    <p>Eliminates the exFAT translation layer (FUSE), reducing CPU overhead and jitter — delivering a
+                        measurable 10–15% improvement in soundstage depth and micro-detail resolution.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🔄</div>
+                    <h3>MangoOS Compatibility</h3>
+                    <p>Configure your profiles in Android — kernel boot profiles, oversampling modes, and harmonic
+                        profiles persist seamlessly when you boot into MangoOS.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">🌐</div>
+                    <h3>Easy USB DAC on Tile</h3>
+                    <p>High-fidelity USB DAC functionality across the entire Android system — use Tidal, Apple Music, or
+                        Spotify with full audio optimization, not just MangoPlayer.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">⚡</div>
+                    <h3>High-Speed UMS File Transfer</h3>
+                    <p>Full USB Mass Storage support for SD Cards — transfer files at ultra-high speeds directly from
+                        macOS and other Android devices.</p>
+                </div>
+
+                <div class="feature-card card-glow">
+                    <div class="feature-icon">📲</div>
+                    <h3>Seamless OTA Updates</h3>
+                    <p>Receive the latest sound optimizations and bug fixes directly over-the-air — no USB connection to
+                        a PC required. Update in seconds right from the Magisk Modules tab.</p>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <section class="py-24 px-6 bg-slate-950">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-xl font-bold mb-12 text-center text-slate-500 uppercase tracking-widest italic">User Interface Screenshots</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
-                <div class="group"><img src="img/Tile.png" class="rounded-xl border border-white/5 group-hover:border-amber-500/50 transition"><p class="text-[11px] text-center mt-3 font-bold text-slate-600 uppercase">Quick Settings</p></div>
-                <div class="group"><img src="img/Boot.png" class="rounded-xl border border-white/5 group-hover:border-amber-500/50 transition"><p class="text-[11px] text-center mt-3 font-bold text-slate-600 uppercase">Boot Profiles</p></div>
-                <div class="group"><img src="img/OverSampling.png" class="rounded-xl border border-white/5 group-hover:border-amber-500/50 transition"><p class="text-[11px] text-center mt-3 font-bold text-slate-600 uppercase">OverSampling</p></div>
-                <div class="group"><img src="img/USBDAC.png" class="rounded-xl border border-white/5 group-hover:border-amber-500/50 transition"><p class="text-[11px] text-center mt-3 font-bold text-slate-600 uppercase">USB DAC Support</p></div>
-            </div>
-        </div>
-    </section>
+    <!-- ───────────── ARCHITECTURE ───────────── -->
+    <section class="section section-dark" id="architecture">
+        <div class="container">
+            <div class="section-tag">🏗️ System Architecture</div>
+            <h2 class="section-title">Desktop-Class Architecture, Realized</h2>
+            <p class="section-sub">Anantar Ultimate operates at every level of the DX340 hardware stack — from the FPGA
+                and DSP chips up through the Linux kernel and into the Android layer.</p>
 
-    <section id="features" class="py-24 px-6 max-w-7xl mx-auto">
-        <h2 class="text-4xl font-bold mb-20 text-center tracking-tighter text-white uppercase">Key Optimizations</h2>
-        
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
-            <div class="space-y-4">
-                <i class="fas fa-headphones accent-gold text-3xl"></i>
-                <h4 class="text-xl font-bold text-white italic">Enhanced Sound Signature</h4>
-                <p class="text-base text-slate-400">Delivers a 3D large soundstage, superior separation, and warm vocal delivery with jitter-free linear scheduling.</p>
+            <div class="arch-img-wrap">
+                <img src="assets/diagram.png"
+                    alt="iBasso DX340 Anantar Ultimate System Architecture Diagram by tekChansin" class="arch-orig-img"
+                    loading="lazy" />
+                <div class="arch-img-credit">Official Architecture Diagram by tekChansin</div>
             </div>
-            <div class="space-y-4">
-                <i class="fas fa-gem accent-gold text-3xl"></i>
-                <h4 class="text-xl font-bold text-white italic">Harmonic Profiles Engine</h4>
-                <p class="text-base text-slate-400">Hardware-level enhancement via DX340 internal FPGA. Absolute signal purity with zero software DSP degradation.</p>
-            </div>
-            <div class="space-y-4">
-                <i class="fas fa-battery-full text-emerald-500 text-3xl"></i>
-                <h4 class="text-xl font-bold text-white italic">Battery Bypass Mode</h4>
-                <p class="text-base text-slate-400">Automatically disconnects the internal battery during playback when using desktop power (>9V) to eliminate noise.</p>
-            </div>
-            <div class="lg:col-span-2 glass p-8 rounded-3xl flex flex-col md:flex-row gap-8 items-center border-white/10">
-                <img src="img/deepsleep2.png" class="w-32 rounded-xl shadow-lg border border-white/10">
-                <div>
-                    <h4 class="text-xl font-bold text-white mb-3 italic">DeepSleep Mode V2</h4>
-                    <p class="text-base text-slate-400 leading-relaxed">Automated power-management feature that maximizes battery life by limiting hardware activity. Includes instant CPU boost upon wake-up.</p>
-                </div>
-            </div>
-            <div class="space-y-4">
-                <i class="fas fa-sync-alt text-blue-400 text-3xl"></i>
-                <h4 class="text-xl font-bold text-white italic">Seamless OTA Updates</h4>
-                <p class="text-base text-slate-400">Keep your device updated effortlessly. Receive new optimizations directly via Magisk without a PC.</p>
-            </div>
-        </div>
-    </section>
 
-    <section id="technical" class="py-24 bg-slate-900/40 px-6">
-        <div class="max-w-6xl mx-auto grid lg:grid-cols-2 gap-20">
-            <div class="space-y-12">
-                <h2 class="text-3xl font-bold text-white italic accent-gold">Technical Profiles</h2>
-                
-                <div>
-                    <h4 class="text-lg font-bold text-white mb-4">⚙️ Kernel Boot Profiles</h4>
-                    <ul class="text-base space-y-3">
-                        <li><strong class="text-white">Extreme:</strong> Maximize performance and system responsiveness.</li>
-                        <li><strong class="text-white">Analog:</strong> Smooth, organic sound signature with reduced glare.</li>
-                        <li><strong class="text-white">MangoOS:</strong> Full benefits persist even in MangoOS environment.</li>
+            <!-- Explanation blocks from Head-Fi post -->
+            <div class="arch-explain-grid">
+
+                <div class="arch-explain-card">
+                    <div class="arch-explain-icon">🛠️</div>
+                    <h3>Desktop-Class Architecture Realized</h3>
+                    <ul class="arch-explain-list">
+                        <li>
+                            <strong>20 Distinct Harmonic Profiles</strong>
+                            Through direct integration with the FPGA 3.0, Anantar delivers meticulously tuned sound
+                            signatures beyond default constraints — for any equipment pairing.
+                        </li>
+                        <li>
+                            <strong>True NOS Mode</strong>
+                            Full potential of the CT7302 DSP is unlocked, achieving an authentic Non-Oversampling (NOS)
+                            experience — a significant upgrade over the factory 2× oversampling.
+                        </li>
+                        <li>
+                            <strong>A "Pure Desktop" Power Environment</strong>
+                            By leveraging desktop-class power chips (bq24192 / bq25890), the system achieves zero
+                            battery noise. When a Linear Power Supply is detected, a clean external power path is
+                            provided automatically.
+                        </li>
                     </ul>
                 </div>
 
-                <div>
-                    <h4 class="text-lg font-bold text-white mb-4 italic">💿 Why Native EXT4?</h4>
-                    <p class="text-base text-slate-400 mb-6">Eliminating the exFAT translation layer reduces CPU load and jitter. Expect 10-15% improvement in stage depth.</p>
-                    <div class="terminal p-6 rounded-2xl text-[13px] text-emerald-400 overflow-x-auto leading-relaxed">
-                        <p class="opacity-50 text-slate-500 mb-2"># Quick Format Command</p>
-                        <p>adb shell su</p>
-                        <p>sm unmount public:179,1</p>
-                        <p class="text-white">mke2fs -t ext4 -b 4096 -L SDCard /dev/block/vold/public:179,1</p>
-                        <p>sm mount public:179,1</p>
-                    </div>
+                <div class="arch-explain-card">
+                    <div class="arch-explain-icon">💻</div>
+                    <h3>The Purest Signal Path</h3>
+                    <ul class="arch-explain-list">
+                        <li>
+                            <strong>Streamlined Kernel-Level Switching</strong>
+                            Two polar opposite signatures — Extreme and Analog — achieved at the binary kernel level. A
+                            reboot finalizes deep-level changes, but Anantar makes switching seamless.
+                        </li>
+                        <li>
+                            <strong>A Jitter-Free Audio Highway</strong>
+                            By isolating the dedicated audio IRQ, the "thin" sound issue is eliminated — delivering a
+                            rich, organic, pure audio buffer.
+                        </li>
+                        <li>
+                            <strong>10–20% Performance Gain via EXT4</strong>
+                            A breakthrough in storage efficiency. Native Linux EXT4 support for microSD significantly
+                            reduces system latency compared to standard exFAT.
+                        </li>
+                    </ul>
                 </div>
+
             </div>
 
-            <div class="glass p-10 rounded-[2.5rem] border-white/5 shadow-2xl">
-                <h3 class="text-2xl font-bold mb-8 italic text-white underline decoration-amber-500/30">Harmonic Engine Series</h3>
-                <div class="space-y-8">
-                    <div class="group">
-                        <h5 class="text-blue-400 font-bold uppercase tracking-widest text-xs mb-3">💧 Water Series</h5>
-                        <p class="text-sm text-slate-500">TaiRai | TaiKei | EnON | Amazakura | Water MAX</p>
-                    </div>
-                    <div class="group">
-                        <h5 class="text-cyan-400 font-bold uppercase tracking-widest text-xs mb-3">☁️ Sky Series</h5>
-                        <p class="text-sm text-slate-500">Velvet | Maven | Zen | ZeNo | TenGen | Sky MAX</p>
-                    </div>
-                    <div class="group">
-                        <h5 class="text-orange-400 font-bold uppercase tracking-widest text-xs mb-3">🔥 Fire Series</h5>
-                        <p class="text-sm text-slate-500">Nap on Beach | Epitome | Sigma Delt Max | Fire</p>
-                    </div>
-                    <div class="pt-6 border-t border-white/5">
-                        <a href="https://github.com/tekchansin/DX340#manual-installation-for-power-users" class="doc-link text-sm font-bold italic">
-                            View Full Documentation on GitHub
-                        </a>
-                    </div>
-                </div>
+            <div class="arch-source-note">
+                Source: <a
+                    href="https://www.head-fi.org/threads/dx340-guides-optimization-battery-replacements-diy-discussions.975654/post-19043601"
+                    target="_blank" rel="noopener">Head-Fi DX340 Guides Thread · Post #669 by tekChansin</a>
             </div>
+
         </div>
     </section>
 
-    <section class="py-24 px-6 border-t border-white/5">
-        <div class="max-w-7xl mx-auto">
-            <h2 class="text-3xl font-bold mb-16 text-center italic text-white">Maintenance & Safety</h2>
-            <div class="grid md:grid-cols-3 gap-12 text-base text-slate-400">
-                <div class="space-y-4">
-                    <h4 class="font-bold text-amber-500 uppercase text-sm tracking-widest">How to Uninstall</h4>
-                    <p>Simply change profile to "Off" and select "Uninstall Magisk" from the app. For more info: <a href="https://github.com/tekchansin/DX340#how-to-uninstall-anantar-ultimate" class="doc-link">Uninstall Guide</a></p>
-                </div>
-                <div class="space-y-4">
-                    <h4 class="font-bold text-amber-500 uppercase text-sm tracking-widest">Soft/Hard Brick</h4>
-                    <p>iBasso devices are fully recoverable via Recovery Mode or QFIL. Check our <a href="https://github.com/tekchansin/DX340#how-to-recover-soft-brick" class="doc-link">Recovery Guide</a></p>
-                </div>
-                <div class="space-y-4">
-                    <h4 class="font-bold text-amber-500 uppercase text-sm tracking-widest">Modding Risks</h4>
-                    <p>Software modifications are virtually 100% recoverable with official iBasso factory images.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="py-24 bg-slate-950 px-6 text-center border-t border-white/5">
-        <div class="max-w-2xl mx-auto">
-            <h2 class="text-3xl font-black mb-8 italic text-white">Support My Research</h2>
-            <p class="text-base text-slate-400 mb-10">
-                Anantar Ultimate is provided for free to the community. Consider supporting my research to keep this project moving forward.
+    <!-- ───────────── TUNING GUIDE ───────────── -->
+    <section class="section" id="guide">
+        <div class="container">
+            <div class="section-tag">🎵 Tuning Guide</div>
+            <h2 class="section-title">Defining Excellence: How to Tune</h2>
+            <p class="section-sub">A step-by-step configuration guide to unlock the full potential of Anantar Ultimate.
             </p>
-            <div class="flex flex-wrap justify-center gap-6 mb-16">
-                <a href="https://www.paypal.me/CharnsilpChinprasert" class="bg-amber-600 hover:bg-amber-500 text-slate-900 px-8 py-4 rounded-xl font-black uppercase flex items-center gap-2 transition">
-                    <i class="fab fa-paypal"></i> PayPal
+
+            <div class="orig-img-card full-width">
+                <div class="orig-img-header">
+                    <span class="orig-img-tag">📖 Tuning Reference</span>
+                    <h3>Official Tuning Parameters</h3>
+                    <p>Guidance on Boot Profile, Over Sampling, Infinity Stage, and Anantar Harmonics. Optimized for
+                        bit-perfect playback without EQ.</p>
+                </div>
+                <div class="orig-img-wrap">
+                    <img src="assets/guide.png"
+                        alt="How to Tune Anantar Ultimate — Defining Excellence Tuning Guide by tekChansin"
+                        class="orig-img" loading="lazy" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ───────────── PROFILES ───────────── -->
+    <section class="section section-dark" id="profiles">
+        <div class="container">
+            <div class="section-tag">🎼 Audio &amp; Kernel Profiles</div>
+            <h2 class="section-title">Craft Your Perfect Sound</h2>
+            <p class="section-sub">Three dimensions of tuning — oversampling, kernel, and harmonic — fully combinable
+                for your taste.</p>
+
+            <div class="profiles-layout">
+
+                <!-- Oversampling -->
+                <div class="profile-group">
+                    <h3 class="profile-group-title">🎧 OverSampling Modes</h3>
+                    <div class="profile-list">
+                        <div class="profile-item">
+                            <span class="profile-num">1</span>
+                            <div>
+                                <strong>Default iBasso</strong>
+                                <p>Stock factory oversampling configuration.</p>
+                            </div>
+                        </div>
+                        <div class="profile-item">
+                            <span class="profile-num">2</span>
+                            <div>
+                                <strong>NOS Mode</strong>
+                                <p>Non-OverSampling — bypasses digital filtering for a raw, phase-coherent, and musical
+                                    sound.</p>
+                            </div>
+                        </div>
+                        <div class="profile-item">
+                            <span class="profile-num">3</span>
+                            <div>
+                                <strong>Improved OverSampling</strong>
+                                <p>Custom-tuned algorithm for better transient response and reduced ringing artifacts.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Kernel -->
+                <div class="profile-group">
+                    <h3 class="profile-group-title">⚙️ Kernel Boot Profiles</h3>
+                    <div class="profile-list">
+                        <div class="profile-item">
+                            <span class="profile-num">1</span>
+                            <div>
+                                <strong>Extreme</strong>
+                                <p>Maximizes CPU performance and system responsiveness for the most precise audio
+                                    processing.</p>
+                            </div>
+                        </div>
+                        <div class="profile-item">
+                            <span class="profile-num">2</span>
+                            <div>
+                                <strong>Analog</strong>
+                                <p>Optimized power delivery and clocking for a smooth, organic, analog-like sound with
+                                    reduced digital glare.</p>
+                            </div>
+                        </div>
+                        <div class="profile-item">
+                            <span class="profile-num">3</span>
+                            <div>
+                                <strong>Default iBasso Boot</strong>
+                                <p>Reverts system behavior to original factory specifications.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Harmonic Profiles -->
+            <div class="harmonic-section">
+                <h3 class="profile-group-title">💎 Harmonic Profiles Engine <span class="tag-small">Hardware-Level
+                        FPGA</span></h3>
+                <p class="harmonic-desc">Over 18+ customized harmonic profiles, grouped into three signature series.
+                    Each profile commands the DX340's internal FPGA directly — zero signal degradation, full DSD
+                    support.</p>
+                <div class="harmonic-grid">
+                    <div class="harmonic-card water">
+                        <div class="harmonic-icon">💧</div>
+                        <h4>Water Series</h4>
+                        <div class="harmonic-tags">
+                            <span>TaiRai</span>
+                            <span>TaiKei</span>
+                            <span>EnON</span>
+                            <span>EnONX</span>
+                            <span>Amazakura</span>
+                            <span>Zenbu</span>
+                            <span>Water</span>
+                            <span>Water MAX</span>
+                        </div>
+                    </div>
+                    <div class="harmonic-card sky">
+                        <div class="harmonic-icon">☁️</div>
+                        <h4>Sky Series</h4>
+                        <div class="harmonic-tags">
+                            <span>Velvet</span>
+                            <span>Maven</span>
+                            <span>Zen</span>
+                            <span>ZeNo</span>
+                            <span>TenGen</span>
+                            <span>Sky</span>
+                            <span>Sky MAX</span>
+                        </div>
+                    </div>
+                    <div class="harmonic-card fire">
+                        <div class="harmonic-icon">🔥</div>
+                        <h4>Fire Series</h4>
+                        <div class="harmonic-tags">
+                            <span>Nap on Beach</span>
+                            <span>Epitome</span>
+                            <span>Sigma Delt Max</span>
+                            <span>Fire</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- DeepSleep -->
+            <div class="deepsleep-card">
+                <div class="ds-header">
+                    <span class="ds-icon">🔋</span>
+                    <div>
+                        <h3>DeepSleep Mode V2</h3>
+                        <p>Automated power-management for maximum battery longevity</p>
+                    </div>
+                </div>
+                <div class="ds-grid">
+                    <div class="ds-item">
+                        <strong>Trigger Logic</strong>
+                        <p>Activates after 15 minutes of: no audio playback &amp; no USB connectivity.</p>
+                    </div>
+                    <div class="ds-item">
+                        <strong>Smart Core Logic</strong>
+                        <p>Deactivates BIG CPU cores during sleep. Triggers 60-second MAX CPU Boost on wake-up.</p>
+                    </div>
+                    <div class="ds-item">
+                        <strong>Radio Shutdown</strong>
+                        <p>Automatically disables Wi-Fi and Bluetooth to eliminate idle battery drain.</p>
+                    </div>
+                    <div class="ds-item">
+                        <strong>Instant Resume</strong>
+                        <p>Screen-on triggers instant state restore — all connections and apps resume immediately, no
+                            reboot needed.</p>
+                    </div>
+                    <div class="ds-item">
+                        <strong>DeepSleep Stats</strong>
+                        <p>View cumulative sleep time and real-time battery discharge rates via new notification.</p>
+                    </div>
+                    <div class="ds-item">
+                        <strong>Android Doze Integration</strong>
+                        <p>Deep-level integration instructs the low-level OS to enter deep sleep states more
+                            effectively.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ───────────── INSTALLATION ───────────── -->
+    <section class="section" id="install">
+        <div class="container">
+            <div class="section-tag">⚡ Installation Guide</div>
+            <h2 class="section-title">Up and Running in 10 Minutes</h2>
+            <p class="section-sub">The fully automated installer handles ADB checks, debloating, rooting, and module
+                installation — automatically.</p>
+
+            <div class="install-layout">
+
+                <!-- Prerequisites -->
+                <div class="install-step prereq">
+                    <div class="step-header">
+                        <span class="step-num">PRE</span>
+                        <h3>Prerequisites</h3>
+                    </div>
+                    <ul class="step-list">
+                        <li>A computer (PC or Mac) with ADB (Android Debug Bridge) installed</li>
+                        <li>A high-quality USB-C cable</li>
+                        <li>iBasso Firmware <strong>1.08 or higher</strong></li>
+                        <li>Disable or Remove legacy modules: <em>Anantar Sound Profile</em>, <em>Anantar Kernel
+                                Boot</em>, and <em>MoonDiamond</em></li>
+                    </ul>
+                </div>
+
+                <!-- Step 0 -->
+                <div class="install-step">
+                    <div class="step-header">
+                        <span class="step-num">0</span>
+                        <h3>Prepare the Device</h3>
+                    </div>
+                    <ol class="step-list">
+                        <li>Enable Developer Options: <code>Settings → About phone → Tap Build number 7 times</code>
+                        </li>
+                        <li>Enable USB Debugging: <code>Settings → System → Developer options → USB debugging ON</code>
+                        </li>
+                        <li>Authorize Connection: Connect DX340 to your PC → select "Always allow" → tap Allow</li>
+                    </ol>
+                </div>
+
+                <!-- Step 1 -->
+                <div class="install-step highlight-step">
+                    <div class="step-header">
+                        <span class="step-num">1</span>
+                        <h3>Download &amp; Run the Installer</h3>
+                    </div>
+                    <div class="download-box">
+                        <a href="https://pub-7d31638bb06b4f1ba9282512928751b3.r2.dev/Anantar-Ultimate/Anantar-Ultimate-Installer.zip"
+                            class="btn-primary" target="_blank" rel="noopener">⬇ Download
+                            Anantar-Ultimate-Installer.zip</a>
+                    </div>
+                    <ol class="step-list">
+                        <li>Download &amp; Extract the ZIP file to any folder</li>
+                        <li>Connect your DX340 via USB (tap "Always allow")</li>
+                        <li>Keep Wi-Fi connected during installation</li>
+                        <li>
+                            Run the installer for your OS:
+                            <div class="os-chips">
+                                <span class="chip chip-win">🪟 Windows:
+                                    <code>Windows-Anantar-Ultimate-Installer.bat</code></span>
+                                <span class="chip chip-mac">🍎 macOS/Linux:
+                                    <code>MacOS-Anantar-Ultimate-Installer.command</code></span>
+                            </div>
+                            <em class="tip">macOS Tip: If it fails, open Terminal → type <code>chmod +x </code> → drag
+                                the .command file in → press Enter → try again.</em>
+                        </li>
+                        <li>Follow on-screen prompts. If Magisk asks for "Additional Setup", tap OK.</li>
+                        <li>Wait for the <strong>ANANTAR ULTIMATE logo</strong> in the terminal — done! Device reboots
+                            automatically.</li>
+                    </ol>
+                </div>
+
+                <!-- MangoOS -->
+                <div class="install-step">
+                    <div class="step-header">
+                        <span class="step-num">+</span>
+                        <h3>📂 MangoOS Integration</h3>
+                    </div>
+                    <ol class="step-list">
+                        <li>Boot into <strong>Android Mode</strong></li>
+                        <li>Select your desired Kernel Boot Profile, OverSampling Mode, and Harmonic Profile</li>
+                        <li>Switch/Boot to MangoOS</li>
+                        <li>Your optimizations persist — Anantar Ultimate sound in MangoOS ✓</li>
+                    </ol>
+                </div>
+
+                <!-- OTA Update -->
+                <div class="install-step">
+                    <div class="step-header">
+                        <span class="step-num">↑</span>
+                        <h3>OTA Updates (No PC Required)</h3>
+                    </div>
+                    <ol class="step-list">
+                        <li>Open the Magisk app</li>
+                        <li>Go to the <strong>Modules tab</strong> (bottom right)</li>
+                        <li>Find <em>Anantar Ultimate</em> and tap <strong>Update</strong></li>
+                        <li>Wait for "Finished" or "Success" — done!</li>
+                    </ol>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ───────────── EXT4 ───────────── -->
+    <section class="section section-dark" id="ext4">
+        <div class="container">
+            <div class="section-tag">💡 Technical Deep Dive</div>
+            <h2 class="section-title">Why EXT4?<br />Improve SQ via Filesystem</h2>
+            <p class="section-sub">Switching your microSD from exFAT to EXT4 is one of the most impactful changes you
+                can make for audio quality.</p>
+
+            <div class="ext4-why-grid">
+                <div class="ext4-why-card">
+                    <div class="ext4-why-icon">⚡</div>
+                    <h4>Lower Overhead</h4>
+                    <p>Unlike exFAT (which requires a FUSE/software translation layer), EXT4 is handled natively by the
+                        Linux kernel — directly reducing CPU load and electrical noise.</p>
+                </div>
+                <div class="ext4-why-card card-glow">
+                    <div class="ext4-why-icon">🎵</div>
+                    <h4>10–15% SQ Improvement</h4>
+                    <p>Expect a significantly larger soundstage, better 3D positioning, and enhanced micro-detail
+                        resolution — a measurable, audible improvement right out of the box.</p>
+                </div>
+                <div class="ext4-why-card">
+                    <div class="ext4-why-icon">🧩</div>
+                    <h4>Native Compatibility</h4>
+                    <p>EXT4 is the native filesystem for the Linux Kernel and Android — every system partition already
+                        uses it. It's what the DX340 was designed to run.</p>
+                </div>
+                <div class="ext4-why-card">
+                    <div class="ext4-why-icon">🔄</div>
+                    <h4>MangoOS Support</h4>
+                    <p>Anantar Ultimate provides full native EXT4 support in MangoOS — enabling audiophile-grade
+                        playback in both operating environments.</p>
+                </div>
+            </div>
+
+            <div class="ext4-format-box">
+                <h3>🛠 Step-by-Step: Format microSD to EXT4 via ADB</h3>
+                <div class="ext4-warning">
+                    ⚠️ <strong>Backup your microSD card data first.</strong> Formatting erases all data.
+                </div>
+                <ol class="step-list">
+                    <li>Backup all data on your microSD card</li>
+                    <li>Connect DX340 via USB and open ADB shell</li>
+                    <li>Grant Shell Permission (Root access required)</li>
+                    <li>Run the formatting command via ADB Shell to format with optimized parameters for high-fidelity
+                        audio playback</li>
+                    <li>Wait for completion, then reboot the device</li>
+                </ol>
+                <div class="ext4-limitations">
+                    <h4>⚠️ EXT4 Limitations</h4>
+                    <ul>
+                        <li>EXT4 microSD cards are <strong>not directly readable on Windows/macOS</strong> via card
+                            readers — transfer files via USB/ADB</li>
+                        <li>If you need to switch back: format via <strong>Settings → Storage → Format as
+                                portable</strong> or via ADB to exFAT</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="ext4-community-note">
+                <blockquote>
+                    <p>"EXT4 is the native file system for Android. By eliminating the exFAT translation layer, it
+                        reduces CPU overhead and jitter, resulting in a 10-15% improvement in soundstage depth and
+                        micro-detail resolution."</p>
+                    <footer>— tekChansin, <a
+                            href="https://www.head-fi.org/threads/ibasso-dx180-dx260-dx300-max-dx320-max-dx340-rooting-optimization-guides-and-discussion.974923/post-19030118"
+                            target="_blank" rel="noopener">Head-Fi iBasso Optimization Thread</a></footer>
+                </blockquote>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ───────────── V4 RELEASE NOTES ───────────── -->
+    <section class="section" id="v4">
+        <div class="container">
+            <div class="section-tag">📝 V4 Release Notes</div>
+            <h2 class="section-title">What's New in V4</h2>
+            <p class="section-sub">The most comprehensive release yet — precision playback, battery intelligence, and a
+                brand-new notification system.</p>
+
+            <div class="v4-grid">
+
+                <div class="v4-group">
+                    <h3 class="v4-group-title">🎵 Precision Playback Engine</h3>
+                    <ul class="v4-list">
+                        <li><strong>Direct Data Path (I/O Optimization):</strong> Streamlines data flow from storage to
+                            CPU cache — removes unnecessary processing layers, significantly reducing latency and CPU
+                            overhead.</li>
+                        <li><strong>Reduce Jitter:</strong> Linear scheduling approach prevents micro-stutters, ensuring
+                            a perfectly stable data stream for high-bitrate playback.</li>
+                        <li><strong>I/O Interrupt Affinity Tuning:</strong> Pinpoints interrupt requests between storage
+                            controller and audio engine to specific CPU cores — reduces latency spikes during demanding
+                            playback.</li>
+                        <li><strong>LocalPlay Engine Optimization:</strong> Fine-tuned CPU scaling governor for local
+                            playback, balancing power delivery with signal stability.</li>
+                        <li><strong>Automated Background Terminator:</strong> New intelligent service identifies and
+                            suspends non-essential tasks during playback, freeing system resources.</li>
+                    </ul>
+                </div>
+
+                <div class="v4-group">
+                    <h3 class="v4-group-title">🔋 DeepSleep V2 Enhancements</h3>
+                    <ul class="v4-list">
+                        <li><strong>DeepSleep Stats:</strong> Cumulative sleep duration and real-time battery discharge
+                            rate notifications.</li>
+                        <li><strong>Big Core Management:</strong> Automatically deactivates BIG cores when DeepSleep is
+                            triggered.</li>
+                        <li><strong>Instant Recovery (CPU Boost):</strong> 60-second MAX CPU Boost triggers immediately
+                            on restore from DeepSleep.</li>
+                        <li><strong>Native Doze Integration:</strong> Deep-level integration with Android's Doze,
+                            instructing the low-level OS into more effective deep sleep states.</li>
+                        <li><strong>Battery Longevity &amp; Guard:</strong> Stricter Play Store background restrictions
+                            to prevent idle battery drain.</li>
+                    </ul>
+                </div>
+
+                <div class="v4-group">
+                    <h3 class="v4-group-title">📱 Enhanced UX/UI (Notification System)</h3>
+                    <ul class="v4-list">
+                        <li><strong>Native Integration:</strong> Fully migrated from Magisk-based app overlays to
+                            Android Native Notification framework for improved stability.</li>
+                        <li><strong>Refined Messaging:</strong> All notifications rewritten with clearer, more intuitive
+                            language.</li>
+                        <li><strong>Bubble Notifications:</strong> Multitasking-friendly bubbles for quick access to
+                            essential controls.</li>
+                        <li><strong>Initial Anantar App Release:</strong> Official portal to the Anantar Ultimate site —
+                            a unified hub for community updates.</li>
+                    </ul>
+                </div>
+
+                <div class="v4-group">
+                    <h3 class="v4-group-title">🐛 Bug Fixes &amp; Compatibility</h3>
+                    <ul class="v4-list">
+                        <li><strong>Software Validation:</strong> Extensively tested with UAPP, Neutron Music Player,
+                            and Nova Launcher.</li>
+                        <li><strong>Note on Neutron CPU DSP:</strong> PCM-to-DSD real-time conversion in Neutron is
+                            supported but increases CPU load and thermal output significantly.</li>
+                        <li><strong>MicroSD EXT4 Fix:</strong> Fixed a critical bug in the microSD cleanup process for
+                            ext4 partitions.</li>
+                        <li><strong>iBasso Firmware Updater Fix:</strong> Resolved an issue where the updater failed to
+                            launch in the optimized environment.</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="v4-community-links">
+                <h3>📌 Official Community Posts</h3>
+                <div class="community-links-grid">
+                    <a href="https://www.head-fi.org/threads/dx340-guides-optimization-battery-replacements-diy-discussions.975654/post-19029789"
+                        class="community-link-card" target="_blank" rel="noopener">
+                        <span class="cl-icon">💬</span>
+                        <div>
+                            <strong>Anantar Ultimate V4 — Announcement Post</strong>
+                            <span>Head-Fi DX340 Guides Thread · Post #338</span>
+                        </div>
+                    </a>
+                    <a href="https://www.head-fi.org/threads/dx340-guides-optimization-battery-replacements-diy-discussions.975654/post-19037433"
+                        class="community-link-card" target="_blank" rel="noopener">
+                        <span class="cl-icon">📋</span>
+                        <div>
+                            <strong>Anantar Ultimate V4 — Full Release Notes</strong>
+                            <span>Head-Fi DX340 Guides Thread · Post #579</span>
+                        </div>
+                    </a>
+                    <a href="https://www.head-fi.org/threads/ibasso-dx180-dx260-dx300-max-dx320-max-dx340-rooting-optimization-guides-and-discussion.974923/post-19030118"
+                        class="community-link-card" target="_blank" rel="noopener">
+                        <span class="cl-icon">💡</span>
+                        <div>
+                            <strong>Improve SQ via EXT4 Filesystem</strong>
+                            <span>iBasso Optimization Thread · Post #2,077</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ───────────── MAINTENANCE ───────────── -->
+    <section class="section section-dark" id="maintenance">
+        <div class="container">
+            <div class="section-tag">🛠️ Maintenance &amp; Recovery</div>
+            <h2 class="section-title">Stay in Control</h2>
+            <p class="section-sub">Full recovery guide for every scenario — from A/B testing to hard brick recovery.</p>
+
+            <div class="maint-grid">
+
+                <div class="maint-card">
+                    <h3>🗑️ Uninstall Anantar Ultimate</h3>
+                    <ol class="step-list compact">
+                        <li>Change Boot Profile to <strong>"Off"</strong> first</li>
+                        <li>Open Magisk app → Select <strong>"Uninstall Magisk"</strong></li>
+                        <li>Device reboots and becomes unrooted</li>
+                        <li>Uninstall the Magisk app</li>
+                    </ol>
+                    <div class="maint-note">💡 If sending to iBasso for service, factory reset after unrooting.</div>
+                </div>
+
+                <div class="maint-card">
+                    <h3>🔄 A/B Testing (Enable/Disable)</h3>
+                    <div class="ab-cols">
+                        <div>
+                            <strong>Disable:</strong>
+                            <ol class="step-list compact">
+                                <li>Change Boot Profile to "Off"</li>
+                                <li>Magisk → Modules → Disable Anantar Ultimate → Reboot</li>
+                            </ol>
+                        </div>
+                        <div>
+                            <strong>Enable:</strong>
+                            <ol class="step-list compact">
+                                <li>Magisk → Modules → Enable Anantar Ultimate → Reboot</li>
+                                <li>Enable your favourite Boot Profile</li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="maint-card">
+                    <h3>⬆️ Upgrade Firmware Without Data Loss</h3>
+                    <ol class="step-list compact">
+                        <li>Download OTA firmware ZIP from iBasso website</li>
+                        <li>Run: <code>adb reboot recovery</code></li>
+                        <li>Select "Apply update from ADB"</li>
+                        <li>Run: <code>adb sideload DX340_full_ota_x.xx.zip</code></li>
+                        <li>Reboot, then reinstall Anantar Ultimate</li>
+                    </ol>
+                    <div class="maint-note">⚠️ Windows 11 has issues with fastboot — use QFIL or ADB sideload instead.
+                    </div>
+                </div>
+
+                <div class="maint-card">
+                    <h3>🔁 Soft Brick Recovery</h3>
+                    <ol class="step-list compact">
+                        <li>Turn DX340 OFF</li>
+                        <li>Hold <strong>Bottom Side Button + Power Button</strong> simultaneously</li>
+                        <li>When iBasso logo appears, release Power (keep holding Side Button)</li>
+                        <li>Navigate to <strong>"Recovery Mode"</strong> → confirm with Power</li>
+                        <li>Select <strong>"Wipe data/factory reset"</strong> → Factory data reset</li>
+                        <li>Select "Reboot system now"</li>
+                    </ol>
+                </div>
+
+                <div class="maint-card full-width">
+                    <h3>🔨 Hard Brick Recovery — QFIL Flash</h3>
+                    <p>The DX340 uses a Qualcomm SoC — you can flash the entire firmware via <strong>QFIL (Qualcomm
+                            Flash Image Loader)</strong>.</p>
+                    <div class="qfil-steps">
+                        <div class="qfil-step">
+                            <strong>What You Need</strong>
+                            <p>QFIL tool, USB-C cable, iBasso full firmware package, Qualcomm EDL drivers</p>
+                        </div>
+                        <div class="qfil-step">
+                            <strong>Steps to Flash</strong>
+                            <p>Enter EDL mode → Connect device → Open QFIL → Select firmware → Flash → Reboot</p>
+                        </div>
+                    </div>
+                    <a href="https://drive.google.com/file/d/15Fzf8U1YbBecVIcsOP35qu2iupTHoZQq/view" class="btn-ghost"
+                        target="_blank" rel="noopener">📄 Full QFIL Documentation (by @mattClarke18)</a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ───────────── COMMUNITY ───────────── -->
+    <section class="section" id="community">
+        <div class="container">
+            <div class="section-tag">💬 Community</div>
+            <h2 class="section-title">Join the Discussion</h2>
+            <p class="section-sub">Anantar Ultimate is community-driven and 100% open-source. Get help, share
+                impressions, and stay updated.</p>
+
+            <div class="community-grid">
+                <a href="https://github.com/tekchansin/DX340" class="community-card" target="_blank" rel="noopener">
+                    <div class="community-card-icon">⭐</div>
+                    <h3>GitHub Repository</h3>
+                    <p>Source code, documentation, releases, and issue tracking. Star the project to support
+                        development!</p>
+                    <span class="community-link-arrow">→</span>
                 </a>
-                <div class="bg-slate-900 border border-white/10 px-8 py-4 rounded-xl font-mono text-xs text-slate-500 flex items-center">
-                    BTC: 0x794161ef033bd117a45f4dbeda023b5a69cc7cd5
-                </div>
-            </div>
-            
-            <div class="flex justify-center gap-10 mb-12">
-                <a href="mailto:justice.form@gmail.com" class="text-slate-500 hover:text-white transition text-2xl"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.head-fi.org/members/tekchansin.500217/" class="text-slate-500 hover:text-white transition text-2xl"><i class="fas fa-head-side-headphones"></i></a>
+                <a href="https://www.head-fi.org/threads/dx340-guides-optimization-battery-replacements-diy-discussions.975654/"
+                    class="community-card" target="_blank" rel="noopener">
+                    <div class="community-card-icon">🎧</div>
+                    <h3>DX340 Guides Thread</h3>
+                    <p>Main community hub for DX340 guides, battery replacements, DIY discussions, and Anantar support
+                        on Head-Fi.</p>
+                    <span class="community-link-arrow">→</span>
+                </a>
+                <a href="https://www.head-fi.org/threads/ibasso-dx180-dx260-dx300-max-dx320-max-dx340-rooting-optimization-guides-and-discussion.974923/"
+                    class="community-card" target="_blank" rel="noopener">
+                    <div class="community-card-icon">🔧</div>
+                    <h3>iBasso Optimization Thread</h3>
+                    <p>Deep-dive optimization discussions, rooting guides, and technical insights for all iBasso DAPs.
+                    </p>
+                    <span class="community-link-arrow">→</span>
+                </a>
             </div>
 
-            <p class="text-[10px] text-slate-700 font-bold uppercase tracking-[0.5em]">
-                Designed in Thailand 🇹🇭 &copy; 2026 Anantar Project
-            </p>
+            <!-- Support -->
+            <div class="support-box">
+                <div class="support-content">
+                    <h3>☕ Support This Work</h3>
+                    <p>Anantar Ultimate is <strong>100% free</strong> — built out of passion for the DX340 and the
+                        audiophile community. If you enjoy the improvements, a small donation helps fund continued
+                        research &amp; development.</p>
+                    <div class="crypto-box">
+                        <span class="crypto-label">ETH / Crypto:</span>
+                        <code class="crypto-addr">0x794161ef033bd117a45f4dbeda023b5a69cc7cd5</code>
+                        <button class="copy-btn"
+                            onclick="navigator.clipboard.writeText('0x794161ef033bd117a45f4dbeda023b5a69cc7cd5');this.textContent='Copied!';setTimeout(()=>this.textContent='Copy',2000)">Copy</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ───────────── FOOTER ───────────── -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <span class="logo-glyph">◈</span>
+                    <span>Anantar Ultimate V4</span>
+                </div>
+                <p class="footer-byline">🔥 Proudly Researched and Developed with Passion by <strong>tekChansin</strong>
+                    · Bangkok, Thailand 🇹🇭</p>
+                <div class="footer-links">
+                    <a href="https://github.com/tekchansin/DX340" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://www.head-fi.org/members/tekchansin.500217/" target="_blank" rel="noopener">Head-Fi
+                        Profile</a>
+                    <a href="https://github.com/tekchansin/DX340/releases" target="_blank" rel="noopener">Releases</a>
+                </div>
+                <p class="footer-disc">This project is provided free of charge with no warranty. Use at your own risk.
+                    Not affiliated with iBasso Audio.</p>
+            </div>
         </div>
     </footer>
 
+    <script src="assets/main.js"></script>
 </body>
+
 </html>
