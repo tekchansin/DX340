@@ -1781,35 +1781,6 @@ code {
     font-size: 1.2rem;
 }
 
-.alipay-trigger:hover .alipay-modal {
-    opacity: 1;
-    visibility: visible;
-    transform: translate(-50%, -10px);
-}
-
-.alipay-modal {
-    position: absolute;
-    bottom: 100%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    background: #fff;
-    padding: 10px;
-    border-radius: 16px;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
-    opacity: 0;
-    visibility: hidden;
-    transition: all 0.3s var(--ease-out);
-    pointer-events: none;
-    width: 200px;
-    z-index: 10;
-}
-
-.alipay-modal img {
-    width: 100%;
-    display: block;
-    border-radius: 8px;
-}
-
 .crypto-box {
     background: rgba(0, 0, 0, 0.2);
     padding: 16px;
