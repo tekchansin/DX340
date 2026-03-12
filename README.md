@@ -25,7 +25,7 @@ The **Anantar Ultimate** edition is a free created specifically for those who wi
 
 | Platform | Donation Link / Address |
 | :--- | :--- |
-| **PayPal** | [![PayPal](https://img.shields.io/badge/Donate-PayPal-00457C?style=flat-square&logo=paypal&logoColor=white)](https://www.paypal.me/CharnsilpChinprasert) |
+| **PayPal** | [![PayPal tekChansin](https://img.shields.io/badge/Donate-PayPal-00457C?style=flat-square&logo=paypal&logoColor=white)](https://www.paypal.me/CharnsilpChinprasert) [![PayPal tekChansin](https://img.shields.io/badge/Donate-PayPal-00457C?style=flat-square&logo=paypal&logoColor=white)](https://www.paypal.com/paypalme/VTram)|
 | **Bitcoin** | `0x794161ef033bd117a45f4dbeda023b5a69cc7cd5` |
 ---
 
