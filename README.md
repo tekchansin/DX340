@@ -1,4 +1,4 @@
-# Anantar Ultimate V4 for iBasso DX340 
+# Anantar Ultimate V6 for iBasso DX340 
 ### 🔥 Proudly Researched and Developed with Passion by tekChansin (Thailand 🇹🇭) | Head-Fi
 
 💸 **100% FREE TO USE** — *Anantar Ultimate is a passionate community-driven project provided completely free of charge. No hidden fees, no premium tiers.*
