@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anantar Ultimate V5 — iBasso DX340</title>
+    <title>Anantar Ultimate V6 — iBasso DX340</title>
     <meta name="description"
-        content="Anantar Ultimate V5 — The definitive audio optimization module for iBasso DX340. Infinity Stage, Improved CPU Pinning, 3D soundstage, hardware-level harmonic tuning, DeepSleep V2, and more." />
+        content="Anantar Ultimate V6 — The definitive audio optimization module for iBasso DX340. Introducing PowerScope deep battery monitoring, Salon Infinity Stage, faster app loading, and more." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -27,12 +27,11 @@
             <ul class="nav-links">
                 <li><a href="#features">Features</a></li>
                 <li><a href="#architecture">Architecture</a></li>
-                <li><a href="#guide">Tuning Anantar</a></li>
+                <li><a href="#profiles">Profiles</a></li>
+                <li><a href="#guide">Tuning</a></li>
+                <li><a href="#powerscope">PowerScope</a></li>
                 <li><a href="#ext4">EXT4</a></li>
-                <li><a href="#v5">V5</a></li>
-                <li><a href="#v4">V4</a></li>
-                <li><a href="#maintenance">Recovery</a></li>
-                <li><a href="#community">Community</a></li>
+                <li><a href="#v6">V6 🆕</a></li>
             </ul>
             <a href="#install" class="btn-nav">⬇ Download</a>
             <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">☰</button>
@@ -52,16 +51,21 @@
             </div>
             <h1 class="hero-title">
                 <span class="title-line1">Anantar Ultimate&trade;</span>
-                <span class="title-v4">V5</span>
+                <span class="title-v4">V6</span>
             </h1>
             <p class="hero-subtitle">for iBasso DX340</p>
             <p class="hero-desc">
-                The definitive hardware-level audio optimization module — now featuring the <strong>Infinity
-                    Stage</strong>
-                and <strong>Improved CPU Pinning</strong>. Delivering a 3D soundstage, hardware harmonic tuning via
-                FPGA,
-                DeepSleep V2, EXT4 native support, and seamless one-click installation. <strong>100% FREE.</strong>
+                The definitive hardware-level audio optimization module — now featuring <strong>PowerScope</strong>,
+                the deepest battery &amp; power monitor ever built for the DX340, plus a new <strong>Salon Infinity
+                    Stage</strong>, faster app loading, and hardware harmonic tuning via FPGA. <strong>100%
+                    FREE.</strong>
             </p>
+            <div class="hero-v6-pills">
+                <span class="v6-pill v6-pill-new">🔬 PowerScope App</span>
+                <span class="v6-pill v6-pill-new">💈 Salon Stage</span>
+                <span class="v6-pill">⚡ Faster Loading</span>
+                <span class="v6-pill">🐛 YouTube Fix</span>
+            </div>
             <div class="hero-ctas">
                 <a href="#install" class="btn-primary">
                     ⬇ Download Installer
@@ -90,10 +94,29 @@
 
             <div class="feature-grid">
 
+                <div class="feature-card card-glow feature-card-hero">
+                    <div class="feature-badge-new">NEW in V6</div>
+                    <div class="feature-icon">🔬</div>
+                    <h3>Anantar PowerScope</h3>
+                    <p>The deepest hardware monitor ever built for the DX340. Real-time dual-battery diagnostics, I2C charger register reads, 24-hour history charts, and live CPU/RAM dashboard — all in one companion app.</p>
+                    <div class="powerscope-screenshots">
+                        <img src="img/powerscope1.png" alt="PowerScope Dashboard" loading="lazy" />
+                        <img src="img/powerscope2.png" alt="PowerScope Battery" loading="lazy" />
+                        <img src="img/powerscope3.png" alt="PowerScope Charts" loading="lazy" />
+                    </div>
+                </div>
+
+                <div class="feature-card card-glow">
+                    <div class="feature-badge-new">NEW in V6</div>
+                    <div class="feature-icon">💈</div>
+                    <h3>Salon Infinity Stage</h3>
+                    <p>A new spatial stage sitting between Theatre and Chamber — refined, intimate, yet beautifully open. Now five stages total: Studio, Chamber, <strong>Salon</strong>, Theatre, and Original.</p>
+                </div>
+
                 <div class="feature-card card-glow">
                     <div class="feature-icon">🌌</div>
                     <h3>Infinity Stage</h3>
-                    <p>Unlock a larger, more immersive soundstage with four distinct profiles: Studio, Chamber, Theatre,
+                    <p>Unlock a larger, more immersive soundstage with five distinct profiles: Studio, Chamber, Salon, Theatre,
                         and Original. Each profile uses a new heap memory configuration for unparalleled space and
                         realism.</p>
                 </div>
@@ -626,6 +649,169 @@
         </div>
     </section>
 
+    <!-- ───────────── V6 RELEASE NOTES ───────────── -->
+    <section class="section section-dark v6-section" id="v6">
+        <div class="container">
+            <div class="section-tag">🆕 V6.0 Change Log</div>
+            <h2 class="section-title">Introducing:<br />Anantar PowerScope</h2>
+            <p class="section-sub">V6 brings the most ambitious companion app ever built for the DX340 — alongside a new
+                Infinity Stage and system-wide performance improvements.</p>
+
+            <!-- PowerScope hero block -->
+            <div class="powerscope-hero-block">
+                <div class="powerscope-hero-text">
+                    <div class="ps-label">🔬 Brand New App</div>
+                    <h3>Anantar PowerScope</h3>
+                    <p>Built exclusively for DX340 + Anantar Ultimate. Surfaces hardware data that no stock app ever
+                        exposes — reading directly from the I2C bus and Linux sysfs.</p>
+                    <ul class="ps-features">
+                        <li><strong>🔋 Dual-Battery Monitor</strong> — voltage, current, power, temperature, health, and charge cycles for both SoC and DAC batteries simultaneously</li>
+                        <li><strong>⚡ Charger Deep Diagnostics</strong> — direct I2C reads from bq25892 &amp; bq24192: VBUS, input current, DPM status, chip registers</li>
+                        <li><strong>📊 24-Hour Battery Charts</strong> — capacity, voltage, power, temperature &amp; VSYS trends with swing analysis and peak markers</li>
+                        <li><strong>🖥️ Live System Dashboard</strong> — animated CPU gauge, RAM usage, Economy Mode</li>
+                        <li><strong>⚙️ Anantar Config Viewer</strong> — every active system property in one view</li>
+                        <li><strong>🔄 OTA Update Tracker</strong> — latest firmware version and changelog in-app</li>
+                    </ul>
+                </div>
+                <div class="powerscope-hero-imgs">
+                    <img src="img/powerscope1.png" alt="PowerScope Dashboard" loading="lazy" class="ps-img" />
+                    <img src="img/powerscope2.png" alt="PowerScope Battery Monitor" loading="lazy" class="ps-img" />
+                    <img src="img/powerscope3.png" alt="PowerScope History Charts" loading="lazy" class="ps-img" />
+                </div>
+            </div>
+
+            <!-- Other V6 changes -->
+            <div class="v6-other-grid">
+                <div class="v6-other-card">
+                    <div class="v6-other-icon">💈</div>
+                    <h4>Salon Infinity Stage</h4>
+                    <p>A new fifth soundstage profile positioned between Theatre and Chamber — refined, intimate, yet
+                        open. Perfect for vocal-focused and acoustic recordings.</p>
+                </div>
+                <div class="v6-other-card">
+                    <div class="v6-other-icon">⚡</div>
+                    <h4>Faster App Loading</h4>
+                    <p>All apps system-wide launch noticeably faster, thanks to pre-compiled package optimization applied
+                        automatically during installation.</p>
+                </div>
+                <div class="v6-other-card">
+                    <div class="v6-other-icon">🐛</div>
+                    <h4>YouTube Crash Fix</h4>
+                    <p>Resolved a crash issue that affected YouTube playback in certain configurations.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ───────────── POWERSCOPE ───────────── -->
+    <section class="section" id="powerscope">
+        <div class="container">
+            <div class="section-tag">🔬 New in V6</div>
+            <h2 class="section-title">Anantar PowerScope<br /><span class="ps-title-sub">The Deepest Hardware Monitor for DX340</span></h2>
+            <p class="section-sub">Built exclusively for DX340 + Anantar Ultimate. Surfaces hardware data that no stock
+                app ever exposes — reading directly from the I2C bus, fuel gauge chips, and Linux sysfs. <a
+                    href="powerscope.md" target="_blank" rel="noopener" class="ps-doc-link">→ Full Documentation</a>
+            </p>
+
+            <!-- Screenshot gallery -->
+            <div class="ps-gallery">
+                <img src="img/powerscope1.png" alt="PowerScope Live System Dashboard" loading="lazy" class="ps-gallery-img" />
+                <img src="img/powerscope2.png" alt="PowerScope Dual-Battery Monitor" loading="lazy" class="ps-gallery-img" />
+                <img src="img/powerscope3.png" alt="PowerScope 24-Hour History Charts" loading="lazy" class="ps-gallery-img" />
+            </div>
+
+            <!-- Feature breakdown -->
+            <div class="ps-feature-grid">
+
+                <div class="ps-feature-card card-glow">
+                    <div class="ps-feature-icon">🖥️</div>
+                    <h3>Live System Dashboard</h3>
+                    <p>Always-on hardware overview that refreshes in real time — directly from Linux sysfs.</p>
+                    <ul class="ps-detail-list">
+                        <li><strong>CPU Usage Gauge</strong> — animated circular gauge showing current processor load</li>
+                        <li><strong>Memory Usage</strong> — live used vs. total RAM in GB</li>
+                        <li><strong>Economy Mode</strong> — reduce polling frequency to save battery during casual monitoring</li>
+                    </ul>
+                </div>
+
+                <div class="ps-feature-card card-glow">
+                    <div class="ps-feature-icon">🔋</div>
+                    <h3>Dual-Battery Monitoring</h3>
+                    <p>The DX340 has two separate batteries — SoC and DAC. PowerScope monitors both simultaneously, exposing data no stock app can reach.</p>
+                    <ul class="ps-detail-list">
+                        <li><strong>State of Charge</strong> — percentage remaining per battery</li>
+                        <li><strong>Voltage / Current / Power</strong> — real-time mV, mA, mW per cell</li>
+                        <li><strong>Temperature</strong> — color-coded safety indicator (green / orange / red)</li>
+                        <li><strong>Health &amp; Charge State</strong> — Charging, Discharging, Full, or Bypass</li>
+                        <li><strong>Capacity (mAh)</strong> — design and full-charge capacity</li>
+                        <li><strong>Charge Cycles</strong> — logged by the fuel gauge chip</li>
+                        <li><strong>Lifetime Min / Max Temperature</strong> — recorded by CW2215/2217/2218</li>
+                    </ul>
+                </div>
+
+                <div class="ps-feature-card">
+                    <div class="ps-feature-icon">⚡</div>
+                    <h3>Charger Deep Diagnostics</h3>
+                    <p>Direct I2C reads from <strong>bq25892</strong> (SoC) and <strong>bq24192</strong> (DAC) charger ICs — data that is invisible to Android at the OS level.</p>
+                    <ul class="ps-detail-list">
+                        <li><strong>VBUS voltage &amp; input current</strong> — actual measured vs. limit</li>
+                        <li><strong>Charger type detection</strong> — SDP, CDP, DCP, OTG</li>
+                        <li><strong>VSYS &amp; battery circuit voltage</strong> — system bus stability</li>
+                        <li><strong>DPM Status</strong> — whether the charger is throttling input current</li>
+                        <li><strong>Fast charge current limit</strong></li>
+                        <li><strong>Chip ID &amp; register hex</strong> — for advanced debugging</li>
+                    </ul>
+                </div>
+
+                <div class="ps-feature-card">
+                    <div class="ps-feature-icon">📊</div>
+                    <h3>Battery History &amp; Charts</h3>
+                    <p>Automatic background recording every 15 minutes — building a rolling 24-hour log even when the app is closed.</p>
+                    <ul class="ps-detail-list">
+                        <li><strong>Capacity (%)</strong> — SOC and DAC charge over time</li>
+                        <li><strong>Voltage (mV)</strong> — cell voltages for both batteries</li>
+                        <li><strong>Power (mW)</strong> — SOC, DAC, and USB input power trends</li>
+                        <li><strong>Temperature (°C)</strong> — detect thermal patterns over sessions</li>
+                        <li><strong>VSYS Voltage</strong> — system bus stability history</li>
+                        <li><strong>Swing Analysis</strong> — auto-annotates peak-to-valley voltage difference</li>
+                        <li><strong>Peak indicators</strong> — highest and lowest points marked on each chart</li>
+                    </ul>
+                    <p class="ps-privacy-note">🔒 Stored locally only — no cloud sync, no privacy concerns.</p>
+                </div>
+
+                <div class="ps-feature-card">
+                    <div class="ps-feature-icon">⚙️</div>
+                    <h3>Anantar Configuration Viewer</h3>
+                    <p>See every active Anantar and iBasso system property in one place — organized in a clean two-column dashboard. Verify your current Boot Profile, Oversampling Mode, Harmonic Profile, and Infinity Stage at a glance.</p>
+                </div>
+
+                <div class="ps-feature-card">
+                    <div class="ps-feature-icon">🔄</div>
+                    <h3>OTA Update Tracker</h3>
+                    <p>Stay informed about the latest Anantar Ultimate firmware releases without leaving the app.</p>
+                    <ul class="ps-detail-list">
+                        <li>Fetches the live OTA manifest from the Anantar update server</li>
+                        <li>Displays the latest firmware version and changelog summary</li>
+                        <li>Opens full release notes in the built-in WebView</li>
+                        <li>Cached locally — available offline</li>
+                    </ul>
+                </div>
+
+                <div class="ps-feature-card">
+                    <div class="ps-feature-icon">🌐</div>
+                    <h3>Resources &amp; Community</h3>
+                    <p>A dynamic resources section powered by Supabase — curated guides, community forums, and support channels maintained server-side so content stays fresh without an app update. Full offline caching included.</p>
+                </div>
+
+            </div>
+
+            <div class="ps-doc-cta">
+                <a href="powerscope.md" class="btn-ghost" target="_blank" rel="noopener">📄 Read Full PowerScope Documentation</a>
+            </div>
+        </div>
+    </section>
+
     <!-- ───────────── V5 RELEASE NOTES ───────────── -->
     <section class="section section-dark" id="v5">
         <div class="container">
@@ -942,7 +1128,7 @@
             <div class="footer-inner">
                 <div class="footer-brand">
                     <span class="logo-glyph">◈</span>
-                    <span>Anantar Ultimate&trade; V5</span>
+                    <span>Anantar Ultimate&trade; V6</span>
                 </div>
                 <p class="footer-byline">🔥 Proudly Researched and Developed with Passion by <strong>tekChansin&trade;</strong>
                     · Bangkok, Thailand 🇹🇭</p>

@@ -66,6 +66,17 @@ The **Anantar Ultimate** edition is a free created specifically for those who wi
 #### 🎶 **FW 1.08 Sound Signature Correction**
 * Fixed the overly bright and dynamically flat sound profile introduced in stock firmware 1.08. This optimization restores the lost dynamics and musicality, bringing back an engaging, full-bodied, and punchy listening experience.
 
+#### 🌌 **Infinity Stage**
+Choose from five distinct soundstage profiles, each using a unique heap memory configuration to shape the spatial presentation of your music:
+
+| Profile | Character |
+|---|---|
+| 🎙️ **Studio** | Clinical precision, zero reverb — every micro-detail exposed |
+| 🎻 **Chamber** | Wide, airy, naturally balanced stereo separation |
+| 🎭 **Theatre** | Grand, cinematic immersion with rich ambient reverb |
+| 💈 **Salon** *(New in V6)* | Between Theatre and Chamber — refined, intimate yet open |
+| 🎸 **Original** | The authentic V4 signature — balanced and pure |
+
 #### 🎛️ **Harmonic Profiles Engine (Hardware-Level)**
 A true hardware-level enhancement. Instead of relying on software DSP, this engine directly commands the DX340's internal FPGA to alter the harmonic sequence. Because the adjustment occurs entirely at the hardware level, it maintains absolute signal purity and fully supports all audio formats, including native DSD playback, with zero software-induced degradation.
 
@@ -119,6 +130,33 @@ A true hardware-level enhancement. Instead of relying on software DSP, this engi
 | Quick Settings | Boot Profiles | OverSampling | USB DAC Support |
 | :---: | :---: | :---: | :---: |
 | <img src="img/Tile.png" width="200"> | <img src="img/Boot.png" width="200"> | <img src="img/OverSampling.png" width="200"> | <img src="img/USBDAC.png" width="200"> |
+
+---
+
+## 🆕 What's New in V6.0
+
+### 🔬 [Anantar PowerScope](./powerscope.md) — New Companion App
+
+A brand-new app built exclusively for DX340 + Anantar Ultimate — giving you the deepest hardware visibility ever available on this device.
+
+| | | |
+| :---: | :---: | :---: |
+| <img src="img/powerscope1.png" width="200"> | <img src="img/powerscope2.png" width="200"> | <img src="img/powerscope3.png" width="200"> |
+
+**What PowerScope shows you:**
+- 🔋 **Dual-Battery Monitor** — real-time voltage, current, power draw, temperature, health, and charge cycles for both the SoC and DAC batteries simultaneously
+- ⚡ **Charger Deep Diagnostics** — reads directly from I2C charger ICs (bq25892 / bq24192) — VBUS voltage, input current, DPM status, chip registers — data no stock app exposes
+- 📊 **24-Hour Battery History Charts** — interactive graphs for capacity, voltage, power, temperature, and VSYS — with swing analysis and peak markers
+- 🖥️ **Live System Dashboard** — animated CPU gauge, RAM usage, live polling with Economy Mode to save battery
+- ⚙️ **Anantar Config Viewer** — see every active Anantar and iBasso system property in one place
+- 🔄 **OTA Update Tracker** — check the latest firmware version and changelog without leaving the app
+
+> 📖 [Full PowerScope documentation →](./powerscope.md)
+
+### ✨ Other V6.0 Highlights
+- 🎭 **Salon Infinity Stage** — A new spatial stage sitting between Theatre and Chamber, for a refined, intimate yet open presentation.
+- ⚡ **Faster App Loading** — All apps launch faster system-wide via pre-compiled package optimization.
+- 🐛 **Fix YouTube Crash** — Resolved a crash affecting YouTube playback.
 
 
 ---
