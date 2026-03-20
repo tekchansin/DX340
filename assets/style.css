@@ -201,7 +201,8 @@ body {
     padding: 0 24px;
     display: flex;
     align-items: center;
-    gap: 32px;
+    gap: 16px;
+    flex-wrap: nowrap;
 }
 
 .nav-logo {
@@ -231,18 +232,21 @@ body {
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 6px;
+    gap: 2px;
     flex: 1;
+    flex-wrap: nowrap;
+    overflow: hidden;
 }
 
 .nav-links a {
     color: var(--text-secondary);
     text-decoration: none;
-    font-size: 0.875rem;
+    font-size: 0.78rem;
     font-weight: 500;
-    padding: 6px 12px;
+    padding: 5px 8px;
     border-radius: 8px;
     transition: color 0.15s, background 0.15s;
+    white-space: nowrap;
 }
 
 .nav-links a:hover {
@@ -1684,7 +1688,7 @@ code {
     background: rgba(91, 127, 255, 0.12);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .nav-links {
         display: none;
     }
@@ -1713,7 +1717,7 @@ code {
     }
 
     .btn-nav {
-        display: none;
+        display: none !important;
     }
 
     .hero-title {
