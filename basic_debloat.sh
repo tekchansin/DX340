@@ -143,9 +143,9 @@ pm install -r simplekeyboard.apk && \
 rm simplekeyboard.apk
 
 
-# curl -L -k -o aurorastore.apk https://f-droid.org/repo/com.aurora.store_71.apk && \
-# pm install -r aurorastore.apk && \
-# rm aurorastore.apk
+curl -L -k -o aurorastore.apk https://f-droid.org/repo/com.aurora.store_71.apk && \
+pm install -r aurorastore.apk && \
+rm aurorastore.apk
 
 
 settings put secure default_input_method rkr.simplekeyboard.inputmethod/.latin.LatinIME
