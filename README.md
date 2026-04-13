@@ -181,7 +181,7 @@ This is the fully automated, single-step method. The script handles ADB checks, 
 
 > **This Installation script can re-run without problem**
 
-## Download Link: [Anantar-Ultimate-Installer](https://pub-7d31638bb06b4f1ba9282512928751b3.r2.dev/Anantar-Ultimate/Anantar-Ultimate-Installer.zip)
+## Download Link: [Anantar-Ultimate-Installer](http://install.anantarultimate.com/installer.zip)
 
 1. **Download & Extract:** Download and extract the ZIP file to a folder on your computer.
 2. **Connect Device:** Connect your DX340 to your computer via a USB cable. 
